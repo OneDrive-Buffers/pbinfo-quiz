@@ -65,3 +65,6 @@ catboost_info/
 .DS_Store
 Thumbs.db
 
+
+.public-audit/
+
