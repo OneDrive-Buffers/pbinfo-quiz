@@ -1,0 +1,137 @@
+[
+  {
+    "id": 536,
+    "title": "Fabrica1",
+    "category": null,
+    "subcategory": null,
+    "url": "https://www.youtube.com/watch?v=TYd5YWlxC9o",
+    "topic": ["CautareBinara"],
+    "observation": ["Solves Fabrica1 problem using binary search (cautare binara)"]
+  },
+  {
+    "id": 1399,
+    "title": "sortare-in-trepte",
+    "category": "vectori",
+    "subcategory": "sortari de vectori",
+    "url": "https://www.youtube.com/watch?v=shVLFZ5yUlY",
+    "topic": ["SortareaVectorilor"],
+    "observation": ["Explains how to sort a vector step by step using sorting algorithms"]
+  },
+  {
+    "id": 250,
+    "title": "interclasare2",
+    "category": "vectori",
+    "subcategory": "interclasare",
+    "url": "https://www.youtube.com/watch?v=WSVfKEedDpk",
+    "topic": ["Interclasare"],
+    "observation": ["Demonstrates merging two sorted sequences (interclasare)"]
+  },
+  {
+    "id": 250,
+    "title": "interclasare1",
+    "category": "vectori",
+    "subcategory": "interclasare",
+    "url": "https://www.youtube.com/watch?v=ewCnrTXM9Ao",
+    "topic": ["Interclasare"],
+    "observation": ["Shows another version of merging sorted vectors"]
+  },
+  {
+    "id": 183,
+    "title": "sortPP",
+    "category": "vectori",
+    "subcategory": "sortari de vectori",
+    "url": "https://www.youtube.com/watch?v=NE_4Wb-frs0",
+    "topic": ["SortareaVectorilor"],
+    "observation": ["Presents sorting problem ‘sortPP’ focusing on vector sorting"]
+  },
+  {
+    "id": 130,
+    "title": "sortcif",
+    "category": "vectori",
+    "subcategory": "sortari de vectori",
+    "url": "https://www.youtube.com/watch?v=aPYP36TBHTo",
+    "topic": ["SortareaVectorilor"],
+    "observation": ["Solves the ‘sortcif’ problem involving sorting vector elements"]
+  },
+  {
+    "id": 512,
+    "title": "sortMax",
+    "category": "vectori",
+    "subcategory": "sortari de vectori",
+    "url": "https://www.youtube.com/watch?v=cpwpccCu7iE",
+    "topic": ["SortareaVectorilor"],
+    "observation": ["Explains how to sort a vector and find the maximum"]
+  },
+  {
+    "id": 618,
+    "title": "inaltimi",
+    "category": "vectori",
+    "subcategory": "sortari de vectori",
+    "url": "https://www.youtube.com/watch?v=lNzSrVm-kQ0",
+    "topic": ["SortareaVectorilor"],
+    "observation": ["Solves ‘inaltimi’ problem by sorting heights"]
+  },
+  {
+    "id": 4146,
+    "title": "Sort10",
+    "category": "vectori",
+    "subcategory": "sortarea elementelor dintr-un vector",
+    "url": "https://www.youtube.com/watch?v=d_2jktOjTnU",
+    "topic": ["SortareaVectorilor"],
+    "observation": ["Demonstrates sorting the first 10 elements of a vector"]
+  },
+  {
+    "id": 2220,
+    "title": "DifMax",
+    "category": "vectori",
+    "subcategory": "parcurgerea vectorilor",
+    "url": "https://www.youtube.com/watch?v=5u9QpPqQcxA",
+    "topic": ["Vectori", "Parcurgerea"],
+    "observation": ["Shows optimal solution for DifMax using vector traversal"]
+  },
+  {
+    "id": 4110,
+    "title": "numarareSD",
+    "category": "vectori",
+    "subcategory": "parcurgerea unui vector",
+    "url": "https://www.youtube.com/watch?v=V8-6i82NCeI",
+    "topic": ["Vectori"],
+    "observation": ["Provides optimal solution for numarareSD by traversing a vector"]
+  },
+  {
+    "id": 5141,
+    "title": "AMM",
+    "category": "vectori",
+    "subcategory": "parcurgerea unui vector",
+    "url": "https://www.youtube.com/watch?v=K4A5Bfq0y7w",
+    "topic": ["Vectori", "Parcurgerea"],
+    "observation": ["Solves AMM problem by iterating through vector elements"]
+  },
+  {
+    "id": 855,
+    "title": "piramida2",
+    "category": "matrici",
+    "subcategory": "generari de matrici",
+    "url": "https://www.youtube.com/watch?v=BAEdZV9SBjM",
+    "topic": ["Matrici", "Generari"],
+    "observation": ["Generates a matrix in a pyramid shape (piramida2)"]
+  },
+  {
+    "id": 547,
+    "title": "numarare6",
+    "category": "vectori",
+    "subcategory": "parcurgerea elementelor unui vector",
+    "url": "https://www.youtube.com/watch?v=T7nRopcA9D4",
+    "topic": ["Vectori"],
+    "observation": ["Counts occurrences in a vector (numarare6)"]
+  },
+  {
+    "id": 1568,
+    "title": "mediediv",
+    "category": "algoritmi elementari",
+    "subcategory": "divizibilitate",
+    "url": "https://www.youtube.com/watch?v=vfvMOptZGzA",
+    "topic": ["Divizibilitate"],
+    "observation": ["Computes average of numbers divisible by a value (mediediv)"]
+  }
+]

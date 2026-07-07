@@ -1,0 +1,310 @@
+{
+  "intro_hello": {
+    "title": "Structura unui program C++",
+    "content": "Orice program C++ începe cu directivele de preprocesare și declarațiile necesare. Structura de bază este:\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // instrucțiuni\n    return 0;\n}\n```\nFuncția `main()` este punctul de intrare al programului.",
+    "key_points": [
+      "Fiecare program are o singură funcție main()",
+      "return 0 indică execuție cu succes",
+      "#include <iostream> pentru cin/cout"
+    ]
+  },
+  "intro_io": {
+    "title": "Citire și afișare: cin și cout",
+    "content": "Citirea se face cu `cin >>` iar afișarea cu `cout <<`. Operatorul `endl` sau `'\\n'` face salt la linie nouă.\n```cpp\nint n;\ncin >> n;\ncout << n << endl;\n```",
+    "key_points": [
+      "cin >> citește de la tastatură",
+      "cout << afișează pe ecran",
+      "endl sau '\\n' pentru linie nouă",
+      "Se pot înlănțui: cin >> a >> b"
+    ]
+  },
+  "intro_vars": {
+    "title": "Variabile și tipuri de date",
+    "content": "În C++ variabilele trebuie declarate cu un tip:\n- `int` – număr întreg (ex: -32768 … 32767 pt short, sau ~±2 miliarde pt int 32-bit)\n- `long long` – întreg mare\n- `float`, `double` – numere reale\n- `char` – caracter\n\nDeclararare: `int x;` sau cu inițializare: `int x = 5;`",
+    "key_points": [
+      "int pentru numere întregi uzuale",
+      "long long pentru numere mari",
+      "char pentru caractere individuale",
+      "Variabilele trebuie declarate înainte de utilizare"
+    ]
+  },
+  "ops_arith": {
+    "title": "Operatori aritmetici",
+    "content": "Operatorii aritmetici sunt: `+`, `-`, `*`, `/`, `%`\n- `/` la întregi dă câtul împărțirii: `7/2 = 3`\n- `%` dă restul împărțirii: `7%2 = 1`\nPrioritatea: `*`, `/`, `%` înainte de `+`, `-`",
+    "key_points": [
+      "7/2 = 3 (împărțire întreagă)",
+      "7%2 = 1 (restul împărțirii)",
+      "Ultima cifră: n%10",
+      "Eliminarea ultimei cifre: n/10"
+    ]
+  },
+  "ops_rel": {
+    "title": "Operatori relaționali și logici",
+    "content": "Operatori relaționali: `==`, `!=`, `<`, `>`, `<=`, `>=`\nOperatori logici: `&&` (și), `||` (sau), `!` (negație)\nAtenție: `=` este atribuire, `==` este comparație!",
+    "key_points": [
+      "== pentru comparație (nu =)",
+      "&&: ambele condiții adevărate",
+      "||: cel puțin o condiție adevărată",
+      "!: negează condiția"
+    ]
+  },
+  "ops_assign": {
+    "title": "Operatori de atribuire și incrementare",
+    "content": "Atribuire: `x = 5;`\nAtribuire compusă: `x += 3` (echivalent cu `x = x + 3`)\nIncrementare: `x++` sau `++x`\nDecrementare: `x--` sau `--x`",
+    "key_points": [
+      "x += 3 echivalent x = x + 3",
+      "x++ crește x cu 1 după evaluare",
+      "++x crește x cu 1 înainte de evaluare",
+      "x *= 2 dublează valoarea lui x"
+    ]
+  },
+  "ops_bitwise": {
+    "title": "Operatori pe biți",
+    "content": "Operatori pe biți lucrează cu reprezentarea binară:\n- `&` (AND pe biți): 5 & 3 = 1\n- `|` (OR pe biți): 5 | 3 = 7\n- `^` (XOR): 5 ^ 3 = 6\n- `<<` (shift stânga): n << 1 = n*2\n- `>>` (shift dreapta): n >> 1 = n/2\n- `n & 1` testează dacă n este impar",
+    "key_points": [
+      "n & 1 == 1 dacă n este impar",
+      "n << k înmulțește cu 2^k",
+      "n >> k împarte cu 2^k (întreg)",
+      "XOR cu același număr de două ori restaurează valoarea"
+    ]
+  },
+  "dec_if": {
+    "title": "Instrucțiunea if / if-else",
+    "content": "```cpp\nif (conditie) {\n    // executat dacă condiție e adevărată\n} else {\n    // executat dacă condiție e falsă\n}\n```\nPentru mai multe ramuri: `else if`\n```cpp\nif (x > 0) cout << \"pozitiv\";\nelse if (x < 0) cout << \"negativ\";\nelse cout << \"zero\";\n```",
+    "key_points": [
+      "Acoladele {} delimitează blocul",
+      "else if pentru condiții multiple",
+      "if fără else ignoră cazul fals",
+      "Atenție la = vs == în condiție"
+    ]
+  },
+  "dec_switch": {
+    "title": "Instrucțiunea switch",
+    "content": "```cpp\nswitch (expresie) {\n    case valoare1:\n        // cod\n        break;\n    case valoare2:\n        // cod\n        break;\n    default:\n        // cod implicit\n}\n```\n`break` oprește execuția. Fără break, continuă la cazul următor.",
+    "key_points": [
+      "break este obligatoriu pentru a ieși din case",
+      "default este cazul implicit",
+      "switch funcționează cu int și char",
+      "Fără break: fall-through la cazul următor"
+    ]
+  },
+  "dec_nested": {
+    "title": "Instrucțiuni condiționate imbricate",
+    "content": "Instrucțiunile if pot fi imbricate (una în interiorul alteia):\n```cpp\nif (a > 0) {\n    if (b > 0) {\n        cout << \"ambele pozitive\";\n    } else {\n        cout << \"a pozitiv, b negativ\";\n    }\n}\n```\nRegula 'dangling else': else se asociază cu cel mai apropiat if.",
+    "key_points": [
+      "else se asociază cu cel mai apropiat if",
+      "Acoladele evită ambiguitățile",
+      "Adâncimea prea mare reduce lizibilitatea"
+    ]
+  },
+  "rep_while": {
+    "title": "Bucla while",
+    "content": "```cpp\nwhile (conditie) {\n    // corp buclă\n}\n```\nBucla while verifică condiția ÎNAINTE de fiecare iterație. Dacă condiția e falsă de la început, corpul nu se execută deloc.\n\nExemplu - suma cifrelor lui n:\n```cpp\nint s = 0;\nwhile (n > 0) {\n    s += n % 10;\n    n /= 10;\n}\n```",
+    "key_points": [
+      "Condiția se verifică ÎNAINTE de execuție",
+      "Dacă condiția inițială e falsă, corpul nu se execută",
+      "Asigurați-vă că variabila din condiție se modifică în corp",
+      "Pattern: while(n > 0) { ...n/=10; } pentru cifre"
+    ]
+  },
+  "rep_dowhile": {
+    "title": "Bucla do-while",
+    "content": "```cpp\ndo {\n    // corp buclă\n} while (conditie);\n```\nBucla do-while execută corpul CEL PUȚIN O DATĂ, apoi verifică condiția.\n\nFolosit când vrem ca bucla să se execute garantat o dată (ex: meniu).",
+    "key_points": [
+      "Corpul se execută CEL PUȚIN O DATĂ",
+      "Condiția se verifică DUPĂ execuția corpului",
+      "Punct și virgulă după paranteza condiției",
+      "Util pentru meniuri și validare input"
+    ]
+  },
+  "rep_for": {
+    "title": "Bucla for",
+    "content": "```cpp\nfor (initializare; conditie; actualizare) {\n    // corp\n}\n```\nExemplu:\n```cpp\nfor (int i = 1; i <= n; i++) {\n    cout << i << \" \";\n}\n```\nEquivalentul cu while:\n```cpp\nint i = 1;\nwhile (i <= n) {\n    cout << i << \" \";\n    i++;\n}\n```",
+    "key_points": [
+      "for(init; cond; update) – toate 3 opționale",
+      "i++ sau i-- pentru incrementare/decrementare",
+      "for(int i=0; i<n; i++) parcurge 0..n-1",
+      "Variabila i declarată în for există doar în for"
+    ]
+  },
+  "rep_nested": {
+    "title": "Bucle imbricate",
+    "content": "Buclele pot fi imbricate (una în alta). Bucla interioară se execută complet pentru fiecare iterație a buclei exterioare.\n```cpp\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= m; j++) {\n        cout << i * j << \" \";\n    }\n    cout << endl;\n}\n```\nComplexitate: dacă bucla externă face n pași și cea internă m pași, total = n*m operații.",
+    "key_points": [
+      "Bucla interioară se execută n*m ori total",
+      "Folosiți variabile diferite: i pentru externă, j pentru internă",
+      "Pot fi mai mult de 2 niveluri imbricate",
+      "Atenție la complexitate: O(n²) pentru 2 bucle cu n pași"
+    ]
+  },
+  "rep_break": {
+    "title": "break și continue",
+    "content": "`break` iese complet din buclă.\n`continue` sare la iterația următoare.\n```cpp\nfor (int i = 1; i <= 10; i++) {\n    if (i == 5) break;    // iese la i=5\n    if (i % 2 == 0) continue; // sare numerele pare\n    cout << i << \" \";  // afișează 1 3\n}\n```",
+    "key_points": [
+      "break iese complet din bucla curentă",
+      "continue sare la iterația următoare",
+      "break în switch iese din switch, nu din buclă",
+      "La bucle imbricate, break/continue afectează numai bucla curentă"
+    ]
+  },
+  "tab_decl": {
+    "title": "Declararea tablourilor unidimensionale",
+    "content": "```cpp\nint v[100]; // tablou de 100 întregi, indici 0..99\nint n;      // dimensiunea logică\ncin >> n;\nfor (int i = 0; i < n; i++) cin >> v[i];\n```\nIndicii merg de la 0 la Dimensiune-1.\nTableurile globale se inițializează cu 0. Cele locale au valori nedeterminate.",
+    "key_points": [
+      "Indici: 0 până la Dimensiune-1",
+      "Dimensiune fizică vs logică n",
+      "Tablouri globale inițializate cu 0",
+      "v[i] accesează elementul i"
+    ]
+  },
+  "tab_ops": {
+    "title": "Inserare și ștergere în vector",
+    "content": "**Ștergere element la poziția p (indexare de la 0):**\n```cpp\nfor (int i = p; i < n-1; i++)\n    v[i] = v[i+1];\nn--;\n```\n**Inserare valoare x la poziția p:**\n```cpp\nfor (int i = n; i > p; i--)\n    v[i] = v[i-1];\nv[p] = x;\nn++;\n```",
+    "key_points": [
+      "Ștergere: deplasare spre stânga, n--",
+      "Inserare: deplasare spre dreapta, n++",
+      "La ștergerea mai multor elemente: parcurgere inversă",
+      "Adăugare la sfârșit: v[n++] = x"
+    ]
+  },
+  "tab_sort": {
+    "title": "Sortarea vectorilor",
+    "content": "**Bubble sort:**\n```cpp\nfor (int i = 0; i < n-1; i++)\n    for (int j = 0; j < n-1-i; j++)\n        if (v[j] > v[j+1]) {\n            int aux = v[j];\n            v[j] = v[j+1];\n            v[j+1] = aux;\n        }\n```\n**Selection sort:**\n```cpp\nfor (int i = 0; i < n-1; i++) {\n    int pmin = i;\n    for (int j = i+1; j < n; j++)\n        if (v[j] < v[pmin]) pmin = j;\n    int aux = v[i]; v[i] = v[pmin]; v[pmin] = aux;\n}\n```",
+    "key_points": [
+      "Interschimbare necesită variabilă auxiliară aux",
+      "Bubble sort compară vecini, selection sort caută minimul",
+      "Complexitate O(n²) pentru ambele",
+      "v[i] > v[i+1] sortare crescătoare"
+    ]
+  },
+  "tab_search": {
+    "title": "Căutare în vector",
+    "content": "**Căutare secvențială (orice vector):**\n```cpp\nint poz = -1;\nfor (int i = 0; i < n; i++)\n    if (v[i] == x) { poz = i; break; }\n```\n**Căutare binară (vector sortat):**\n```cpp\nint st = 0, dr = n-1, poz = -1;\nwhile (st <= dr) {\n    int mij = (st + dr) / 2;\n    if (v[mij] == x) { poz = mij; break; }\n    else if (v[mij] < x) st = mij + 1;\n    else dr = mij - 1;\n}\n```",
+    "key_points": [
+      "Căutare secvențială: O(n), orice vector",
+      "Căutare binară: O(log n), NUMAI vector sortat",
+      "poz = -1 indică 'negăsit'",
+      "mij = (st + dr) / 2"
+    ]
+  },
+  "tab_classic": {
+    "title": "Probleme clasice cu vectori",
+    "content": "**Suma elementelor:**\n```cpp\nint s = 0;\nfor (int i = 0; i < n; i++) s += v[i];\n```\n**Maximul:**\n```cpp\nint max = v[0];\nfor (int i = 1; i < n; i++)\n    if (v[i] > max) max = v[i];\n```\n**Inversare vector:**\n```cpp\nfor (int i = 0; i < n/2; i++) {\n    int aux = v[i]; v[i] = v[n-1-i]; v[n-1-i] = aux;\n}\n```",
+    "key_points": [
+      "Inițializare sumă cu 0, produs cu 1",
+      "Max/min se inițializează cu v[0]",
+      "Inversare: interschimbați v[i] cu v[n-1-i]",
+      "Parcurgere până la n/2 pentru inversare"
+    ]
+  },
+  "str_decl": {
+    "title": "Șiruri de caractere (cstring)",
+    "content": "```cpp\n#include <cstring>\nchar s[100];\ncin >> s;  // citește până la spațiu\ncin.getline(s, 100); // citește toată linia\n```\nFuncții utile: `strlen(s)`, `strcpy(dest, src)`, `strcmp(s1, s2)`, `strcat(dest, src)`\nTerminatorul de șir: `'\\0'` (zero ASCII)",
+    "key_points": [
+      "Șirul se termină cu '\\0'",
+      "strlen returnează lungimea fără '\\0'",
+      "strcmp: 0 dacă egale, negativ/pozitiv altfel",
+      "cin.getline citește spații inclusiv"
+    ]
+  },
+  "str_ops": {
+    "title": "Operații pe șiruri de caractere",
+    "content": "Parcurgerea caractere cu caractere:\n```cpp\nfor (int i = 0; i < strlen(s); i++) {\n    if (s[i] >= 'a' && s[i] <= 'z') // literă mică\n    if (s[i] >= '0' && s[i] <= '9') // cifră\n}\n```\nConversie: `s[i] - '0'` dă valoarea cifrei, `s[i] - 'a'` dă indexul literei.",
+    "key_points": [
+      "'a' până la 'z': litere mici",
+      "'A' până la 'Z': litere mari",
+      "'0' până la '9': cifre",
+      "s[i] - '0' convertește cifră char la int"
+    ]
+  },
+  "alg_cifre": {
+    "title": "Prelucrarea cifrelor unui număr",
+    "content": "```cpp\nwhile (n > 0) {\n    int cifra = n % 10;  // ultima cifră\n    // prelucrare cifră\n    n /= 10;             // eliminăm ultima cifră\n}\n```\nNumărul de cifre al lui n: se numără iterațiile.\nSuma cifrelor, produsul cifrelor, cifra maximă/minimă.",
+    "key_points": [
+      "n % 10 = ultima cifră",
+      "n / 10 = numărul fără ultima cifră",
+      "Continuăm while(n > 0)",
+      "Atenție: n = 0 are 1 cifră (tratați separat)"
+    ]
+  },
+  "alg_div": {
+    "title": "Divizibilitate și numere prime",
+    "content": "**Verificare număr prim:**\n```cpp\nint ok = 1;\nif (n < 2) ok = 0;\nfor (int d = 2; d * d <= n; d++)\n    if (n % d == 0) { ok = 0; break; }\n// ok = 1 dacă n este prim\n```\n**Cel mai mare divizor comun (cmmdc):**\n```cpp\nwhile (b != 0) {\n    int r = a % b;\n    a = b;\n    b = r;\n}\n// a = cmmdc\n```",
+    "key_points": [
+      "Verificare primă: d de la 2 la sqrt(n)",
+      "1 nu este număr prim",
+      "cmmdc cu algoritmul lui Euclid",
+      "cmmmc(a,b) = a/cmmdc(a,b) * b"
+    ]
+  },
+  "alg_maxmin": {
+    "title": "Maxime și minime",
+    "content": "```cpp\ncin >> n;\ncin >> max; // citim primul element ca max inițial\nfor (int i = 1; i < n; i++) {\n    int x;\n    cin >> x;\n    if (x > max) max = x;\n}\n```\nPentru max și min simultan: inițializați cu primul element.",
+    "key_points": [
+      "Inițializați max/min cu primul element",
+      "Nu cu 0 sau o valoare arbitrară",
+      "Păstrați și poziția (indexul) dacă necesar",
+      "max din 2 numere: (a > b) ? a : b"
+    ]
+  },
+  "alg_sume": {
+    "title": "Sume, produse și numărări",
+    "content": "```cpp\nint s = 0, p = 1, nr = 0;\nfor (int i = 0; i < n; i++) {\n    s += v[i];           // suma\n    if (v[i] != 0) p *= v[i]; // produsul (evitam 0)\n    if (v[i] % 2 == 0) nr++; // numărăm pare\n}\n```",
+    "key_points": [
+      "Suma se inițializează cu 0",
+      "Produsul se inițializează cu 1",
+      "Numărătorul se inițializează cu 0",
+      "Condiție în numărare: if (conditie) nr++"
+    ]
+  },
+  "alg_numaratie": {
+    "title": "Baze de numerație",
+    "content": "**Conversie din baza 10 în baza b:**\n```cpp\nwhile (n > 0) {\n    cifre[k++] = n % b;\n    n /= b;\n}\n// cifrele sunt în ordine inversă în cifre[]\n```\n**Conversie din baza b în baza 10:**\n```cpp\nint putere = 1, val = 0;\nwhile (n > 0) {\n    val += (n % 10) * putere;\n    putere *= b;\n    n /= 10;\n}\n```",
+    "key_points": [
+      "n % b = ultima cifră în baza b",
+      "n / b = numărul fără ultima cifră în baza b",
+      "Cifrele apar în ordine inversă",
+      "Baza 2: cifre 0 și 1; Baza 16: 0-9 și A-F"
+    ]
+  },
+  "alg_siruri_gen": {
+    "title": "Generarea șirurilor",
+    "content": "Șirul lui Fibonacci:\n```cpp\nint a = 0, b = 1;\nfor (int i = 2; i <= n; i++) {\n    int c = a + b;\n    a = b;\n    b = c;\n}\n// b = al n-lea termen\n```\nȘiruri cu relație de recurență: se calculează termenii succesiv pe baza celor anteriori.",
+    "key_points": [
+      "Fibonacci: f(n) = f(n-1) + f(n-2)",
+      "Se păstrează doi termeni consecutivi",
+      "Inițializare: f(0)=0, f(1)=1",
+      "Atenție la overflow pentru n mare"
+    ]
+  },
+  "func_def": {
+    "title": "Definirea și apelul funcțiilor",
+    "content": "```cpp\nint suma(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    cout << suma(3, 4); // afișează 7\n    return 0;\n}\n```\nFuncția trebuie declarată/definită ÎNAINTE de apel, sau folosiți prototip.",
+    "key_points": [
+      "Tip returnat înainte de numele funcției",
+      "void dacă nu returnează nimic",
+      "Parametrii se transmit prin valoare (copii)",
+      "return termină funcția și returnează valoarea"
+    ]
+  },
+  "func_rec": {
+    "title": "Recursivitate",
+    "content": "O funcție recursivă se apelează pe ea însăși:\n```cpp\nint factorial(int n) {\n    if (n <= 1) return 1;       // cazul de bază\n    return n * factorial(n-1); // apel recursiv\n}\n```\nNecesară: condiție de oprire (caz de bază) și progres spre cazul de bază.",
+    "key_points": [
+      "Cazul de bază oprește recursivitatea",
+      "Apelul recursiv progresează spre cazul de bază",
+      "Fără caz de bază: recursie infinită / stack overflow",
+      "Fibonacci recursiv: O(2^n), iterativ: O(n)"
+    ]
+  },
+  "func_param": {
+    "title": "Parametri și valori returnate",
+    "content": "**Transmitere prin referință** (modifică variabila originală):\n```cpp\nvoid dublu(int &x) { x *= 2; }\ndublu(a); // a se modifică\n```\n**Tablouri ca parametri:**\n```cpp\nvoid citeste(int v[], int n) {\n    for (int i = 0; i < n; i++) cin >> v[i];\n}\n```\nTablourile se transmit întotdeauna prin referință.",
+    "key_points": [
+      "& transmite prin referință (modifică originalul)",
+      "Fără &: transmitere prin valoare (copie)",
+      "Tablourile se transmit automat prin referință",
+      "Funcțiile pot returna o singură valoare"
+    ]
+  }
+}

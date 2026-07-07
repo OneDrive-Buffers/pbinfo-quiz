@@ -1,0 +1,254 @@
+{
+  "sources": [
+    {
+      "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=8&id_subtag=12",
+      "filters": {"disciplina": 0, "clasa": 9, "id_tag": 8, "id_subtag": 12},
+      "articles": [
+        {
+          "id": 70,
+          "title": "Structuri alternative",
+          "brief": "Prezentare a structurilor de decizie (alternative) în C++, explicând de ce sunt necesare atunci când anumite instrucțiuni trebuie executate doar în anumite condiții.",
+          "abstract": "Articolul explică pe larg instrucțiunile de decizie `if` şi `switch`. Sunt prezentate cele două forme ale instrucţiunii `if` (cu sau fără clauză `else`) şi modul în care expresia este convertită la `bool`. Sunt descrişi paşii de execuţie: evaluarea expresiei, executarea instrucţiunii corespunzătoare şi continuarea programului【899696215594561†L117-L130】. Se enumeră observaţii importante, cum ar fi echivalenţa dintre `if` fără `else` şi varianta cu un `else` vid, faptul că expresiile sunt convertite la `bool` fără a folosi obligatoriu operatori relaţionali şi erorile frecvente precum plasarea greşită a unui `;`【899696215594561†L143-L159】. Pentru instrucţiunea `switch` sunt prezentate sintaxa şi modul de execuţie (evaluarea expresiei şi alegerea cazului sau a ramurii `default`)【899696215594561†L219-L237】.",
+          "introduction": "În anumite situaţii este necesară executarea unor instrucţiuni numai dacă se îndeplineşte o condiţie. Structurile alternative (structuri de decizie) permit rezolvarea acestor situaţii【899696215594561†L89-L92】.",
+          "concept": [
+            {
+              "type": "definition",
+              "title": "Instrucţiunea if",
+              "content": "Instrucţiunea `if` are două variante: cu clauză `else` (`if (expresie) Instrucţiune1 else Instrucţiune2`) şi fără clauză `else` (`if (expresie) Instrucţiune1`). Expresia trebuie să fie de tip `bool` sau convertibilă; valoarea nenulă se consideră `true`, valoarea nulă se consideră `false`【899696215594561†L99-L115】."
+            },
+            {
+              "type": "definition",
+              "title": "Instrucţiunea switch",
+              "content": "Instrucţiunea `switch` evaluează o expresie şi, în funcţie de egalitatea cu valori constante, execută grupul de instrucţiuni corespunzător clauzelor `case`; dacă nicio valoare nu se potriveşte, poate exista o clauză `default`【899696215594561†L219-L237】."
+            },
+            {
+              "type": "observation",
+              "title": "Observaţii despre if",
+              "content": "Varianta fără `else` a instrucţiunii `if` este echivalentă cu varianta cu `else` urmat de o instrucţiune vidă; doar una dintre instrucţiunile `Instrucţiune1` şi `Instrucţiune2` este executată, niciodată amândouă. Expresiile sunt convertite la `bool` fără a fi obligatorie folosirea operatorilor `==` sau `!=`. Erori frecvente sunt scrierea unui `;` după condiţia `if` sau după acoladă【899696215594561†L143-L178】."
+            },
+              {
+              "type": "observation",
+              "title": "Observaţii despre switch",
+              "content": "Valorile din clauzele `case` trebuie să fie constante întregi; instrucţiunile din fiecare grup pot fi oricâte. Instrucţiunea `break` nu este obligatorie, dar lipsa ei face ca execuţia să continue cu ramurile următoare【899696215594561†L239-L243】."
+            },
+            {
+              "type": "result",
+              "title": "Modul de execuţie pentru if",
+              "content": "Pentru varianta cu `else`: se evaluează expresia; dacă valoarea este `true` se execută `Instrucţiune1`, altfel `Instrucţiune2` şi programul continuă【899696215594561†L117-L130】. Pentru varianta fără `else`: dacă expresia este adevărată se execută instrucţiunea din clauză, altfel execuţia trece la instrucţiunea următoare【899696215594561†L136-L141】."
+            },
+            {
+              "type": "example",
+              "title": "Exemple de utilizare a if",
+              "content": "Se citeşte un număr `x`; instrucţiunea `if(x % 2 == 0)` cu `else` afișează `x este par` sau `x este impar` în funcţie de paritate【899696215594561†L182-L190】. Un alt exemplu arată verificarea divizibilităţii cu tratarea cazului `m=0` prin `if` imbricate【899696215594561†L192-L204】."
+            },
+            {
+              "type": "result",
+              "title": "Modul de execuţie pentru switch",
+              "content": "`switch (Expresie)` evaluează expresia; dacă valoarea coincide cu o clauză `case`, execută instrucţiunile din acea clauză, apoi (în funcţie de prezenţa lui `break`) trece la instrucţiunea de după `switch`. Dacă nu se potriveşte nicio clauză, instrucţiunea `default` (dacă există) este executată【899696215594561†L219-L237】."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=1&id_subtag=20",
+      "filters": {"disciplina": 0, "clasa": 9, "id_tag": 1, "id_subtag": 20},
+      "articles": [
+        {
+          "id": 76,
+          "title": "Maxime și minime",
+          "brief": "Introduce noţiunile de maxim şi minim într-o mulţime de valori, explicând ce înseamnă fiecare şi de ce sunt importante.",
+          "abstract": "Articolul defineşte maximul unei mulţimi ca fiind cea mai mare valoare din acea mulţime şi minimul ca fiind cea mai mică valoare. Sunt oferite exemple simple şi observaţii că într-o mulţime cu un singur element, maximul şi minimul coincid【338612418102479†L53-L66】. Se evidenţiază faptul că aceste noţiuni se aplică nu doar numerelor, ci şi caracterelor sau şirurilor de caractere.",
+          "introduction": "În programare apare frecvent necesitatea de a determina cea mai mare sau cea mai mică valoare dintr-o mulţime. Se clarifică noţiunile de maxim şi minim şi se subliniază că pentru o mulţime cu un element atât maximul, cât şi minimul sunt acel element【338612418102479†L53-L66】.",
+          "concept": [
+            {"type": "definition", "title": "Maxim şi minim", "content": "Maximul unei mulţimi de valori este cea mai mare dintre valorile sale, iar minimul este cea mai mică dintre valorile sale【338612418102479†L53-L63】."},
+            {"type": "observation", "title": "Seturi cu un element", "content": "Dacă o mulţime are un singur element, maximul şi minimul coincid şi sunt acel element【338612418102479†L63-L69】."}
+          ]
+        },
+        {
+          "id": 77,
+          "title": "Maximul/minimul a două valori",
+          "brief": "Explică determinarea maximului sau minimului pentru două valori prin comparaţie şi folosirea instrucţiunii `if`.",
+          "abstract": "Se arată că pentru a afla maximul (sau minimul) dintre două variabile se compară valorile. Sunt prezentate două variante de implementare: o soluţie directă care afişează valoarea mai mare folosind `if` şi `else` şi o soluţie care utilizează o variabilă auxiliară `max` iniţializată cu valoarea primei variabile şi actualizată dacă a doua variabilă este mai mare【329607384428514†L59-L109】. Observaţiile subliniază că pentru a determina minimul se foloseşte operatorul `<` în loc de `>` şi că în cazul egalităţii rezultatul este al doilea argument【329607384428514†L83-L86】.",
+          "introduction": "Maximul sau minimul a două valori se determină prin comparaţie folosind instrucţiunea `if`【329607384428514†L59-L64】.",
+          "concept": [
+            {"type": "definition", "title": "Compararea a două valori", "content": "Dacă `n > m`, maximul a două variabile `n` şi `m` este `n`, altfel este `m`【329607384428514†L59-L66】. Pentru minim se foloseşte operatorul `<`."},
+            {"type": "observation", "title": "Observaţii pentru minim", "content": "Pentru a determina minimul se procedează analog, folosind `<`; dacă valorile sunt egale, se poate afişa a doua valoare【329607384428514†L83-L86】."},
+            {"type": "example", "title": "Program pentru maxim", "content": "Un program C++ citeşte două numere şi afişează maximul lor: `cin >> n >> m; if(n > m) cout << n; else cout << m;`【329607384428514†L67-L79】."},
+            {"type": "example", "title": "Program cu variabilă auxiliară", "content": "O altă variantă iniţializează o variabilă `max` cu `n` şi o actualizează dacă `m > max`, apoi afişează `max`【329607384428514†L91-L110】."}
+          ]
+        },
+        {
+          "id": 78,
+          "title": "Maximul/minimul unui număr fix de valori",
+          "brief": "Prezintă metode pentru determinarea maximului sau minimului dintre trei sau mai multe valori cunoscute, evidenţiind reducerea numărului de comparaţii.",
+          "abstract": "Se compară două abordări pentru a găsi maximul dintre trei variabile: una foloseşte `if`-uri imbricate, necesitând trei comparaţii, şi alta foloseşte o variabilă `max` iniţializată cu una dintre valori şi actualizată în cazul în care celelalte valori sunt mai mari, necesitând doar două comparaţii【79106571756863†L65-L113】. Articolul generalizează această metodă pentru patru sau mai multe valori folosind o variabilă de maxim şi un ciclu pentru actualizare【79106571756863†L119-L165】. Se discută avantajele reducerii numărului de comparaţii şi modul de extindere la `n` valori.",
+          "introduction": "Determinarea maximului sau minimului pentru trei, patru sau mai multe valori necesită mai multe comparaţii; articolul arată cum se pot reduce comparările【79106571756863†L59-L63】.",
+          "concept": [
+            {"type": "definition", "title": "Maxim dintre trei valori", "content": "O metodă foloseşte instrucţiuni `if` imbricate pentru a compara trei variabile `n`, `m` şi `p`, dar aceasta necesită trei comparaţii【79106571756863†L65-L80】."},
+            {"type": "observation", "title": "Reducerea comparărilor", "content": "Folosind o variabilă `max` iniţializată cu prima valoare şi actualizată prin comparaţie cu celelalte două valori sunt suficiente două comparaţii pentru trei valori; metoda se extinde uşor pentru mai multe valori şi este mai puţin predispusă la greşeli de codare【79106571756863†L88-L113】."},
+            {"type": "example", "title": "Program pentru trei valori", "content": "Programul compară trei variabile `n`, `m` şi `p` cu `if`-uri imbricate pentru a determina maximul【79106571756863†L65-L80】. O variantă optimizată foloseşte `max` actualizat dacă `n` este depăşit de `m` sau `p`【79106571756863†L94-L109】."},
+            {"type": "result", "title": "Generalizare la n valori", "content": "Pentru patru sau mai multe valori se foloseşte un ciclu care citeşte fiecare valoare, compară cu maximul curent şi actualizează dacă este necesar【79106571756863†L119-L165】."}
+          ]
+        },
+        {
+          "id": 79,
+          "title": "Maximul/minimul pentru un număr oarecare de valori",
+          "brief": "Prezintă algoritmi pentru determinarea valorii minime sau maxime într-o listă de valori de lungime variabilă, cunoscută sau necunoscută.",
+          "abstract": "Sunt discutate două situaţii: când numărul de valori `n` este cunoscut şi când nu este cunoscut. Pentru determinarea minimului cu `n` valori, articolul descrie iniţializarea variabilei `min` cu prima valoare sau cu o valoare foarte mare, apoi parcurgerea listei cu un ciclu `for` pentru a actualiza `min`【407329553848300†L86-L116】. Pentru determinarea maximului când numărul de valori este necunoscut, se citeşte fiecare valoare până la apariţia unui sentinel (`0`), actualizând variabila `max` corespunzător【407329553848300†L128-L166】. Se subliniază importanţa unei iniţializări corecte şi se oferă exemple de cod.",
+          "introduction": "Când numărul valorilor nu este constant, pentru a determina maximul sau minimul este necesară folosirea unor structuri repetitive. Alegerea tipului de ciclu depinde de faptul că numărul de valori este cunoscut sau nu【407329553848300†L74-L82】.",
+          "concept": [
+            {"type": "definition", "title": "Algoritm pentru minim cu număr cunoscut de valori", "content": "Pentru `n` numere citite, se iniţializează `min` şi se compară fiecare număr citit cu `min`, actualizându-l dacă este cazul【407329553848300†L86-L116】."},
+            {"type": "definition", "title": "Algoritm pentru maxim cu număr necunoscut de valori", "content": "Se citeşte un număr în `x`; variabila `max` este iniţializată. Cât timp `x` este nenul, se compară `x` cu `max` şi se actualizează dacă este mai mare, apoi se citeşte următorul număr【407329553848300†L128-L166】."},
+            {"type": "observation", "title": "Iniţializarea variabilei", "content": "Iniţializarea variabilelor `min` şi `max` trebuie să ţină cont de domeniul datelor; se pot utiliza valori mari (e.g., 1<<30) sau se poate folosi prima valoare citită【407329553848300†L95-L101】【407329553848300†L141-L156】."},
+            {"type": "example", "title": "Exemple de cod", "content": "Exemplele includ determinarea minimului pentru `n` valori folosind un ciclu `for` şi determinarea maximului pentru valori citite până la `0` folosind un ciclu `while`【407329553848300†L106-L116】【407329553848300†L146-L160】."}
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=1&id_subtag=5",
+      "filters": {"disciplina": 0, "clasa": 9, "id_tag": 1, "id_subtag": 5},
+      "articles": [
+        {
+          "id": 65,
+          "title": "Cifrele unui număr",
+          "brief": "Descrie tehnicile de extragere a cifrelor unui număr întreg folosind operaţii aritmetice şi noţiunea de trunchiere.",
+          "abstract": "Articolul explică faptul că numerele sunt stocate ca valori şi nu ca şiruri de cifre. Pentru a determina cifrele unui număr, se foloseşte operaţia `n % 10` pentru a obţine ultima cifră (cifra unităţilor) şi împărţirea la `10` pentru a elimina ultima cifră – trunchierea. Prin repetarea acestor operaţii într-un ciclu, se obţin toate cifrele în ordine inversă【91792489883955†L76-L98】. Sunt oferite explicaţii şi un exemplu de program care afişează cifrele unei variabile şi se menţionează că, dacă valoarea este `0`, ciclul nu se execută【91792489883955†L91-L126】.",
+          "introduction": "Numărul este memorat ca valoare, nu ca o înşiruire de cifre; pentru a afla cifrele sale trebuie folosite operaţii aritmetice adecvate【91792489883955†L64-L69】.",
+          "concept": [
+            {"type": "definition", "title": "Obţinerea ultimei cifre", "content": "Ultima cifră a unui număr `n` (cifra unităţilor) se obţine cu operaţia `n % 10`【91792489883955†L76-L87】."},
+            {"type": "definition", "title": "Trunchierea unui număr", "content": "Trunchierea elimină ultima cifră a numărului: `n = n / 10` sau `n /= 10`【91792489883955†L96-L98】."},
+            {"type": "observation", "title": "Ordinea determinării cifrelor", "content": "Prin aplicarea repetată a operaţiilor de trunchiere şi `mod 10` se obţin cifrele de la ultima spre prima; dacă `n` este `0`, ciclul nu se execută, ceea ce poate fi important la numărarea cifrelor【91792489883955†L96-L110】."},
+            {"type": "example", "title": "Exemplu de program", "content": "Programul C++ citeşte `n` şi foloseşte un `while` pentru a calcula `uc = n % 10`, îl afişează, apoi trunchiază `n` (`n /= 10`) până când `n` devine `0`【91792489883955†L91-L126】."}
+          ]
+        },
+        {
+          "id": 13257,
+          "title": "Cifra de control a unui număr",
+          "brief": "Defineşte noţiunea de cifră de control (digital root) şi prezintă algoritmi pentru calcularea ei.",
+          "abstract": "Cifra de control a unui număr se obţine prin suma cifrelor sale repetată până când rezultatul devine o singură cifră. Se oferă algoritmul iterativ în care se calculează suma cifrelor lui `n` până când `n` devine mai mic decât `10`【780548280231919†L53-L71】. O variantă alternativă adună `n/10` şi `n%10` până când rămâne o cifră【780548280231919†L76-L88】. Este prezentată o metodă rapidă bazată pe criteriul de divizibilitate cu `9`: cifra de control este `n % 9`, iar dacă restul este `0`, cifra de control este `9`【780548280231919†L92-L96】.",
+          "introduction": "Cifra de control (digital root) se obţine prin efectuarea sumei cifrelor unui număr până când rezultatul are o singură cifră【780548280231919†L53-L55】.",
+          "concept": [
+            {"type": "definition", "title": "Algoritm iterativ", "content": "Se repetă: se setează `s=0`, se adună cifrele lui `n` în `s` (`s += n%10; n /= 10`), apoi se atribuie `n = s`. Procesul continuă până când `n` < 10【780548280231919†L53-L71】."},
+            {"type": "definition", "title": "Algoritm alternativ", "content": "Alternativ, se înlocuieşte `n` cu `n/10 + n%10` repetând până când se obţine o cifră【780548280231919†L76-L88】."},
+            {"type": "observation", "title": "Metodă bazată pe modulo 9", "content": "Cifra de control poate fi calculată ca `n % 9`; dacă restul este `0`, cifra de control este `9`, altfel cifra de control este restul【780548280231919†L92-L96】."},
+            {"type": "example", "title": "Cod C++ pentru cifra de control", "content": "Pseudocodul arată utilizarea unui ciclu `while (n > 9)` în care se acumulează suma cifrelor într-o variabilă `s` şi se reatribue `n = s`【780548280231919†L60-L71】."}
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=1&id_subtag=18",
+      "filters": {"disciplina": 0, "clasa": 9, "id_tag": 1, "id_subtag": 18},
+      "articles": [
+        {
+          "id": 66,
+          "title": "Divizibilitate",
+          "brief": "Introducere în conceptele de divizibilitate între numere naturale şi relaţiile divisor–multiplu.",
+          "abstract": "Articolul defineşte noţiunea de divizibilitate: un număr `n` divide un număr `m` dacă există un număr `p` astfel încât `n * p = m`, echivalent cu `m % n == 0` în C/C++【328476830588088†L56-L63】. Explică faptul că dacă `n` divide `m`, atunci `n` este divizor al lui `m` şi `m` este multiplu al lui `n`【328476830588088†L60-L63】. Este o prezentare generală care pregăteşte articolele ulterioare despre divizori, cmmdc, numere prime şi factorizare.",
+          "introduction": "Defineşte conceptul de divizibilitate între numere naturale şi termenii de divizor şi multiplu【328476830588088†L56-L63】.",
+          "concept": [
+            {"type": "definition", "title": "Divizibilitate", "content": "Spunem că numărul `n` divide numărul `m` dacă există un număr `p` astfel încât `n * p = m`; în C/C++ condiţia este `m % n == 0`【328476830588088†L56-L63】."},
+            {"type": "observation", "title": "Divizor şi multiplu", "content": "Dacă `n` divide `m`, atunci `n` este divizor al lui `m` iar `m` este multiplu al lui `n`【328476830588088†L60-L63】."}
+          ]
+        },
+        {
+          "id": 72,
+          "title": "Divizorii unui număr",
+          "brief": "Prezintă algoritmi pentru determinarea tuturor divizorilor unui număr şi discută eficienţa lor.",
+          "abstract": "Se abordează două metode de determinare a divizorilor unui număr `n`. Algoritmul naiv parcurge toate numerele de la `1` la `n` şi verifică dacă `n % d == 0` pentru a tipări divisorii【185364177793063†L72-L87】. Această metodă este ineficientă pentru valori mari. Se propune o metodă îmbunătăţită care exploatează faptul că divisorii apar în perechi (`d` şi `n/d`); astfel, este suficientă parcurgerea numerelor de la `1` la `√n`, iar pentru fiecare divisor `d` se tipăresc `d` şi `n/d`【185364177793063†L98-L120】, având grijă ca la pătrate perfecte divisorul `√n` să fie afişat o singură dată【185364177793063†L115-L132】. Se subliniază observaţia că numerele care nu sunt pătrate perfecte au număr par de divizori, iar pătratele perfecte au număr impar de divizori【185364177793063†L155-L160】.",
+          "introduction": "O problemă frecventă este determinarea divizorilor unui număr natural; este necesară atât în listarea, cât şi în însumarea sau numărarea lor【185364177793063†L66-L68】.",
+          "concept": [
+            {"type": "definition", "title": "Algoritm naiv", "content": "Parcurge toate numerele `d` de la `1` la `n` şi dacă `n % d == 0` atunci `d` este divizor al lui `n`【185364177793063†L72-L87】."},
+            {"type": "result", "title": "Algoritm eficient folosind perechi de divizori", "content": "Se iterează `d` de la `1` la `√n`; dacă `d` divide `n`, se afişează `d` şi `n/d`. La pătratele perfecte, când `d * d = n`, divisorul `d` se afişează o singură dată【185364177793063†L98-L132】."},
+            {"type": "observation", "title": "Numărul de divizori", "content": "Numerele care nu sunt pătrate perfecte au un număr par de divizori, în timp ce pătratele perfecte au un număr impar de divizori【185364177793063†L155-L160】."}
+          ]
+        },
+        {
+          "id": 73,
+          "title": "CMMDC și CMMMC. Algoritmul lui Euclid",
+          "brief": "Introduce noţiunile de cel mai mare divizor comun (cmmdc) şi cel mai mic multiplu comun (cmmmc) şi prezintă algoritmii lui Euclid pentru calcularea lor.",
+          "abstract": "Articolul defineşte cmmdc ca fiind cel mai mare număr care divide două numere naturale şi precizează că două numere sunt prime între ele dacă cmmdc-ul este 1【820383273566228†L86-L99】. Sunt descrise două variante ale algoritmului lui Euclid pentru calculul cmmdc: varianta cu scăderi repetate (scădem numărul mai mic din cel mai mare până devin egale)【820383273566228†L118-L140】 şi varianta cu împărţiri, bazată pe resturi succesive【820383273566228†L160-L167】. Se arată că cmmdc-ul a mai multor numere se determină iterativ, calculând cmmdc-ul perechilor【820383273566228†L200-L208】. Pentru cmmmc se defineşte ca fiind cel mai mic număr natural nenul divizibil cu ambele numere【820383273566228†L210-L214】 şi se prezintă metode de calcul folosind relaţia dintre produsul numerelor şi cmmdc【820383273566228†L225-L227】 sau un algoritm de tip Euclid care adună multiplii până se egalizează【820383273566228†L230-L237】.",
+          "introduction": "Se introduc noţiunile de cmmdc (greatest common divisor) şi cmmmc (least common multiple) pentru două sau mai multe numere şi se subliniază că două numere sunt prime între ele dacă cmmdc este 1【820383273566228†L86-L99】【820383273566228†L210-L214】.",
+          "concept": [
+            {"type": "definition", "title": "Cel mai mare divizor comun (cmmdc)", "content": "Pentru două numere naturale, cmmdc este cel mai mare număr care le divide pe amândouă; dacă cmmdc=1, numerele sunt prime între ele【820383273566228†L86-L99】."},
+            {"type": "definition", "title": "Cel mai mic multiplu comun (cmmmc)", "content": "Cmmmc al două numere este cel mai mic număr natural nenul care este multiplu al ambelor numere【820383273566228†L210-L214】."},
+            {"type": "result", "title": "Algoritmul lui Euclid cu scăderi", "content": "Cât timp cele două numere sunt diferite, se scade numărul mai mic din cel mai mare; când valorile devin egale, acea valoare este cmmdc【820383273566228†L118-L140】."},
+            {"type": "result", "title": "Algoritmul lui Euclid cu împărţiri", "content": "Se repetă: se înlocuieşte `n` cu `m` şi `m` cu restul împărţirii lui `n` la `m` până când `m` devine `0`; valoarea curentă a lui `n` este cmmdc【820383273566228†L160-L167】."},
+            {"type": "result", "title": "Cmmdc pentru mai multe numere", "content": "Cmmdc pentru mai multe numere se determină iterativ, calculând cmmdc-ul perechii de numere şi apoi cmmdc-ul rezultat cu următorul număr【820383273566228†L200-L208】."},
+            {"type": "result", "title": "Relaţia dintre produs şi cmmdc/cmmmc", "content": "Produsul a două numere nenule este egal cu produsul dintre cmmdc-ul lor şi cmmmc-ul lor【820383273566228†L225-L227】."},
+            {"type": "result", "title": "Algoritm de determinare a cmmmc", "content": "Pentru a calcula cmmmc se poate aduna `n` şi `m` până când multiplii devin egali: se setează `n ← a`, `m ← b` şi se adaugă `a` la `n` sau `b` la `m` în funcţie de valoarea mai mică până când valorile coincid; valoarea comună este cmmmc【820383273566228†L230-L237】."}
+          ]
+        },
+        {
+          "id": 74,
+          "title": "Numere prime",
+          "brief": "Defineşte numerele prime şi prezintă metode de verificare a primalităţii.",
+          "abstract": "Numerele prime sunt numere naturale mai mari decât `1` care au exact doi divizori: `1` şi numărul însuşi. Se menţionează că `0` şi `1` nu sunt numere prime【485746137017983†L68-L80】. Articolul prezintă un algoritm de verificare a primalităţii: se porneşte de la presupunerea că `n` este prim, se tratează cazurile particulare (`n<2`) şi se caută un divizor d în intervalul `[2, √n]`; dacă se găseşte unul, `n` nu este prim【485746137017983†L82-L100】. Un exemplu de program C++ ilustrează implementarea acestui algoritm【485746137017983†L108-L123】.",
+          "introduction": "Definirea numerelor prime şi indecompozabile; se remarcă echivalenţa dintre a fi prim şi a fi indecompozabil şi faptul că `0` şi `1` nu sunt prime【485746137017983†L68-L80】.",
+          "concept": [
+            {"type": "definition", "title": "Număr prim", "content": "Un număr natural mai mare decât `1` este prim dacă are exact doi divizori: `1` şi el însuşi; echivalent, un număr indecompozabil nu poate fi scris ca produs de două numere naturale diferite de `1` şi el însuşi【485746137017983†L68-L79】."},
+            {"type": "observation", "title": "Cazuri particulare", "content": "Numerele `0` şi `1` nu sunt prime; un număr natural mai mare decât `1` care nu este prim se numeşte compus【485746137017983†L78-L80】."},
+            {"type": "result", "title": "Metode de verificare a primalităţii", "content": "Un număr `p` este prim dacă are exact doi divizori, dacă suma divizorilor săi este `p + 1` sau dacă nu există divizori proprii în intervalul `[2, √p]`【485746137017983†L82-L100】."},
+            {"type": "example", "title": "Program de verificare a primalităţii", "content": "Programul C++ presupune că `n` este prim (variabila `prim = true`), tratează cazul `n<2`, apoi verifică divizorii până la `√n`. Dacă se găseşte un divizor, variabila `prim` devine `false`. Se afişează un mesaj corespunzător【485746137017983†L108-L123】."}
+          ]
+        },
+        {
+          "id": 75,
+          "title": "Descompunerea în factori primi",
+          "brief": "Explică teorema fundamentală a aritmeticii şi oferă un algoritm pentru descompunerea unui număr în factori primi.",
+          "abstract": "Orice număr natural `n` mai mare decât `1` poate fi scris în mod unic ca produs de numere prime la anumite puteri. Articolul prezintă această teoremă şi oferă un algoritm de factorizare: se parcurg divisorii `d` de la `2` în sus; când `d` divide `n`, se contorizează de câte ori `n` se împarte la `d` şi se afişează `d` şi exponenţa sa, apoi se creşte `d`【989263337544972†L58-L73】. Dacă la un moment dat `d*d` depăşeşte `n` şi `n` este mai mare decât `1`, `n` este prim şi se afişează ca factor【989263337544972†L100-L105】. C++ codul exemplifică implementarea şi subliniază că nu se testează toate numerele până la `n`【989263337544972†L66-L114】.",
+          "introduction": "Se prezintă Teorema fundamentală a aritmeticii: orice număr natural >1 poate fi scris în mod unic sub forma unui produs de factori primi【989263337544972†L58-L60】.",
+          "concept": [
+            {"type": "definition", "title": "Teorema fundamentală a aritmeticii", "content": "Orice număr natural `n` > 1 are o reprezentare unică sub forma `p1^a1 * p2^a2 * … * pk^ak`, unde `pi` sunt numere prime【989263337544972†L58-L60】."},
+            {"type": "result", "title": "Algoritm de factorizare", "content": "Se parcurg divisorii `d` începând cu `2`. Pentru fiecare divisor `d` care divide `n`, se determină exponenţa (numărul de împărţiri repetate) şi se afişează `d` şi exponentul său; procesul continuă până când `n` devine `1`. Dacă `d * d > n` şi `n > 1`, `n` însuşi este factor prim【989263337544972†L66-L106】."},
+            {"type": "observation", "title": "Optimizarea opririi", "content": "Când `d*d > n` şi `n` este mai mare decât `1`, se concluzionează că `n` este prim, astfel evitând testarea altor numere inutile【989263337544972†L100-L105】."},
+            {"type": "example", "title": "Program C++ pentru factorizare", "content": "Codul C++ citeşte `n`, parcurge divisorii începând de la `2` şi, pentru fiecare divisor care divide `n`, contorizează exponenţa şi afişează factorul şi exponentul său【989263337544972†L66-L106】."}
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=1&id_subtag=56",
+      "filters": {"disciplina": 0, "clasa": 9, "id_tag": 1, "id_subtag": 56},
+      "articles": [
+        {
+          "id": 5562,
+          "title": "Baze de numerație",
+          "brief": "Prezintă sistemele de numeraţie şi modalităţile de conversie între baze diferite.",
+          "abstract": "Articolul explică că orice număr natural `b` > 1 poate fi utilizat ca bază de numeraţie şi descrie sistemele de bază 10, 2, 8 şi 16. Pentru baza 16 se introduc convenţii pentru cifrele cu valori 10-15, notate cu literele A-F【974268177264421†L68-L97】. Sunt prezentate algoritmi de transformare din baza 10 în baza `b` (împărţirea repetată la `b` şi colectarea resturilor în ordine inversă)【974268177264421†L99-L119】, din baza `b` în baza 10 (folosind formula de dezvoltare pe poziţii)【974268177264421†L138-L158】 şi din baza `b` în baza `d` prin trecere prin baza 10【974268177264421†L161-L169】. Se oferă şi metode pentru transformări între baze puteri ale lui 2 (de exemplu baza 2 şi baza 16) prin gruparea şi transformarea cifrelor【974268177264421†L172-L197】.",
+          "introduction": "Oamenii folosesc în mod obişnuit sistemul zecimal, dar orice număr natural mai mare decât 1 poate fi bază de numeraţie. Sunt discutate bazele 10, 2, 8 şi 16 şi convenţiile pentru cifrele din baza 16【974268177264421†L68-L97】.",
+          "concept": [
+            {"type": "definition", "title": "Sistem de numeraţie şi baze comune", "content": "Un sistem de numeraţie se bazează pe un număr natural `b` > 1; cifrele folosite sunt `0..b-1`. În contextul calculatoarelor, bazele uzuale sunt 10, 2, 8 şi 16. Pentru baza 16 cifrele 10..15 se notează A–F【974268177264421†L68-L97】."},
+            {"type": "result", "title": "Transformarea din baza 10 în baza b", "content": "Pentru a transforma `n` din baza 10 în baza `b` se efectuează împărţiri repetate la `b`; se colectează resturile şi se scriu în ordine inversă pentru a obţine reprezentarea în baza `b`【974268177264421†L99-L119】."},
+            {"type": "result", "title": "Transformarea din baza b în baza 10", "content": "Pentru a transforma un număr din baza `b` în baza 10 se foloseşte dezvoltarea pe poziţii: `c1*b^{n-1} + c2*b^{n-2} + ... + cn*b^0`, implementată printr-un ciclu care înmulţeşte acumulat rezultatul cu `b` şi adaugă cifra curentă【974268177264421†L138-L158】."},
+            {"type": "result", "title": "Transformarea din baza b în baza d", "content": "Transformarea între baze arbitrare se face trecând mai întâi numărul în baza 10 şi apoi din baza 10 în baza dorită `d`【974268177264421†L161-L169】."},
+            {"type": "result", "title": "Transformări între baze puteri ale lui 2", "content": "Pentru a transforma din baza 2 în baza 16, cifrele din baza 2 se grupează câte 4 (de la sfârşit); fiecare grupă se transformă într-o cifră hexazecimală. Invers, pentru a trece din baza 16 în baza 2, fiecare cifră hexazecimală este convertită în cele 4 biţi corespunzători, completând cu zerouri nesemnificative unde este cazul【974268177264421†L172-L197】."},
+            {"type": "example", "title": "Exemplu de transformare", "content": "Numărul 24 din baza 10 este transformat în baza 2 prin împărţiri succesive şi colectarea resturilor, obţinându-se 11000(2)【974268177264421†L99-L117】."}
+          ]
+        }
+      ]
+    },
+    {
+      "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=1&id_subtag=57",
+      "filters": {"disciplina": 0, "clasa": 9, "id_tag": 1, "id_subtag": 57},
+      "articles": [
+        {
+          "id": 25706,
+          "title": "Înmulțirea a la russe și ridicarea la putere rapidă",
+          "brief": "Prezintă două algoritmi eficienţi: înmulţirea a la russe şi ridicarea la putere rapidă, explicând legătura lor cu reprezentarea binară.",
+          "abstract": "Înmulţirea a la russe (numită şi înmulţire rusească) determină produsul a două numere `a` şi `b` prin repetarea: dacă `a` este impar, adună `b` la rezultat `R`, apoi înjumătăţeşte `a` şi dublează `b`, până când `a` devine `0`【855385149716124†L61-L92】. Un exemplu cu `a=18` şi `b=12` arată paşii şi evidenţiază că valorile adunate în `R` corespund cifrelor binare `1` din reprezentarea lui `a`【855385149716124†L73-L87】. Algoritmul se bazează pe scrierea numerelor ca sumă de puteri ale lui 2【855385149716124†L100-L104】. A doua parte prezintă ridicarea la putere rapidă: pentru a calcula `A^n`, se exprimă exponentul `n` în baza 2, se iniţializează un produs `P=1` şi se parcurg cifrele binare; pentru fiecare bit, dacă bitul este 1, se înmulţeşte `P` cu `A`, apoi se înlocuieşte `A` cu `A*A` şi se împarte `n` la 2. Această metodă are un număr de iteratii egal cu numărul de cifre binare ale lui `n` și este mult mai rapidă decât multiplicarea repetată【855385149716124†L119-L152】.",
+          "introduction": "Articolul prezintă două algoritmi clasici: înmulţirea a la russe (metodă de înmulţire bazată pe halving/doubling) şi ridicarea la putere rapidă, subliniind legătura cu reprezentarea numerelor în baza 2【855385149716124†L61-L104】.",
+          "concept": [
+            {"type": "definition", "title": "Înmulţirea a la russe", "content": "Algoritm de înmulţire: se iniţializează `R=0`; cât timp `a ≠ 0`, dacă `a` este impar se adună `b` la `R`, apoi se înjumătăţeşte `a` (`a ← [a/2]`) şi se dublează `b` (`b ← b*2`) până când `a` devine 0; rezultatul `R` este produsul `a*b`【855385149716124†L61-L92】."},
+            {"type": "example", "title": "Exemplu de înmulţire a la russe", "content": "Pentru `a=18` şi `b=12`, algoritmul însumează 24 şi 192 în etapele în care `a` este impar, obţinând `216`, care este produsul `18*12`【855385149716124†L73-L87】."},
+            {"type": "observation", "title": "Legătura cu baza 2", "content": "Metoda se bazează pe reprezentarea numerelor în baza 2: orice număr este o sumă de puteri ale lui 2; termenii adunaţi la `R` corespund cifrelor binare `1` din reprezentarea lui `a`【855385149716124†L100-L104】."},
+            {"type": "definition", "title": "Ridicarea la putere rapidă", "content": "Pentru a calcula `A^n` se parcurg cifrele binare ale lui `n` începând cu bitul cel mai puţin semnificativ; se menţine un produs `P` iniţial `1`. Pentru fiecare bit: dacă bitul este 1, se înmulţeşte `P` cu `A`; apoi `A` se înlocuieşte cu `A*A` şi `n` se împarte la 2. Rezultatul final este `P`【855385149716124†L119-L152】."},
+            {"type": "result", "title": "Complexitate", "content": "Numărul de iteraţii al algoritmului de ridicare la putere rapidă este egal cu numărul de cifre în reprezentarea binară a exponentului `n`, deci algoritmul este mult mai eficient decât înmulţirea repetată【855385149716124†L119-L152】."}
+          ]
+        }
+      ]
+    }
+  ]
+}

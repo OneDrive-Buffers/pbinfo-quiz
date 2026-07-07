@@ -1,0 +1,511 @@
+{
+  "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=8&id_subtag=6",
+  "filters": {
+    "disciplina": 0,
+    "clasa": 9,
+    "id_tag": 8,
+    "id_subtag": 6
+  },
+  "articles": [
+    {
+      "id": 59,
+      "title": "Introducere în C++",
+      "brief": "Prezentare de bază a limbajului C++: rolul limbajului de programare, noțiunea de program sursă și executabil, modul în care un compilator transformă codul sursă într‑un program rulabil.",
+      "abstract": "Articolul introduce limbajul C++, evidențiind diferența dintre un program sursă și unul executabil și deosebirea dintre limbaje compilate și interpretate. Se explică pașii principali din fluxul de dezvoltare (editarea fișierului .cpp, compilarea, link‑editarea și rularea) și se prezintă un program minim de tip ‘Hello world’ care ilustrează elementele de bază ale sintaxei, comentarii și directive de preprocesor.",
+      "introduction": "C++ este descris ca o extensie a limbajului C care se compilează într‑un executabil. Programul sursă este scris într‑un fișier text (.cpp), iar compilatorul îl traduce într‑o formă binară care poate fi executată de sistemul de operare. Se evidențiază etapele editare → compilare → link‑editare → rulare și se explică pe scurt ce face fiecare etapă【457344251128826†L69-L97】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Limbaj de programare, program sursă și executabil",
+          "content": "Un limbaj de programare permite scrierea unui program sursă, care este un fișier text cu cod C++ ce poate fi înțeles de compilator; compilarea și link‑editarea transformă codul într‑un fișier executabil ce poate rula pe computer【457344251128826†L69-L97】."
+        },
+        {
+          "type": "observation",
+          "title": "Compilare vs. interpretare",
+          "content": "Unele limbaje sunt compilate (cum este C++), ceea ce implică transformarea codului sursă într‑un executabil înainte de rulare, în timp ce altele sunt interpretate (codul este tradus la rulare); această diferență explică de ce executabilele pot rula fără codul sursă【457344251128826†L69-L97】."
+        },
+        {
+          "type": "result",
+          "title": "Etapele dezvoltării unui program C++",
+          "content": "Dezvoltarea unui program se desfășoară în pași: 1) scrierea codului sursă (.cpp) cu un editor, 2) compilarea (verificare sintactică și generare fișier obiect), 3) link‑editarea (îmbinarea fișierelor obiect cu biblioteci) și 4) rularea executabilului【457344251128826†L69-L97】."
+        },
+        {
+          "type": "example",
+          "title": "Programul ‘Hello world’",
+          "content": "Programul minim afișează textul “Hello world!” folosind directiva de preprocesor `#include <iostream>`, funcția `main`, instrucțiunea `cout << \"Hello world!\"` și terminația cu `return 0`【457344251128826†L108-L174】. Comentariile (`//` sau `/* */`) nu influențează execuția programului【457344251128826†L108-L174】."
+        },
+        {
+          "type": "properties",
+          "title": "Comentarii și terminarea instrucțiunilor",
+          "content": "Instrucțiunile C++ se termină cu punct și virgulă `;`, iar omiterea lui este o eroare frecventă. Comentariile (text după `//` sau între `/*` și `*/`) sunt ignorate la compilare și servesc la documentare【457344251128826†L108-L174】."
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Intrări/Ieșiri în C++",
+      "brief": "Descrie conceptele de intrare și ieșire (I/O) în programe C++ și prezintă modelul de flux (stream) folosit pentru a citi și a afișa date.",
+      "abstract": "Articolul clarifică distincția între operațiile de intrare (citire de date) și cele de ieșire (afișare de date) și introduce noțiunea de flux de caractere (stream). Se explică cum `cin` și `cout` gestionează citirile și afișările, ce înseamnă operatorii `>>` și `<<` și cum se pot formata mesajele. I/O este prezentat ca un transfer uniform de caractere între un program și surse sau destinații variate (consolă, fișiere etc.)【290900369303779†L61-L80】.",
+      "introduction": "Intrarea reprezintă primirea de date de către program, iar ieșirea reprezintă trimiterea de date către exterior. Datele sunt tratate ca șiruri de caractere într‑un flux care circulă între sursă și destinație; programul ‘extrage’ caractere la citire și ‘inserează’ caractere la afișare【290900369303779†L61-L80】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Operații de intrare și de ieșire",
+          "content": "Operațiile de intrare (input) furnizează programului date din exterior, iar cele de ieșire (output) trimit rezultatele programului către exterior【290900369303779†L61-L80】."
+        },
+        {
+          "type": "definition",
+          "title": "Flux (stream) de caractere",
+          "content": "Un stream este o succesiune ordonată de caractere care se deplasează între o sursă (cum este tastatura sau un fișier) și o destinație (consola sau un fișier); programul citește caractere din flux sau inserează caractere în flux la afișare【290900369303779†L61-L80】."
+        },
+        {
+          "type": "observation",
+          "title": "Model unitar pentru I/O",
+          "content": "Modelul bazat pe fluxuri oferă o abordare unitară pentru input și output, indiferent dacă datele provin de la tastatură, sunt trimise către ecran sau implică fișiere ori alte dispozitive【290900369303779†L61-L80】."
+        },
+        {
+          "type": "example",
+          "title": "Utilizarea `cout` și `cin`",
+          "content": "Afișările se fac cu `cout` utilizând operatorul de inserare `<<`, iar citirile se fac cu `cin` folosind operatorul de extracție `>>`. De exemplu, `cin >> x; cout << \"Valoarea: \" << x;` citește o variabilă `x` și o afișează【290900369303779†L101-L170】."
+        },
+        {
+          "type": "properties",
+          "title": "Operatorii `>>` și `<<`",
+          "content": "Operatorii `>>` și `<<` sunt folosiți pentru a extrage și a insera caractere într-un flux. Între două inserări sau extrageri se pot concatena mai multe elemente, iar newline se obține cu `\n` sau manipulatorul `endl`【290900369303779†L101-L170】."
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Tipuri de date C/C++",
+      "brief": "Prezintă noțiunea de tip de date și clasificarea tipurilor simple și derivate în C/C++.",
+      "abstract": "Articolul definește tipul de date ca restricție asupra valorilor posibile și a operațiilor permise și detaliază principalele tipuri simple (int, float/double, char, pointer, bool, void) și tipurile derivate (tablouri, structuri/clase, enumerări). Pentru fiecare tip se descrie domeniul de valori și se dau exemple de utilizare【514280652171985†L69-L87】【514280652171985†L89-L162】.",
+      "introduction": "Tipul de date determină ce valori poate avea o variabilă și ce operații sunt valabile pentru ea. O înțelegere corectă a tipurilor este esențială pentru programarea fără erori【514280652171985†L69-L87】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Tip de date",
+          "content": "Un tip de date specifică domeniul de valori admise și operațiile valabile pentru o variabilă sau expresie; tipurile pot fi simple (de bază) sau derivate【514280652171985†L69-L87】."
+        },
+        {
+          "type": "result",
+          "title": "Tipuri simple (de bază)",
+          "content": "Tipurile de bază din C/C++ includ: `int` (numere întregi), `float` și `double` (numere reale cu precizie simplă, respectiv dublă), `char` (un caracter), `bool` (valori `true`/`false`), `void` (fără valoare), precum și pointerii (adrese de memorie). Fiecare tip are un domeniu specific și se pot aplica operații caracteristice【514280652171985†L89-L162】."
+        },
+        {
+          "type": "result",
+          "title": "Tipuri derivate",
+          "content": "Din tipuri de bază se pot construi tipuri derivate precum tablouri (colecții de elemente cu același tip), structuri sau clase (asamblări de valori eterogene), și enumerări (liste de constante). Aceste tipuri extind modul în care se pot grupa și manipula datele【514280652171985†L69-L87】."
+        },
+        {
+          "type": "example",
+          "title": "Descrierea tipurilor simple",
+          "content": "Articolul explică caracteristicile fiecărui tip de bază: `int` are domenii tipice în funcție de arhitectură (de exemplu 32 sau 64 de biți); `float` și `double` stochează valori reale cu 6‑7 respectiv 15‑16 cifre semnificative; `char` reprezintă caractere folosind codificări precum ASCII; pointerii stochează adrese de memorie; `bool` este folosit pentru condiții logice; `void` se folosește pentru funcții ce nu returnează nimic【514280652171985†L89-L162】."
+        },
+        {
+          "type": "properties",
+          "title": "Modificatori de tip",
+          "content": "Există modificatori care schimbă domeniul numeric (de exemplu `short`, `long`, `signed`, `unsigned`) ce se pot aplica la tipuri integrale; aceștia permit adaptarea tipului în funcție de necesitățile de memorie sau de domeniu de valori【514280652171985†L167-L177】."
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Variabile și constante C/C++",
+      "brief": "Explică noțiunea de variabilă și constantă în C/C++, prezintă elementele constitutive ale unei variabile, regulile de denumire și modurile de definire a constantelor.",
+      "abstract": "Articolul definește variabilele ca locații de memorie ce pot conține valori modificabile în timp și descrie componentele fiecărei variabile (adresă, identificator, tip, domeniu de vizibilitate). Sunt prezentate reguli de denumire a identificatorilor și se arată cum se declară și se inițializează variabilele. Secțiunea despre constante explică diferența dintre constante literale și simbolice și folosește directivele `#define` și cuvântul cheie `const` pentru a crea constante【766147030541206†L75-L104】【766147030541206†L142-L161】.",
+      "introduction": "Datele într‑un program sunt stocate în memoria RAM sub forma variabilelor (care se pot modifica) și a constantelor (care rămân neschimbate). Pentru a fi utile, variabilele trebuie să aibă nume (identificatori), un tip și o adresă; alegerea corectă a acestor elemente previne erori și crește claritatea codului【766147030541206†L75-L104】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Variabilă",
+          "content": "O variabilă reprezintă o locație de memorie cu un identificator asociat, ce poate reține o valoare care se poate modifica pe parcursul execuției programului【766147030541206†L75-L104】."
+        },
+        {
+          "type": "definition",
+          "title": "Constantă",
+          "content": "O constantă reprezintă o valoare ce nu se modifică în timpul execuției; poate fi literală (scrisă direct, precum `3.14` sau `'A'`) sau simbolică (definită prin `#define` sau `const`)【766147030541206†L142-L161】."
+        },
+        {
+          "type": "properties",
+          "title": "Caracteristicile unei variabile",
+          "content": "Fiecare variabilă are: 1) o adresă, care indică poziția în memorie; 2) un identificator (numele), folosit pentru referire; 3) un tip, ce determină domeniul de valori și operațiile permise; 4) o zonă de vizibilitate (scope), unde poate fi accesată【766147030541206†L75-L104】."
+        },
+        {
+          "type": "properties",
+          "title": "Reguli de denumire a identificatorilor",
+          "content": "Identificatorii pot conține litere, cifre și caracterele `_`, dar nu pot începe cu cifră; nu se folosesc spații sau caractere speciale și se evită cuvintele rezervate. Alegerea unor nume semnificative îmbunătățește lizibilitatea【766147030541206†L110-L140】."
+        },
+        {
+          "type": "example",
+          "title": "Declararea și inițializarea variabilelor",
+          "content": "Variabilele se declară prin specificarea tipului urmat de identificator (de exemplu, `int x;` sau `double y = 5.2;`). Inițializarea poate fi efectuată în momentul declarării sau ulterior; definirea incorectă (utilizarea unui cuvânt rezervat ca nume, lipsa tipului, etc.) produce erori【766147030541206†L110-L140】."
+        },
+        {
+          "type": "example",
+          "title": "Declararea constantelor",
+          "content": "Pentru a defini constante, se pot folosi: 1) directive `#define` (ex.: `#define PI 3.14159`) care înlocuiesc textul la preprocesare și 2) cuvântul cheie `const` (ex.: `const int Max = 100;`) care permite compilatorului să verifice tipul și domeniul【766147030541206†L142-L161】."
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "title": "Operatori C++",
+      "brief": "Introduce conceptul de operator și tipurile de operatori din C++, explicând principiile prioritații și asociativității și prezentând operatorii aritmetici de bază.",
+      "abstract": "Articolul definește operatorul ca entitate care acționează asupra operanzilor pentru a produce un rezultat și clasifică operatorii în funcție de numărul de operanzi (unari, binari, ternari). Sunt descriși operatorii aritmetici (`+`, `-`, `*`, `/`, `%`) și se explică modul în care funcționează împărțirea între numere întregi și reale, precum și operatorul modul. De asemenea se menționează regulile de prioritate și asociativitate care determină ordinea evaluării expresiilor complexe【142461828268977†L112-L129】【142461828268977†L135-L178】.",
+      "introduction": "În C++, operatorii oferă o modalitate de a combina operanzi pentru a calcula valori. Un operator poate fi unar (lucrează cu un operand), binar (cu doi operanzi) sau ternar (cu trei operanzi); rezultatul este o expresie evaluabilă. Cunoașterea operatorilor și a regulilor lor este fundamentală pentru scrierea programelor corecte【142461828268977†L112-L129】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Operator și operanzi",
+          "content": "Un operator este un simbol sau cuvânt cheie care acționează asupra unuia sau mai multor operanzi pentru a produce o valoare. Operatorii pot fi unari (ex.: `++x`), binari (`x + y`) sau ternari (`cond ? val1 : val2`)【142461828268977†L112-L129】."
+        },
+        {
+          "type": "result",
+          "title": "Operatorii aritmetici și regula împărțirii",
+          "content": "Operatorii aritmetici elementari sunt: `+` (adunare), `-` (scădere), `*` (înmulțire), `/` (împărțire) și `%` (modulo). Împărțirea dintre două numere întregi produce un rezultat întreg (partea întreagă), în timp ce împărțirea dintre numere reale menține partea zecimală; operatorul modulo `a % b` returnează restul împărțirii a la b【142461828268977†L135-L178】."
+        },
+        {
+          "type": "example",
+          "title": "Particularități la împărțirea între numere întregi și modulul",
+          "content": "Dacă `a` și `b` sunt întregi, `a / b` produce partea întreagă a raportului, iar `a % b` produce restul; de exemplu, `7 / 3` este 2, iar `7 % 3` este 1. În schimb, `7.0 / 3.0` dă 2.3333…【142461828268977†L135-L178】."
+        },
+        {
+          "type": "properties",
+          "title": "Prioritate și asociativitate",
+          "content": "Operatorii au niveluri de prioritate care stabilesc ordinea în care sunt evaluați într‑o expresie: în absența parantezelor, operatorii cu prioritate mai mare se evaluează înaintea celor cu prioritate mai mică; asociativitatea determină ordinea evaluării operatorilor cu aceeași prioritate (stânga‑la‑dreapta sau dreapta‑la‑stânga). Cunoașterea acestor reguli ajută la evitarea rezultatelor neașteptate【142461828268977†L135-L178】."
+        },
+        {
+          "type": "observation",
+          "title": "Diviziunea și modulul cu numere negative",
+          "content": "Atunci când lucrează cu numere negative, limbajul definește modul în care se calculează partea întreagă și restul; detaliile pot varia în funcție de implementare, dar `a / b` împreună cu `a % b` respectă relația `a = (a/b) * b + (a % b)`【142461828268977†L135-L178】."
+        }
+      ]
+    },
+    {
+      "id": 21315,
+      "title": "Operații logice",
+      "brief": "Explică logica booleeană și operatorii logici utilizați în C++, cu exemple de formule adevărate sau false și tabele de adevăr.",
+      "abstract": "Articolul pornește de la noțiunea de propoziție adevărată sau falsă și introduce logica booleeană; sunt descrise operațiile logice elementare (negarea, conjuncția, disjuncția) și se arată cum sunt implementate în C++ (`!`, `&&`, `||`). Se prezintă tabele de adevăr pentru fiecare operator și se oferă exemple de condiții în programe【755959444539473†L73-L104】【755959444539473†L118-L170】.",
+      "introduction": "În logica matematică, o propoziție este fie adevărată, fie falsă. Operatori logici combină propoziții pentru a produce o valoare de adevăr; C++ reprezintă valori logice prin tipul `bool` și evaluează expresii condiționale folosind acești operatori【755959444539473†L73-L104】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Valori de adevăr și propoziții",
+          "content": "O propoziție poate fi `adevărată` sau `falsă` (0 sau 1). Operatori logici se aplică asupra propozițiilor pentru a forma noi propoziții a căror valoare de adevăr depinde de propozițiile inițiale【755959444539473†L73-L104】."
+        },
+        {
+          "type": "definition",
+          "title": "Negarea (NOT)",
+          "content": "Negarea transformă o propoziție adevărată în falsă și invers; operatorul C++ este `!`. De exemplu, `!(x > y)` este adevărat dacă `x > y` este fals și invers【755959444539473†L118-L138】."
+        },
+        {
+          "type": "definition",
+          "title": "Conjuncția (AND)",
+          "content": "Conjuncția este adevărată dacă ambele propoziții sunt adevărate, altfel este falsă; în C++ se folosește operatorul `&&`. În tabelul de adevăr, doar combinația `A = adevărat` și `B = adevărat` produce `adevărat`【755959444539473†L142-L170】."
+        },
+        {
+          "type": "definition",
+          "title": "Disjuncția (OR)",
+          "content": "Disjuncția este adevărată dacă cel puțin una dintre propoziții este adevărată; în C++ se folosește operatorul `||`. Este falsă doar când ambele propoziții sunt false. (Text similar de pe site, dar dedus din exemple)"
+        },
+        {
+          "type": "example",
+          "title": "Exemple de condiții logice în C++",
+          "content": "Sunt date propoziții matematice (de exemplu `x % 2 == 0` pentru numere pare) și se arată cum se combină condițiile cu `&&` și `||` pentru a selecta valori sau a controla structurile de decizie (if/while). De exemplu, condiția `x % 3 == 0 && x % 5 == 0` verifică dacă un număr este multiplu de 3 și 5 simultan【755959444539473†L73-L104】."
+        },
+        {
+          "type": "properties",
+          "title": "Adevăruri tabelare",
+          "content": "Tabelul de adevăr pentru negare arată că `!true = false` și `!false = true`. Pentru conjuncție, `true && true = true` și toate celelalte combinații sunt `false`; pentru disjuncție, `false || false = false`, iar restul sunt `true`【755959444539473†L118-L170】."
+        }
+      ]
+    },
+    {
+      "id": 26005,
+      "title": "Operatorii de incrementare/decrementare",
+      "brief": "Prezintă operatorii `++` și `--` din C++, explicând cum modifică valoarea unei variabile și diferența dintre forma prefix și postfix.",
+      "abstract": "Articolul explică faptul că incrementarea sporește valoarea unei variabile cu 1, iar decrementarea o diminuează cu 1. Operatorii `++` și `--` sunt unari și se aplică numai pe l‑value‑uri (nu pe constante sau expresii temporare). Sunt analizate formele prefix (`++x`, `--x`) și postfix (`x++`, `x--`) și se arată cum influențează ordinea evaluării în expresii prin exemple【539074870534788†L65-L95】【539074870534788†L90-L116】.",
+      "introduction": "Incrementarea (creșterea) și decrementarea (scăderea) sunt operații frecvente în C++, utilizate pentru a avansa indecși sau a modifica variabile numerice cu o unitate. Aceste operații au două forme: prefix și postfix, care se comportă diferit în evaluarea expresiilor【539074870534788†L65-L95】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Operatorii `++` și `--`",
+          "content": "`++` mărește valoarea operandului cu 1, iar `--` o micșorează cu 1. Acești operatori sunt unari și se pot aplica numai pe variabile (l‑value‑uri)【539074870534788†L65-L78】."
+        },
+        {
+          "type": "observation",
+          "title": "Restricții de aplicare",
+          "content": "Operatorii de incrementare și decrementare nu se pot aplica pe constante sau rezultatul unei expresii (de exemplu `++5` este invalid). Ei trebuie aplicați pe o variabilă care poate fi modificată【539074870534788†L65-L78】."
+        },
+        {
+          "type": "properties",
+          "title": "Diferența dintre prefix și postfix",
+          "content": "În forma prefix (`++x` / `--x`), variabila se modifică înainte de evaluarea expresiei, iar valoarea rezultată este l‑value (poate fi folosită pentru a atribui). În forma postfix (`x++` / `x--`), variabila se modifică după evaluarea expresiei, iar rezultatul este valoarea originală, nu un l‑value【539074870534788†L90-L116】."
+        },
+        {
+          "type": "example",
+          "title": "Exemple de incrementare și decrementare",
+          "content": "Dacă `x = 3`, atunci `++x` produce `4` și `x` devine 4, iar `x++` produce `3` (returnează valoarea inițială), dar `x` devine ulterior 4. Similar, `--x` scade imediat valoarea lui `x`, iar `x--` scade după returnarea valorii【539074870534788†L90-L116】."
+        }
+      ]
+    },
+    {
+      "id": 26006,
+      "title": "Operatorul condițional ?",
+      "brief": "Prezentarea operatorului ternar `?:` din C++, care selectează una dintre două expresii în funcție de o condiție.",
+      "abstract": "Articolul definește operatorul condițional ca un operator ternar care evaluează mai întâi o condiție logică; dacă rezultatul este adevărat, se evaluează și returnează prima expresie, altfel a doua. Este menționat faptul că tipul rezultatului final trebuie să fie compatibil cu cele două expresii și că operatorul condițional poate substitui structura `if` în situații simple【806611395641597†L61-L78】. Se prezintă un exemplu practic și se menționează posibilitatea de a imbina mai multe operatori condiționali (ternari)【806611395641597†L80-L96】.",
+      "introduction": "Operatorul condițional `?:` oferă o metodă concisă de a selecta între două valori sau expresii în funcție de adevărul unei condiții. El evaluează `cond ? expr1 : expr2`, returnând `expr1` dacă condiția este adevărată și `expr2` dacă este falsă【806611395641597†L61-L78】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Operator ternar",
+          "content": "Este un operator cu trei operanzi: `cond ? expr1 : expr2`. Se evaluează `cond`; dacă este adevărat (non‑zero), se evaluează și se returnează `expr1`, altfel se evaluează și se returnează `expr2`【806611395641597†L61-L78】."
+        },
+        {
+          "type": "result",
+          "title": "Compatibilitatea tipurilor rezultatelor",
+          "content": "Cele două expresii `expr1` și `expr2` trebuie să fie conversibile la un tip comun, altfel apar avertizări sau erori de compilare. De obicei se preferă ca ambele să fie de același tip sau compatibile pentru conversie【806611395641597†L61-L78】."
+        },
+        {
+          "type": "example",
+          "title": "Utilizare simplă și echivalență cu `if`",
+          "content": "Exemplul `int max = (a > b ? a : b);` atribuie lui `max` valoarea mai mare dintre `a` și `b`. Aceeași logică se poate implementa cu un `if` tradițional: `if (a > b) max = a; else max = b;`【806611395641597†L80-L96】."
+        },
+        {
+          "type": "observation",
+          "title": "Imbricarea operatorilor ternari",
+          "content": "Operatorii condiționali se pot imbrica pentru a alege între mai multe valori; totuși, codul devine mai dificil de citit, iar utilizarea unui `if` în astfel de situații poate fi mai clară (dedus din text)."
+        }
+      ]
+    },
+    {
+      "id": 26016,
+      "title": "Tipul char",
+      "brief": "Descrie tipul `char` în C++, modul de declarare și inițializare a caracterelor, și diferența dintre caractere și șiruri.",
+      "abstract": "Articolul explică faptul că tipul `char` stochează un singur caracter și de obicei corespunde codurilor ASCII, oferind un domeniu `signed` și `unsigned`. Se arată cum se declară și se inițializează o variabilă de tip `char` cu un caracter delimitat de apostrof (de exemplu, `'A'`) sau cu un cod numeric. Sunt discutate diferențele dintre caractere și șiruri (`"A"`), modul în care se citesc și se afișează caracterele folosind `cin` și `cout`, și faptul că caracterele sunt tratate numeric în operații aritmetice【430932715882230†L71-L103】【430932715882230†L105-L179】.",
+      "introduction": "Tipul `char` este folosit pentru a reprezenta un singur caracter; pentru a manipula mai multe caractere se folosesc tablouri de caractere sau tipul `string`. În spatele fiecărui caracter stă un cod numeric (de obicei cod ASCII)【430932715882230†L71-L86】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Variabilă de tip `char`",
+          "content": "Variabila de tip `char` ocupă un octet și stochează un cod numeric ce corespunde unui caracter; domeniul poate fi `signed char` (de la −128 la 127) sau `unsigned char` (de la 0 la 255), determinat de implementare【430932715882230†L71-L86】."
+        },
+        {
+          "type": "observation",
+          "title": "Inițializarea caracterelor",
+          "content": "Un caracter se inițializează cu valoare literă între apostrofi (de exemplu `'A'`) sau cu un număr care reprezintă codul ASCII. Deosebirea dintre `'A'` și `\"A\"` este că primul este un `char`, iar al doilea un `string` (tabloul de caractere)【430932715882230†L88-L103】."
+        },
+        {
+          "type": "properties",
+          "title": "Citirea și afișarea caracterelor",
+          "content": "Caracterul poate fi citit cu `cin >> c;` și afișat cu `cout << c;`. Deoarece `char` este numeric, se pot efectua operații aritmetice; de exemplu, `c + 1` produce următorul caracter în codul ASCII. Pentru a afișa codul numeric se convertește la un tip întreg (`int(c)`)【430932715882230†L105-L179】."
+        },
+        {
+          "type": "example",
+          "title": "Modificarea unui caracter",
+          "content": "Dacă `char c = 'A';`, atunci `c + 1` (după conversie la `char`) devine `'B'`. Prin scăderea sau adunarea unei valori se pot naviga literele, iar diferența între două caractere dă numărul de poziții din alfabet【430932715882230†L105-L179】."
+        }
+      ]
+    },
+    {
+      "id": 26007,
+      "title": "Conversii de tip",
+      "brief": "Explică conversiile implicite și explicite între tipuri de date în C++, evidențiind promovarea și trunchierea valorilor și folosirea cast‑urilor.",
+      "abstract": "Articolul descrie conversiile implicite de tip (promovarea) când expresii conțin operanzi de diferite tipuri, explicând că conversiile se realizează doar între tipuri compatibile (de exemplu, întregi în reale). Se evidențiază pericolul pierderii de date la convertirea valorilor reale la întregi (trunchiere). Apoi se prezintă conversiile explicite (casting) prin operatorii `(TYPE)expr` sau `TYPE(expr)`, care forțează transformarea tipului și sunt folosite atunci când conversiile implicite nu sunt suficiente sau dorite【296155891366918†L77-L90】【296155891366918†L160-L173】.",
+      "introduction": "Atunci când operațiile implică valori de diferite tipuri, compilatorul trebuie să le convertească într‑un tip comun. În C++, conversiile implicite (automate) se aplică doar între tipuri compatibile, iar conversiile explicite permit programatorului să controleze modul în care se transformă valorile【296155891366918†L77-L90】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Conversie implicită (promovare de tip)",
+          "content": "Conversia implicită se produce când operanzii unui operator au tipuri diferite; tipurile mai mici (ex.: `int`) sunt promovate la tipuri mai mari (ex.: `double`) pentru a evita pierderea informației. Conversiile implicite se efectuează doar între tipuri compatibile【296155891366918†L77-L90】."
+        },
+        {
+          "type": "observation",
+          "title": "Pierderea de precizie la trunchiere",
+          "content": "Conversia unei valori reale la un tip întreg conduce la trunchiere (partea zecimală se pierde), ceea ce poate cauza erori de precizie. Conversia inversă (din întreg în real) este sigură și nu determină pierderi【296155891366918†L96-L157】."
+        },
+        {
+          "type": "definition",
+          "title": "Conversie explicită (casting)",
+          "content": "Programatorul poate forța conversia unui operand la un tip dorit folosind sintaxa `(TYPE)expr` sau `TYPE(expr)`. Conversiile explicite sunt necesare atunci când conversiile implicite nu se aplică sau se dorește controlul asupra tipului rezultat【296155891366918†L160-L173】."
+        },
+        {
+          "type": "example",
+          "title": "Exemple de conversii",
+          "content": "Exemplu de conversie implicită: `double z = 5 + 2.3;` (5 este promovat la `5.0`). Exemplu de conversie explicită: `int k = (int)3.9;` (k devine 3) sau `int m = int(3.9);`【296155891366918†L96-L157】."
+        },
+        {
+          "type": "properties",
+          "title": "Promovare vs. demote",
+          "content": "Promovarea (mărirea) se referă la conversia unui tip de dimensiune mai mică într‑unul mai mare (ex.: `int` → `double`), în timp ce demote (diminution) este conversia inversă (ex.: `double` → `int`), care poate pierde informații【296155891366918†L96-L157】."
+        }
+      ]
+    },
+    {
+      "id": 18929,
+      "title": "Secvențe Escape",
+      "brief": "Introduce conceptul de secvențe escape în C/C++ și descrie cum sunt folosite pentru a reprezenta caractere speciale și control.",
+      "abstract": "Articolul explică faptul că secvențele escape sunt șiruri de două caractere începând cu bară oblică inversă (`\`) care permit reprezentarea în cod a unor caractere speciale (newline, tab, ghilimele, backslash) sau a unor coduri ASCII imposibil de tastat direct. Sunt enumerate cele mai frecvente secvențe (`\n`, `\t`, `\\`, `\"` etc.), se menționează codurile ASCII corespunzătoare și se oferă exemple care ilustrează modul în care secvențele escape influențează afișarea textului【31676918623794†L66-L111】."
+      "introduction": "În limbajul C/C++ anumite caractere nu se pot introduce direct în șiruri, de exemplu newline sau tab. Pentru a le reprezenta se folosesc secvențe escape care sunt interpretate de compilator ca un singur caracter special【31676918623794†L66-L111】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Secvență escape",
+          "content": "O secvență escape este un șir format din caracterul `\\` urmat de o altă literă sau cifră, reprezentând un caracter special sau de control (de exemplu, `\\n` pentru newline, `\\t` pentru tab). Compilatorul interpretează secvența ca un singur caracter【31676918623794†L66-L111】."
+        },
+        {
+          "type": "result",
+          "title": "Lista secvențelor uzuale",
+          "content": "Printre cele mai folosite secvențe escape se numără: `\\n` (newline, ASCII 10), `\\t` (tab, ASCII 9), `\\\"` (caracter ghilimele), `\\\\` (backslash), `\\r` (carriage return). Există și secvențe pentru caractere octale/hexazecimale: `\\101` reprezintă ‘A’ (cod ASCII 65)【31676918623794†L66-L111】."
+        },
+        {
+          "type": "example",
+          "title": "Utilizarea secvențelor escape",
+          "content": "Într‑un șir, secvențele escape permit inserarea de linii noi (\"Prima linie\\nA doua linie\") sau de taburi (\"Col1\\tCol2\"). Pentru a include ghilimele în interiorul unui șir, se folosește `\\\"` sau se delimitează șirul cu ghilimele simple【31676918623794†L66-L111】."
+        },
+        {
+          "type": "observation",
+          "title": "Interpretarea la compilare",
+          "content": "La procesarea codului, compilatorul înlocuiește secvența escape cu caracterul corespunzător. De aceea, în șirul \"\\\\\" se afișează un singur backslash, iar \"\\101\" se transformă în litera ‘A’【31676918623794†L66-L111】."
+        }
+      ]
+    },
+    {
+      "id": 8598,
+      "title": "Funcții C++ predefinite",
+      "brief": "Prezintă noțiunea de funcție și enumeră principalele funcții din biblioteca standard C/C++ împreună cu prototipurile și utilizarea lor.",
+      "abstract": "Articolul definește funcția ca mecanism prin care se prelucrează date de intrare (parametri) și se produce o valoare de ieșire. Sunt prezentate informații despre prototipul unei funcții (nume, parametri, tipul rezultatului), declararea în anteturi (`#include <cmath>` etc.) și modul de utilizare a unor funcții matematice precum `abs`, `sqrt`, `pow`, `sin`, `cos`, `log` și `rand`. Sunt discutate și funcțiile pentru generarea numerelor pseudo-aleatoare și modul în care se folosește `rand()`【596597981113754†L65-L96】【596597981113754†L100-L115】【596597981113754†L119-L157】.",
+      "introduction": "În C++ funcțiile sunt instrumente esențiale ce apar ca operanzi în expresii. O funcție primește parametri, efectuează calcule și returnează un rezultat; pentru a utiliza funcții predefinite trebuie incluse anteturi corespunzătoare. Informații precum numărul și tipul parametrilor și tipul rezultatului se numesc prototip【596597981113754†L65-L96】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Funcție și parametri",
+          "content": "O funcție preia date de intrare numite parametri și returnează o valoare; forma generală este `tipRezultat numeFuncție(tip1 param1, tip2 param2, …)`. Parametrii pot fi poziționali și se folosesc pentru a personaliza calculul【596597981113754†L65-L96】."
+        },
+        {
+          "type": "result",
+          "title": "Prototipul și anteturile",
+          "content": "Prototipul unei funcții specifică numele, numărul și tipul parametrilor și tipul rezultatului. El este declarat în fișiere antet (de exemplu, funcțiile matematice sunt declarate în `<cmath>`), iar pentru a utiliza funcția în program se include antetul corespunzător cu `#include`【596597981113754†L65-L96】."
+        },
+        {
+          "type": "result",
+          "title": "Funcții matematice uzuale",
+          "content": "Biblioteca C++ oferă funcții precum: `abs(x)` (valoarea absolută), `sqrt(x)` (rădăcina pătrată), `pow(a,b)` (ridicarea la putere), funcțiile trigonometice `sin`, `cos`, `tan`, funcțiile logaritmice `log`, `log10` și multe altele. Pentru fiecare se prezintă prototipul și o scurtă descriere a comportamentului【596597981113754†L100-L115】."
+        },
+        {
+          "type": "observation",
+          "title": "Generarea numerelor aleatoare",
+          "content": "Funcția `rand()` generează un număr întreg pseudo-aleator în intervalul [0, RAND_MAX]. Pentru rezultate cu distribuție uniformă în alte intervale, se poate folosi `rand() % n` sau conversia la un tip real. În general, se recomandă inițializarea generatorului cu `srand()` pentru variabilitate【596597981113754†L119-L157】."
+        },
+        {
+          "type": "example",
+          "title": "Exemplu de utilizare a funcțiilor",
+          "content": "Exemplu: `double r = sqrt(9.0);` calculează rădăcina pătrată a lui 9. Funcția `pow(2.0, 3.0)` returnează 8. Pentru generarea unui număr pseudo-aleator de la 0 la 99 se poate folosi `int x = rand() % 100;`【596597981113754†L100-L115】【596597981113754†L119-L157】."
+        }
+      ]
+    },
+    {
+      "id": 16018,
+      "title": "Citiri și scrieri cu format în C++",
+      "brief": "Explică necesitatea formatării intrărilor și ieșirilor în C++ și prezintă manipulatoarele care controlează prezentarea numerică și alinierea textelor.",
+      "abstract": "Articolul arată că formatul implicit al citirilor/afișărilor este de obicei suficient, dar în anumite contexte trebuie controlat aspectul rezultatelor. Sunt introduși manipulatori din `<iomanip>` precum `setw` (lățimea câmpului), `left`/`right`/`internal` (alinierea textului), `setfill` (caracterul de umplere), `setprecision` (numărul de cifre), și manipulatoare pentru baza numerică (`dec`, `oct`, `hex`). Sunt explicate regulile de aplicare a acestor manipulatoare atât la ieșire, cât și la intrare (de exemplu, `noskipws`, `skipws`) și se oferă exemple de formatări specifice【348981067466792†L91-L124】【348981067466792†L100-L137】.",
+      "introduction": "Formatul standard de afișare este adecvat în majoritatea situațiilor, însă pentru rezultate mai precise sau o prezentare specială se pot folosi manipulatori care controlează lățimea, precizia zecimală și baza de afișare. De asemenea, există manipulatoare pentru citire care permit sau nu omiterea spațiilor albe【348981067466792†L91-L124】.",
+      "concept": [
+        {
+          "type": "observation",
+          "title": "Limitările formatului implicit",
+          "content": "Formatul implicit (de exemplu, afișarea unui număr întreg în baza 10 sau a unui număr real cu un număr fix de zecimale) nu se potrivește întotdeauna cerințelor; de aceea, controlul formatului devine necesar în rapoarte, tabele sau afișări precise【348981067466792†L91-L124】."
+        },
+        {
+          "type": "result",
+          "title": "Manipulatoare de ieșire",
+          "content": "În `<iomanip>` există manipulatoare pentru ieșire: `setw(n)` definește lățimea câmpului, `setfill(c)` stabilește caracterul de umplere, `left`, `right` și `internal` controlează alinierea; `setprecision(p)` fixează numărul de cifre semnificative; `dec`, `oct`, `hex` setează baza numerică. Aceste manipulatoare afectează afișările ulterioare până la o nouă schimbare【348981067466792†L91-L124】【348981067466792†L100-L137】."
+        },
+        {
+          "type": "result",
+          "title": "Manipulatoare de intrare",
+          "content": "Pentru citire, manipulatorul `noskipws` face ca spațiile albe să fie citite ca date, iar `skipws` (implicit) le ignoră. De asemenea, `dec`, `oct` și `hex` pot fi folosite pentru a citi numere în diferite baze. Manipulatorii se aplică fluxului `cin` într‑un mod similar celor de ieșire【348981067466792†L100-L137】."
+        },
+        {
+          "type": "example",
+          "title": "Exemple de formatări",
+          "content": "Exemplu: `cout << setw(5) << setfill('0') << 42;` afișează `00042`. `cout << setprecision(2) << fixed << 3.14159;` afișează `3.14`. La citire, `cin >> hex >> x;` citește un număr în baza 16 și îl converteste la zecimal【348981067466792†L91-L124】."
+        },
+        {
+          "type": "properties",
+          "title": "Persistența manipulatoarelor",
+          "content": "Manipulatoarele rămân active pentru fluxul pe care au fost aplicate până când sunt înlocuite de altele. De exemplu, după `cout << hex`, toate întregile ulterioare vor fi afișate în baza 16 până la `cout << dec`【348981067466792†L100-L137】."
+        }
+      ]
+    },
+    {
+      "id": 19047,
+      "title": "Operații de intrare/ieșire cu fișiere în C++",
+      "brief": "Explică modul de realizare a operațiilor de citire și scriere în fișiere text în C++, arătând pașii necesari și tipurile de fluxuri corespunzătoare.",
+      "abstract": "Articolul prezintă extinderea modelului de stream al I/O standard către fișiere: 1) fișierul este deschis și asociat cu un flux (`ifstream` pentru citire, `ofstream` pentru scriere, `fstream` pentru citire și scriere), 2) se realizează citiri și scrieri folosind operatorii `>>` și `<<`, iar 3) fișierul se închide. Se explică faptul că fișierul de intrare trebuie să existe, în timp ce fișierul de ieșire este creat și poate suprascrie conținutul existent. Sunt oferite exemple de citire a două numere dintr‑un fișier și de scriere a sumei lor într‑un alt fișier【390580255323006†L67-L79】【390580255323006†L83-L110】【390580255323006†L172-L167】.",
+      "introduction": "Modelul de intrări/ieșiri se aplică și fișierelor. Pentru a citi sau a scrie într‑un fișier text în C++, trebuie deschis fișierul și asociat cu un flux corespunzător, se efectuează operațiile dorite, apoi se închide fișierul. Acești pași asigură manipularea corectă a datelor și eliberarea resurselor【390580255323006†L67-L79】.",
+      "concept": [
+        {
+          "type": "result",
+          "title": "Pașii lucrului cu fișiere text",
+          "content": "1) Se declară un obiect flux (`ifstream`, `ofstream`, `fstream`) și se deschide fișierul (cu `open` sau direct în constructor). 2) Se citește sau se scrie folosind operatorii `>>` și `<<` similar cu `cin` și `cout`. 3) Se închide fișierul cu `close`, pentru a elibera resursele și a asigura salvarea datelor【390580255323006†L67-L79】【390580255323006†L83-L110】."
+        },
+        {
+          "type": "definition",
+          "title": "Fluxuri pentru fișiere",
+          "content": "`ifstream` este folosit pentru citire din fișiere, `ofstream` pentru scriere, iar `fstream` pentru citire și scriere. Aceste fluxuri sunt declarate în `<fstream>` și se comportă similar cu `cin` și `cout`, dar lucrează cu fișiere【390580255323006†L83-L110】."
+        },
+        {
+          "type": "observation",
+          "title": "Existența fișierelor de intrare și crearea fișierelor de ieșire",
+          "content": "Fișierul de intrare trebuie să existe înainte de deschidere, altfel operația de citire eșuează. Fișierul de ieșire este creat dacă nu există și, dacă există, conținutul său poate fi suprascris. Este responsabilitatea programatorului să verifice că fișierul a fost deschis cu succes【390580255323006†L172-L167】."
+        },
+        {
+          "type": "example",
+          "title": "Citirea și scrierea numerelor",
+          "content": "Exemplu: `ifstream fin(\"input.txt\"); ofstream fout(\"output.txt\"); int a, b; fin >> a >> b; fout << (a + b);` citește două numere din `input.txt` și scrie suma în `output.txt`. La final, se apelează `fin.close()` și `fout.close()`【390580255323006†L83-L110】."
+        },
+        {
+          "type": "properties",
+          "title": "Similarități cu I/O standard",
+          "content": "Operațiile de citire și scriere în fișiere folosesc aceiași operatori `>>` și `<<` ca `cin` și `cout`, astfel încât codul este aproape identic; singura diferență este fluxul asupra căruia se aplică operatorii (fișier vs. consolă)【390580255323006†L67-L79】."
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Codul ASCII",
+      "brief": "Explică de ce datele sunt reprezentate numeric în calculatoare și introduce codul ASCII ca standard de codificare a caracterelor.",
+      "abstract": "Articolul subliniază că, în computere, toate datele sunt stocate și prelucrate ca numere binare. Pentru a reprezenta caractere se folosește o codificare numerică; ASCII (American Standard Code for Information Interchange) este unul dintre cele mai vechi și răspândite standarde. Sunt prezentate categoriile de caractere din ASCII (litere mari și mici, cifre, semne de punctuație, caractere speciale și caractere de control) și se menționează codurile speciale pentru caracterul nul și newline. Se subliniază importanța înțelegerea codurilor ASCII în programare【907232639711054†L63-L79】【907232639711054†L85-L98】【907232639711054†L105-L125】.",
+      "introduction": "În calculatoare, toate informațiile trebuie convertite la valori numerice. De aceea, caracterele sunt reprezentate prin coduri. Standardul ASCII a fost adoptat pe scară largă pentru a asocia fiecărui caracter un număr între 0 și 127, permițând stocarea și transmiterea textului sub formă digitală【907232639711054†L63-L79】.",
+      "concept": [
+        {
+          "type": "definition",
+          "title": "Codificarea caracterelor",
+          "content": "Codificarea caracterelor este o mapare între caractere (litere, cifre, simboluri) și numerele corespunzătoare; pentru ASCII, codurile sunt de la 0 la 127 și sunt reprezentate în binar cu 7 biți【907232639711054†L63-L79】."
+        },
+        {
+          "type": "definition",
+          "title": "ASCII (American Standard Code for Information Interchange)",
+          "content": "ASCII este un standard ce atribuie coduri numerice caracterelor uzuale (litere majuscule, litere minuscule, cifre 0–9, semne de punctuație, simboluri și caractere de control). Codurile 0–31 sunt caractere de control (neimprimabile), iar codurile 32–126 sunt caractere imprimabile【907232639711054†L63-L79】【907232639711054†L85-L98】."
+        },
+        {
+          "type": "result",
+          "title": "Categorii de caractere în ASCII",
+          "content": "Caracterele imprimabile includ: litere mari A–Z (coduri 65–90), litere mici a–z (97–122), cifre 0–9 (48–57), semne de punctuație și operatori. Caracterele de control includ `\0` (NULL) și newline `\n`; spațiul (` `) are cod 32【907232639711054†L85-L98】【907232639711054†L105-L125】."
+        },
+        {
+          "type": "observation",
+          "title": "Observații despre coduri",
+          "content": "Codurile literelor majuscule sunt consecutive între A și Z, iar literele minuscule se află la distanța 32 față de majuscule (de exemplu, `A` are cod 65, `a` 97). Cifrele `0`–`9` sunt codurile 48–57, diferite de valorile numerice reprezentate. Spațiul (` `) are codul 32【907232639711054†L112-L125】."
+        },
+        {
+          "type": "example",
+          "title": "Utilizarea codurilor ASCII",
+          "content": "În programe se pot converti caracterele la coduri cu `int(c)` și invers: `char(65)` este `'A'`. Cunoașterea codurilor permite sortarea sau compararea lexicografică a textelor și implementarea algoritmilor de procesare a șirurilor (text dedus din articol)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1512 @@
+[
+  {
+    "id": "q0001",
+    "title": "Care dintre următoarele reprezintă un program C++ corect și ",
+    "category": "Introducere în C++",
+    "subcategory": "Hello World",
+    "lesson": "Structura programului",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Care dintre următoarele reprezintă un program C++ corect și complet?",
+    "hint_key": "intro_hello",
+    "explanation": "Un program C++ minim necesită #include <iostream>, using namespace std;, funcția main() cu return 0.",
+    "answer": "A",
+    "question_data": {
+      "options": {
+        "A": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Hello\" << endl;\n    return 0;\n}",
+        "B": "iostream include\nusing std\nmain() { cout Hello }",
+        "C": "#include <iostream>\nint main() {\n    cout << \"Hello\";\n}",
+        "D": "using namespace std;\nmain() {\n    cout << \"Hello\";\n    return 0;\n}"
+      }
+    },
+    "keywords": [
+      "main",
+      "include",
+      "iostream",
+      "return 0"
+    ]
+  },
+  {
+    "id": "q0002",
+    "title": "Care este output-ul următorului program?\n```cpp\n#include <io",
+    "category": "Introducere în C++",
+    "subcategory": "Hello World",
+    "lesson": "Structura programului",
+    "difficulty": "trivial",
+    "type": "output-prediction",
+    "statement": "Care este output-ul următorului program?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"pbinfo\" << endl;\n    return 0;\n}\n```",
+    "hint_key": "intro_hello",
+    "explanation": "cout << afișează textul dintre ghilimele. endl face salt la linia nouă.",
+    "answer": "pbinfo",
+    "question_data": {
+      "expected": "pbinfo"
+    },
+    "keywords": [
+      "cout",
+      "output",
+      "endl"
+    ]
+  },
+  {
+    "id": "q0003",
+    "title": "Aranjează liniile pentru a obține un program C++ corect care",
+    "category": "Introducere în C++",
+    "subcategory": "Hello World",
+    "lesson": "Structura programului",
+    "difficulty": "simple",
+    "type": "order-blocks",
+    "statement": "Aranjează liniile pentru a obține un program C++ corect care afișează 'OK'.",
+    "hint_key": "intro_hello",
+    "explanation": "Ordinea corectă: directive, namespace, main, corp, return.",
+    "answer": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "question_data": {
+      "blocks": [
+        "int main() {",
+        "#include <iostream>",
+        "    return 0;",
+        "using namespace std;",
+        "    cout << \"OK\" << endl;\n}"
+      ]
+    },
+    "keywords": [
+      "structura",
+      "ordine"
+    ]
+  },
+  {
+    "id": "q0004",
+    "title": "Afirmație: În C++, funcția `main()` trebuie să returneze un ",
+    "category": "Introducere în C++",
+    "subcategory": "Hello World",
+    "lesson": "Structura programului",
+    "difficulty": "trivial",
+    "type": "true-false",
+    "statement": "Afirmație: În C++, funcția `main()` trebuie să returneze un număr întreg.",
+    "hint_key": "intro_hello",
+    "explanation": "Funcția main are tipul int și returnează 0 la terminare cu succes.",
+    "answer": "true",
+    "question_data": {
+      "statement": "Funcția main() trebuie să returneze un număr întreg."
+    },
+    "keywords": [
+      "main",
+      "return",
+      "int"
+    ]
+  },
+  {
+    "id": "q0005",
+    "title": "Completează codul pentru a citi un număr întreg n și a-l afi",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Citire și afișare",
+    "difficulty": "trivial",
+    "type": "fill-gaps",
+    "statement": "Completează codul pentru a citi un număr întreg n și a-l afișa:\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int n;\n    ___ >> n;\n    cout << ___;\n    return 0;\n}\n```",
+    "hint_key": "intro_io",
+    "explanation": "cin citește de la tastatură, cout afișează.",
+    "answer": [
+      "cin",
+      "n"
+    ],
+    "question_data": {
+      "blanks": [
+        "cin",
+        "n"
+      ],
+      "options_per_blank": [
+        [
+          "cin",
+          "cout",
+          "int",
+          "endl"
+        ],
+        [
+          "n",
+          "endl",
+          "cout",
+          "cin"
+        ]
+      ]
+    },
+    "keywords": [
+      "cin",
+      "cout"
+    ]
+  },
+  {
+    "id": "q0006",
+    "title": "Ce operator se folosește pentru citire cu cin?",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Citire și afișare",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Ce operator se folosește pentru citire cu cin?",
+    "hint_key": "intro_io",
+    "explanation": "cin folosește operatorul >> (extracție), cout folosește << (inserție).",
+    "answer": ">>",
+    "question_data": {
+      "options": {
+        "A": "<<",
+        "B": ">>",
+        "C": "->",
+        "D": "::"
+      }
+    },
+    "keywords": [
+      "cin",
+      "operator"
+    ]
+  },
+  {
+    "id": "q0007",
+    "title": "Ce afișează programul?\n```cpp\n#include <iostream>\nusing name",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Citire și afișare",
+    "difficulty": "simple",
+    "type": "output-prediction",
+    "statement": "Ce afișează programul?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 3, b = 7;\n    cout << a + b << endl;\n    return 0;\n}\n```",
+    "hint_key": "intro_io",
+    "explanation": "cout afișează valoarea expresiei a + b = 3 + 7.",
+    "answer": "10",
+    "question_data": {
+      "expected": "10"
+    },
+    "keywords": [
+      "cout",
+      "expresie",
+      "suma"
+    ]
+  },
+  {
+    "id": "q0008",
+    "title": "Cum citim două numere a și b pe aceeași linie?",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Citire și afișare",
+    "difficulty": "simple",
+    "type": "multiple-choice",
+    "statement": "Cum citim două numere a și b pe aceeași linie?",
+    "hint_key": "intro_io",
+    "explanation": "cin poate înlănțui mai multe citiri cu >>.",
+    "answer": "cin >> a >> b;",
+    "question_data": {
+      "options": {
+        "A": "cin >> a; cin >> b;",
+        "B": "cin >> a >> b;",
+        "C": "cin >> a, b;",
+        "D": "read(a, b);"
+      }
+    },
+    "keywords": [
+      "cin",
+      "citire",
+      "multipla"
+    ]
+  },
+  {
+    "id": "q0009",
+    "title": "Găsește eroarea în codul următor:\n```cpp\n#include <iostream>",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Citire și afișare",
+    "difficulty": "easy",
+    "type": "debug-code",
+    "statement": "Găsește eroarea în codul următor:\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int n;\n    cout >> n;\n    cout << n * 2;\n    return 0;\n}\n```",
+    "hint_key": "intro_io",
+    "explanation": "cin se folosește pentru citire, nu cout.",
+    "answer": "cout >> n; trebuie înlocuit cu cin >> n;",
+    "question_data": {
+      "buggy_line": "    cout >> n;",
+      "fixed_line": "    cin >> n;"
+    },
+    "keywords": [
+      "cin",
+      "cout",
+      "bug"
+    ]
+  },
+  {
+    "id": "q0010",
+    "title": "Ce tip de dată folosim pentru a stoca numărul 1000000000 (un",
+    "category": "Introducere în C++",
+    "subcategory": "Variabile și tipuri",
+    "lesson": "Tipuri de date",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Ce tip de dată folosim pentru a stoca numărul 1000000000 (un miliard)?",
+    "hint_key": "intro_vars",
+    "explanation": "int poate stoca aproximativ ±2 miliarde. long long pentru numere mai mari.",
+    "answer": "int",
+    "question_data": {
+      "options": {
+        "A": "char",
+        "B": "int",
+        "C": "float",
+        "D": "bool"
+      }
+    },
+    "keywords": [
+      "int",
+      "tip",
+      "date"
+    ]
+  },
+  {
+    "id": "q0011",
+    "title": "Ce tip de dată folosim pentru a stoca numărul 10000000000 (1",
+    "category": "Introducere în C++",
+    "subcategory": "Variabile și tipuri",
+    "lesson": "Tipuri de date",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Ce tip de dată folosim pentru a stoca numărul 10000000000 (10 miliarde)?",
+    "hint_key": "intro_vars",
+    "explanation": "int poate stoca până la ~2.1 miliarde. Pentru valori mai mari folosim long long.",
+    "answer": "long long",
+    "question_data": {
+      "options": {
+        "A": "int",
+        "B": "short",
+        "C": "long long",
+        "D": "float"
+      }
+    },
+    "keywords": [
+      "long long",
+      "tip",
+      "date"
+    ]
+  },
+  {
+    "id": "q0012",
+    "title": "Afirmație: În C++, variabilele locale sunt inițializate auto",
+    "category": "Introducere în C++",
+    "subcategory": "Variabile și tipuri",
+    "lesson": "Tipuri de date",
+    "difficulty": "easy",
+    "type": "true-false",
+    "statement": "Afirmație: În C++, variabilele locale sunt inițializate automat cu 0.",
+    "hint_key": "intro_vars",
+    "explanation": "Variabilele locale au valori nedeterminate dacă nu sunt inițializate explicit. Numai cele globale sunt inițializate cu 0.",
+    "answer": "false",
+    "question_data": {
+      "statement": "Variabilele locale sunt inițializate automat cu 0."
+    },
+    "keywords": [
+      "variabile",
+      "initializare",
+      "local"
+    ]
+  },
+  {
+    "id": "q0013",
+    "title": "Declară și inițializează trei variabile: un întreg x cu valo",
+    "category": "Introducere în C++",
+    "subcategory": "Variabile și tipuri",
+    "lesson": "Tipuri de date",
+    "difficulty": "simple",
+    "type": "fill-gaps",
+    "statement": "Declară și inițializează trei variabile: un întreg x cu valoarea 5, un real y cu valoarea 3.14, și un caracter c cu valoarea 'A':\n```cpp\n___ x = 5;\n___ y = 3.14;\n___ c = 'A';\n```",
+    "hint_key": "intro_vars",
+    "explanation": "int pentru întregi, double pentru reale, char pentru caractere.",
+    "answer": [
+      "int",
+      "double",
+      "char"
+    ],
+    "question_data": {
+      "blanks": [
+        "int",
+        "double",
+        "char"
+      ],
+      "options_per_blank": [
+        [
+          "int",
+          "float",
+          "char",
+          "double"
+        ],
+        [
+          "double",
+          "int",
+          "char",
+          "float"
+        ],
+        [
+          "char",
+          "int",
+          "double",
+          "string"
+        ]
+      ]
+    },
+    "keywords": [
+      "int",
+      "double",
+      "char",
+      "declarare"
+    ]
+  },
+  {
+    "id": "q0014",
+    "title": "Ce afișează?\n```cpp\n#include <iostream>\nusing namespace std;",
+    "category": "Introducere în C++",
+    "subcategory": "Variabile și tipuri",
+    "lesson": "Tipuri de date",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int x = 7;\n    x = x + 3;\n    cout << x;\n    return 0;\n}\n```",
+    "hint_key": "intro_vars",
+    "explanation": "x primește valoarea 7, apoi se adaugă 3, deci x devine 10.",
+    "answer": "10",
+    "question_data": {
+      "expected": "10"
+    },
+    "keywords": [
+      "atribuire",
+      "calcul"
+    ]
+  },
+  {
+    "id": "q0015",
+    "title": "Care este valoarea expresiei 17 % 5?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Operatori aritmetici",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Care este valoarea expresiei 17 % 5?",
+    "hint_key": "ops_arith",
+    "explanation": "% este operatorul modulo (rest). 17 = 5*3 + 2, deci 17 % 5 = 2.",
+    "answer": "2",
+    "question_data": {
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "7",
+        "D": "0"
+      }
+    },
+    "keywords": [
+      "%",
+      "modulo",
+      "rest"
+    ]
+  },
+  {
+    "id": "q0016",
+    "title": "Care este valoarea expresiei 7 / 2 în C++ (cu variabile într",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Operatori aritmetici",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Care este valoarea expresiei 7 / 2 în C++ (cu variabile întregi)?",
+    "hint_key": "ops_arith",
+    "explanation": "La împărțirea a doi întregi în C++, rezultatul este câtul întreg (fără rest). 7/2 = 3.",
+    "answer": "3",
+    "question_data": {
+      "options": {
+        "A": "3.5",
+        "B": "3",
+        "C": "4",
+        "D": "2"
+      }
+    },
+    "keywords": [
+      "/",
+      "impartire",
+      "intreg"
+    ]
+  },
+  {
+    "id": "q0017",
+    "title": "Ce expresie returnează ultima cifră a unui număr întreg n?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Cifre",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Ce expresie returnează ultima cifră a unui număr întreg n?",
+    "hint_key": "ops_arith",
+    "explanation": "Restul împărțirii la 10 dă ultima cifră a unui număr.",
+    "answer": "n % 10",
+    "question_data": {
+      "options": {
+        "A": "n / 10",
+        "B": "n % 10",
+        "C": "n - 10",
+        "D": "n * 10"
+      }
+    },
+    "keywords": [
+      "%",
+      "cifra",
+      "ultima"
+    ]
+  },
+  {
+    "id": "q0018",
+    "title": "Ce expresie elimină ultima cifră a numărului n?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Cifre",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Ce expresie elimină ultima cifră a numărului n?",
+    "hint_key": "ops_arith",
+    "explanation": "Împărțirea întreagă la 10 elimină ultima cifră.",
+    "answer": "n / 10",
+    "question_data": {
+      "options": {
+        "A": "n % 10",
+        "B": "n / 10",
+        "C": "n - n % 10",
+        "D": "n / 100"
+      }
+    },
+    "keywords": [
+      "/",
+      "cifra",
+      "eliminare"
+    ]
+  },
+  {
+    "id": "q0019",
+    "title": "Ce afișează?\n```cpp\nint a = 10, b = 3;\ncout << a / b << \" \" ",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Operatori aritmetici",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint a = 10, b = 3;\ncout << a / b << \" \" << a % b;\n```",
+    "hint_key": "ops_arith",
+    "explanation": "10 / 3 = 3 (câtul întreg), 10 % 3 = 1 (restul).",
+    "answer": "3 1",
+    "question_data": {
+      "expected": "3 1"
+    },
+    "keywords": [
+      "/",
+      "%",
+      "impartire"
+    ]
+  },
+  {
+    "id": "q0020",
+    "title": "Completează expresia pentru a calcula numărul de cifre ale u",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Operatori aritmetici",
+    "difficulty": "easy",
+    "type": "fill-gaps",
+    "statement": "Completează expresia pentru a calcula numărul de cifre ale unui număr natural n (n > 0):\n```cpp\nint nrCifre = 0;\nwhile (n > 0) {\n    nrCifre++;\n    n = n ___ 10;\n}\n```",
+    "hint_key": "ops_arith",
+    "explanation": "Împărțind la 10 eliminăm ultima cifră. Numărăm câte cifre am eliminat.",
+    "answer": "/",
+    "question_data": {
+      "blanks": [
+        "/"
+      ],
+      "options_per_blank": [
+        [
+          "/",
+          "%",
+          "*",
+          "-"
+        ]
+      ]
+    },
+    "keywords": [
+      "cifre",
+      "while",
+      "count"
+    ]
+  },
+  {
+    "id": "q0021",
+    "title": "Fie n = 1234. Ce valoare are expresia (n / 10) % 10?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori aritmetici",
+    "lesson": "Operatori aritmetici",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Fie n = 1234. Ce valoare are expresia (n / 10) % 10?",
+    "hint_key": "ops_arith",
+    "explanation": "n/10 = 123, 123%10 = 3. Această expresie extrage penultima cifră.",
+    "answer": "3",
+    "question_data": {
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "1"
+      }
+    },
+    "keywords": [
+      "/",
+      "%",
+      "cifre",
+      "extragere"
+    ]
+  },
+  {
+    "id": "q0022",
+    "title": "Ce operatori se folosesc pentru comparație în C++?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori relaționali",
+    "lesson": "Condiții",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Ce operatori se folosesc pentru comparație în C++?",
+    "hint_key": "ops_rel",
+    "explanation": "== verifică egalitatea. = este atribuire, nu comparație!",
+    "answer": "==",
+    "question_data": {
+      "options": {
+        "A": "=",
+        "B": "==",
+        "C": "eq",
+        "D": "equals"
+      }
+    },
+    "keywords": [
+      "==",
+      "comparatie",
+      "egalitate"
+    ]
+  },
+  {
+    "id": "q0023",
+    "title": "Care condiție verifică dacă n este par?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori relaționali",
+    "lesson": "Condiții",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Care condiție verifică dacă n este par?",
+    "hint_key": "ops_rel",
+    "explanation": "Un număr e par dacă restul împărțirii la 2 este 0.",
+    "answer": "n % 2 == 0",
+    "question_data": {
+      "options": {
+        "A": "n / 2 == 0",
+        "B": "n % 2 == 0",
+        "C": "n % 2 != 0",
+        "D": "n == 2"
+      }
+    },
+    "keywords": [
+      "%",
+      "par",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0024",
+    "title": "Care condiție verifică dacă n este impar?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori relaționali",
+    "lesson": "Condiții",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Care condiție verifică dacă n este impar?",
+    "hint_key": "ops_rel",
+    "explanation": "Un număr e impar dacă restul împărțirii la 2 nu este 0.",
+    "answer": "n % 2 != 0",
+    "question_data": {
+      "options": {
+        "A": "n % 2 == 1",
+        "B": "n % 2 != 0",
+        "C": "n % 2 == 0",
+        "D": "n % 2 >= 1"
+      }
+    },
+    "keywords": [
+      "%",
+      "impar",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0025",
+    "title": "Care expresie verifică dacă n este în intervalul [10, 99]?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori relaționali",
+    "lesson": "Logici",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Care expresie verifică dacă n este în intervalul [10, 99]?",
+    "hint_key": "ops_rel",
+    "explanation": "Trebuie să fie adevărate ambele condiții simultan: n >= 10 ȘI n <= 99.",
+    "answer": "n >= 10 && n <= 99",
+    "question_data": {
+      "options": {
+        "A": "n >= 10 || n <= 99",
+        "B": "n >= 10 && n <= 99",
+        "C": "10 <= n <= 99",
+        "D": "n > 10 && n < 99"
+      }
+    },
+    "keywords": [
+      "&&",
+      "interval",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0026",
+    "title": "Ce afișează?\n```cpp\nint a = 5, b = 3;\ncout << (a > b) << \" \"",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori relaționali",
+    "lesson": "Logici",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint a = 5, b = 3;\ncout << (a > b) << \" \" << (a == b);\n```",
+    "hint_key": "ops_rel",
+    "explanation": "a > b este adevărat (1), a == b este fals (0).",
+    "answer": "1 0",
+    "question_data": {
+      "expected": "1 0"
+    },
+    "keywords": [
+      "bool",
+      "relational",
+      "output"
+    ]
+  },
+  {
+    "id": "q0027",
+    "title": "Ce afișează?\n```cpp\nint x = 5;\ncout << (x > 3 && x < 10) << ",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori relaționali",
+    "lesson": "Logici",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Ce afișează?\n```cpp\nint x = 5;\ncout << (x > 3 && x < 10) << \" \" << (x > 7 || x < 3);\n```",
+    "hint_key": "ops_rel",
+    "explanation": "5>3 && 5<10: ambele adevărate → 1. 5>7: fals, 5<3: fals → 0.",
+    "answer": "1 0",
+    "question_data": {
+      "options": {
+        "A": "1 0",
+        "B": "0 1",
+        "C": "1 1",
+        "D": "0 0"
+      }
+    },
+    "keywords": [
+      "&&",
+      "||",
+      "logic"
+    ]
+  },
+  {
+    "id": "q0028",
+    "title": "Ce afișează?\n```cpp\nint x = 5;\nx += 3;\ncout << x;\n```",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori de atribuire",
+    "lesson": "Incrementare",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint x = 5;\nx += 3;\ncout << x;\n```",
+    "hint_key": "ops_assign",
+    "explanation": "x += 3 este echivalent cu x = x + 3. x devine 5 + 3 = 8.",
+    "answer": "8",
+    "question_data": {
+      "expected": "8"
+    },
+    "keywords": [
+      "+=",
+      "atribuire",
+      "compusa"
+    ]
+  },
+  {
+    "id": "q0029",
+    "title": "Care este valoarea lui x după: `int x = 10; x -= 4; x *= 2;`",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori de atribuire",
+    "lesson": "Incrementare",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Care este valoarea lui x după: `int x = 10; x -= 4; x *= 2;`?",
+    "hint_key": "ops_assign",
+    "explanation": "x = 10, x -= 4 → x = 6, x *= 2 → x = 12.",
+    "answer": "12",
+    "question_data": {
+      "options": {
+        "A": "6",
+        "B": "12",
+        "C": "8",
+        "D": "10"
+      }
+    },
+    "keywords": [
+      "-=",
+      "*=",
+      "calcul"
+    ]
+  },
+  {
+    "id": "q0030",
+    "title": "Ce afișează?\n```cpp\nint x = 5;\ncout << x++ << \" \";\ncout << x",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori de atribuire",
+    "lesson": "Incrementare",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint x = 5;\ncout << x++ << \" \";\ncout << x;\n```",
+    "hint_key": "ops_assign",
+    "explanation": "x++ afișează valoarea CURENTĂ (5) și DUPĂ incrementează. La a doua afișare x este 6.",
+    "answer": "5 6",
+    "question_data": {
+      "expected": "5 6"
+    },
+    "keywords": [
+      "x++",
+      "postincrement"
+    ]
+  },
+  {
+    "id": "q0031",
+    "title": "Ce afișează?\n```cpp\nint x = 5;\ncout << ++x << \" \";\ncout << x",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori de atribuire",
+    "lesson": "Incrementare",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint x = 5;\ncout << ++x << \" \";\ncout << x;\n```",
+    "hint_key": "ops_assign",
+    "explanation": "++x incrementează ÎNAINTE de afișare. Prima afișare: 6, a doua: 6.",
+    "answer": "6 6",
+    "question_data": {
+      "expected": "6 6"
+    },
+    "keywords": [
+      "++x",
+      "preincrement"
+    ]
+  },
+  {
+    "id": "q0032",
+    "title": "Ce valoare are expresia 5 & 3?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori pe biți",
+    "lesson": "Biți",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Ce valoare are expresia 5 & 3?",
+    "hint_key": "ops_bitwise",
+    "explanation": "5 = 101 în binar, 3 = 011. AND bit cu bit: 101 & 011 = 001 = 1.",
+    "answer": "1",
+    "question_data": {
+      "options": {
+        "A": "7",
+        "B": "1",
+        "C": "2",
+        "D": "15"
+      }
+    },
+    "keywords": [
+      "&",
+      "AND",
+      "biti"
+    ]
+  },
+  {
+    "id": "q0033",
+    "title": "Ce valoare are expresia 5 | 3?",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori pe biți",
+    "lesson": "Biți",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Ce valoare are expresia 5 | 3?",
+    "hint_key": "ops_bitwise",
+    "explanation": "5 = 101, 3 = 011. OR bit cu bit: 101 | 011 = 111 = 7.",
+    "answer": "7",
+    "question_data": {
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "15",
+        "D": "3"
+      }
+    },
+    "keywords": [
+      "|",
+      "OR",
+      "biti"
+    ]
+  },
+  {
+    "id": "q0034",
+    "title": "Care expresie este echivalentă cu n * 4, folosind operatori ",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori pe biți",
+    "lesson": "Biți",
+    "difficulty": "above-average",
+    "type": "multiple-choice",
+    "statement": "Care expresie este echivalentă cu n * 4, folosind operatori pe biți?",
+    "hint_key": "ops_bitwise",
+    "explanation": "Shift stânga cu k poziții înmulțește cu 2^k. 4 = 2^2, deci n << 2.",
+    "answer": "n << 2",
+    "question_data": {
+      "options": {
+        "A": "n >> 2",
+        "B": "n << 2",
+        "C": "n & 4",
+        "D": "n | 4"
+      }
+    },
+    "keywords": [
+      "<<",
+      "shift",
+      "inmultire"
+    ]
+  },
+  {
+    "id": "q0035",
+    "title": "Care expresie verifică dacă n este impar folosind operatori ",
+    "category": "Operatori și expresii",
+    "subcategory": "Operatori pe biți",
+    "lesson": "Biți",
+    "difficulty": "above-average",
+    "type": "multiple-choice",
+    "statement": "Care expresie verifică dacă n este impar folosind operatori pe biți?",
+    "hint_key": "ops_bitwise",
+    "explanation": "Ultimul bit al unui număr impar este 1. n & 1 testează ultimul bit.",
+    "answer": "n & 1",
+    "question_data": {
+      "options": {
+        "A": "n | 1",
+        "B": "n & 1",
+        "C": "n ^ 1",
+        "D": "n >> 1"
+      }
+    },
+    "keywords": [
+      "&",
+      "bit",
+      "impar"
+    ]
+  },
+  {
+    "id": "q0036",
+    "title": "Ce instrucțiune C++ se folosește pentru a lua decizii bazate",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "Condiții",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Ce instrucțiune C++ se folosește pentru a lua decizii bazate pe condiții?",
+    "hint_key": "dec_if",
+    "explanation": "if verifică o condiție și execută un bloc dacă aceasta e adevărată.",
+    "answer": "if",
+    "question_data": {
+      "options": {
+        "A": "loop",
+        "B": "if",
+        "C": "switch",
+        "D": "for"
+      }
+    },
+    "keywords": [
+      "if",
+      "decizie"
+    ]
+  },
+  {
+    "id": "q0037",
+    "title": "Completează codul care afișează 'pozitiv' dacă n > 0, altfel",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "if-else",
+    "difficulty": "easy",
+    "type": "fill-gaps",
+    "statement": "Completează codul care afișează 'pozitiv' dacă n > 0, altfel 'negativ sau zero':\n```cpp\nif (n ___ 0)\n    cout << \"pozitiv\";\n___ \n    cout << \"negativ sau zero\";\n```",
+    "hint_key": "dec_if",
+    "explanation": "if (conditie) ... else ... pentru două ramuri alternative.",
+    "answer": [
+      ">",
+      "else"
+    ],
+    "question_data": {
+      "blanks": [
+        ">",
+        "else"
+      ],
+      "options_per_blank": [
+        [
+          ">",
+          "<",
+          "==",
+          ">="
+        ],
+        [
+          "else",
+          "elif",
+          "otherwise",
+          "default"
+        ]
+      ]
+    },
+    "keywords": [
+      "if",
+      "else",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0038",
+    "title": "Ce afișează?\n```cpp\nint x = 0;\nif (x > 0) cout << \"A\";\nelse ",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "if-else",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint x = 0;\nif (x > 0) cout << \"A\";\nelse if (x < 0) cout << \"B\";\nelse cout << \"C\";\n```",
+    "hint_key": "dec_if",
+    "explanation": "x = 0 nu e > 0 (nu A), nu e < 0 (nu B), deci else → C.",
+    "answer": "C",
+    "question_data": {
+      "expected": "C"
+    },
+    "keywords": [
+      "if",
+      "else",
+      "output"
+    ]
+  },
+  {
+    "id": "q0039",
+    "title": "Fie a = 5, b = 3. Ce afișează?\n```cpp\nint max;\nif (a > b) ma",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "if-else",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Fie a = 5, b = 3. Ce afișează?\n```cpp\nint max;\nif (a > b) max = a;\nelse max = b;\ncout << max;\n```",
+    "hint_key": "dec_if",
+    "explanation": "a = 5 > b = 3, deci condiția e adevărată, max = a = 5.",
+    "answer": "5",
+    "question_data": {
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "8",
+        "D": "2"
+      }
+    },
+    "keywords": [
+      "max",
+      "if-else"
+    ]
+  },
+  {
+    "id": "q0040",
+    "title": "Găsește eroarea:\n```cpp\nint n = 10;\nif (n = 0)\n    cout << \"",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "if-else",
+    "difficulty": "mediocre",
+    "type": "debug-code",
+    "statement": "Găsește eroarea:\n```cpp\nint n = 10;\nif (n = 0)\n    cout << \"zero\";\nelse\n    cout << \"non-zero\";\n```",
+    "hint_key": "dec_if",
+    "explanation": "= este atribuire, == este comparație. if (n = 0) atribuie 0 lui n, nu compară.",
+    "answer": "if (n = 0) trebuie scris if (n == 0)",
+    "question_data": {
+      "buggy_line": "if (n = 0)",
+      "fixed_line": "if (n == 0)"
+    },
+    "keywords": [
+      "==",
+      "=",
+      "bug",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0041",
+    "title": "Ordonează liniile pentru a găsi maximul a trei numere a, b, ",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "if-else",
+    "difficulty": "above-average",
+    "type": "order-blocks",
+    "statement": "Ordonează liniile pentru a găsi maximul a trei numere a, b, c:",
+    "hint_key": "dec_if",
+    "explanation": "Compară mai întâi a cu b, stochează maximul, apoi compară cu c.",
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "question_data": {
+      "blocks": [
+        "int max;",
+        "if (a > b) max = a;",
+        "else max = b;",
+        "if (c > max) max = c;",
+        "cout << max;",
+        ""
+      ]
+    },
+    "keywords": [
+      "max",
+      "if",
+      "nested"
+    ]
+  },
+  {
+    "id": "q0042",
+    "title": "Ce afișează?\n```cpp\nint a = 4, b = 4;\nif (a > b)\n    cout <<",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "if-else",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint a = 4, b = 4;\nif (a > b)\n    cout << \"A\";\nelse if (a == b)\n    cout << \"B\";\nelse\n    cout << \"C\";\n```",
+    "hint_key": "dec_if",
+    "explanation": "a = b = 4. a > b e fals, a == b e adevărat → B.",
+    "answer": "B",
+    "question_data": {
+      "expected": "B"
+    },
+    "keywords": [
+      "else if",
+      "comparatie"
+    ]
+  },
+  {
+    "id": "q0043",
+    "title": "Ce se întâmplă dacă uităm `break` în interiorul unui case di",
+    "category": "Structura de decizie",
+    "subcategory": "switch",
+    "lesson": "switch",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Ce se întâmplă dacă uităm `break` în interiorul unui case din switch?",
+    "hint_key": "dec_switch",
+    "explanation": "Fără break, execuția continuă în cazul următor (fall-through).",
+    "answer": "Execuția continuă în cazul următor (fall-through)",
+    "question_data": {
+      "options": {
+        "A": "Compilatorul dă eroare",
+        "B": "Execuția continuă în cazul următor (fall-through)",
+        "C": "Se iese din switch",
+        "D": "Se execută default"
+      }
+    },
+    "keywords": [
+      "break",
+      "switch",
+      "fall-through"
+    ]
+  },
+  {
+    "id": "q0044",
+    "title": "Ce afișează?\n```cpp\nint x = 2;\nswitch(x) {\n    case 1: cout ",
+    "category": "Structura de decizie",
+    "subcategory": "switch",
+    "lesson": "switch",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint x = 2;\nswitch(x) {\n    case 1: cout << \"unu\"; break;\n    case 2: cout << \"doi\"; break;\n    case 3: cout << \"trei\"; break;\n    default: cout << \"altul\";\n}\n```",
+    "hint_key": "dec_switch",
+    "explanation": "x = 2, se execută case 2, break oprește.",
+    "answer": "doi",
+    "question_data": {
+      "expected": "doi"
+    },
+    "keywords": [
+      "switch",
+      "case",
+      "break"
+    ]
+  },
+  {
+    "id": "q0045",
+    "title": "Ce afișează?\n```cpp\nint x = 1;\nswitch(x) {\n    case 1: cout ",
+    "category": "Structura de decizie",
+    "subcategory": "switch",
+    "lesson": "switch",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint x = 1;\nswitch(x) {\n    case 1: cout << \"A\";\n    case 2: cout << \"B\"; break;\n    case 3: cout << \"C\";\n}\n```",
+    "hint_key": "dec_switch",
+    "explanation": "case 1 nu are break → fall-through la case 2. Se afișează A, B, apoi break.",
+    "answer": "AB",
+    "question_data": {
+      "expected": "AB"
+    },
+    "keywords": [
+      "switch",
+      "fall-through",
+      "break"
+    ]
+  },
+  {
+    "id": "q0046",
+    "title": "De câte ori se execută corpul buclei?\n```cpp\nint i = 1;\nwhil",
+    "category": "Structuri repetitive",
+    "subcategory": "while",
+    "lesson": "Bucla while",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "De câte ori se execută corpul buclei?\n```cpp\nint i = 1;\nwhile (i <= 5) i++;\n```",
+    "hint_key": "rep_while",
+    "explanation": "i ia valorile 1,2,3,4,5 și la i=6 condiția devine falsă. 5 iterații.",
+    "answer": "5",
+    "question_data": {
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "infinit"
+      }
+    },
+    "keywords": [
+      "while",
+      "iteratii",
+      "count"
+    ]
+  },
+  {
+    "id": "q0047",
+    "title": "Ce afișează?\n```cpp\nint i = 1;\nwhile (i <= 4) {\n    cout << ",
+    "category": "Structuri repetitive",
+    "subcategory": "while",
+    "lesson": "Bucla while",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint i = 1;\nwhile (i <= 4) {\n    cout << i << \" \";\n    i++;\n}\n```",
+    "hint_key": "rep_while",
+    "explanation": "i ia valorile 1, 2, 3, 4 (la i=5 condiția e falsă).",
+    "answer": "1 2 3 4 ",
+    "question_data": {
+      "expected": "1 2 3 4 "
+    },
+    "keywords": [
+      "while",
+      "output",
+      "secventa"
+    ]
+  },
+  {
+    "id": "q0048",
+    "title": "Ordonează blocurile pentru a calcula suma cifrelor numărului",
+    "category": "Structuri repetitive",
+    "subcategory": "while",
+    "lesson": "Suma cifrelor",
+    "difficulty": "mediocre",
+    "type": "order-blocks",
+    "statement": "Ordonează blocurile pentru a calcula suma cifrelor numărului n:",
+    "hint_key": "rep_while",
+    "explanation": "Extragem cifra cu n%10, adăugăm la sumă, eliminăm cifra cu n/=10.",
+    "answer": [
+      1,
+      3,
+      0,
+      2,
+      4
+    ],
+    "question_data": {
+      "blocks": [
+        "int s = 0;",
+        "s += n % 10;",
+        "while (n > 0) {",
+        "    n /= 10;\n}",
+        "cout << s;"
+      ]
+    },
+    "keywords": [
+      "cifre",
+      "suma",
+      "while"
+    ]
+  },
+  {
+    "id": "q0049",
+    "title": "Găsește eroarea (bucla infinită):\n```cpp\nint i = 0;\nwhile (i",
+    "category": "Structuri repetitive",
+    "subcategory": "while",
+    "lesson": "Bucla while",
+    "difficulty": "mediocre",
+    "type": "debug-code",
+    "statement": "Găsește eroarea (bucla infinită):\n```cpp\nint i = 0;\nwhile (i < 10) {\n    cout << i << \" \";\n}\n```",
+    "hint_key": "rep_while",
+    "explanation": "Lipsește incrementarea. i rămâne 0 mereu → buclă infinită.",
+    "answer": "Lipsește i++ (sau i = i + 1) în corpul buclei",
+    "question_data": {
+      "buggy_line": "while (i < 10) {",
+      "fix_hint": "Adaugă i++ în corp"
+    },
+    "keywords": [
+      "while",
+      "infinit",
+      "incrementare",
+      "bug"
+    ]
+  },
+  {
+    "id": "q0050",
+    "title": "Scrie o expresie/linie de cod care calculează suma cifrelor ",
+    "category": "Structuri repetitive",
+    "subcategory": "while",
+    "lesson": "Cifre",
+    "difficulty": "hard",
+    "type": "code-snippet",
+    "statement": "Scrie o expresie/linie de cod care calculează suma cifrelor numărului n (n > 0). Variabilele disponibile: int s=0; se execută în while(n>0) { ___ }",
+    "hint_key": "rep_while",
+    "explanation": "La fiecare iterație adăugăm ultima cifră (n%10) la sumă, apoi eliminăm (n/=10).",
+    "answer": "s += n % 10; n /= 10;",
+    "question_data": {
+      "placeholder": "s += ___; n ___= 10;",
+      "accept_patterns": [
+        "s\\s*\\+=\\s*n\\s*%\\s*10\\s*;\\s*n\\s*/=\\s*10\\s*;"
+      ]
+    },
+    "keywords": [
+      "cifre",
+      "suma",
+      "while"
+    ]
+  },
+  {
+    "id": "q0051",
+    "title": "Câte ori se execută corpul buclei dacă condiția e falsă de l",
+    "category": "Structuri repetitive",
+    "subcategory": "do-while",
+    "lesson": "do-while",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Câte ori se execută corpul buclei dacă condiția e falsă de la început?\n```cpp\ndo {\n    cout << \"X\";\n} while (false);\n```",
+    "hint_key": "rep_dowhile",
+    "explanation": "do-while execută corpul CEL PUȚIN O DATĂ indiferent de condiție.",
+    "answer": "1",
+    "question_data": {
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "infinit"
+      }
+    },
+    "keywords": [
+      "do-while",
+      "executie",
+      "cel-putin-o-data"
+    ]
+  },
+  {
+    "id": "q0052",
+    "title": "Ce afișează?\n```cpp\nint i = 5;\ndo {\n    cout << i << \" \";\n  ",
+    "category": "Structuri repetitive",
+    "subcategory": "do-while",
+    "lesson": "do-while",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint i = 5;\ndo {\n    cout << i << \" \";\n    i++;\n} while (i < 5);\n```",
+    "hint_key": "rep_dowhile",
+    "explanation": "Corpul se execută cu i=5, se afișează 5, i devine 6. Condiția 6 < 5 e falsă → stop.",
+    "answer": "5 ",
+    "question_data": {
+      "expected": "5 "
+    },
+    "keywords": [
+      "do-while",
+      "output"
+    ]
+  },
+  {
+    "id": "q0053",
+    "title": "Completează bucla for care afișează numerele de la 1 la n:\n`",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Bucla for",
+    "difficulty": "easy",
+    "type": "fill-gaps",
+    "statement": "Completează bucla for care afișează numerele de la 1 la n:\n```cpp\nfor (int i = ___; i <= n; ___)\n    cout << i << \" \";\n```",
+    "hint_key": "rep_for",
+    "explanation": "Bucla for: inițializare, condiție, actualizare. Inițiem cu 1, creștem cu i++.",
+    "answer": [
+      "1",
+      "i++"
+    ],
+    "question_data": {
+      "blanks": [
+        "1",
+        "i++"
+      ],
+      "options_per_blank": [
+        [
+          "0",
+          "1",
+          "n",
+          "i"
+        ],
+        [
+          "i++",
+          "i--",
+          "i+1",
+          "i*2"
+        ]
+      ]
+    },
+    "keywords": [
+      "for",
+      "initializare",
+      "increment"
+    ]
+  },
+  {
+    "id": "q0054",
+    "title": "Ce afișează?\n```cpp\nfor (int i = 0; i < 5; i++)\n    cout << ",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Bucla for",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nfor (int i = 0; i < 5; i++)\n    cout << i * 2 << \" \";\n```",
+    "hint_key": "rep_for",
+    "explanation": "i ia valorile 0,1,2,3,4. Se afișează 0,2,4,6,8.",
+    "answer": "0 2 4 6 8 ",
+    "question_data": {
+      "expected": "0 2 4 6 8 "
+    },
+    "keywords": [
+      "for",
+      "output",
+      "calcul"
+    ]
+  },
+  {
+    "id": "q0055",
+    "title": "Ce afișează?\n```cpp\nfor (int i = 10; i >= 1; i -= 3)\n    cou",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Bucla for",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nfor (int i = 10; i >= 1; i -= 3)\n    cout << i << \" \";\n```",
+    "hint_key": "rep_for",
+    "explanation": "i ia valorile 10, 7, 4, 1 (la i = -2 condiția e falsă).",
+    "answer": "10 7 4 1 ",
+    "question_data": {
+      "expected": "10 7 4 1 "
+    },
+    "keywords": [
+      "for",
+      "decrement",
+      "secventa"
+    ]
+  },
+  {
+    "id": "q0056",
+    "title": "Scrie bucla for care calculează suma elementelor unui vector",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Suma elementelor",
+    "difficulty": "mediocre",
+    "type": "code-snippet",
+    "statement": "Scrie bucla for care calculează suma elementelor unui vector v cu n elemente (indexat de la 0). Variabila s este inițializată cu 0.",
+    "hint_key": "rep_for",
+    "explanation": "Parcurgem de la i=0 la i<n și adăugăm v[i] la s.",
+    "answer": "for (int i = 0; i < n; i++) s += v[i];",
+    "question_data": {
+      "placeholder": "for (___ ; ___ ; ___) s += v[i];",
+      "accept_patterns": [
+        "for\\s*\\(\\s*int\\s+i\\s*=\\s*0\\s*;\\s*i\\s*<\\s*n\\s*;\\s*i\\+\\+\\s*\\)\\s*s\\s*\\+=\\s*v\\[i\\]\\s*;"
+      ]
+    },
+    "keywords": [
+      "for",
+      "sum",
+      "vector"
+    ]
+  },
+  {
+    "id": "q0057",
+    "title": "Ce afișează?\n```cpp\nfor (int i = 1; i <= 3; i++)\n    for (in",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Bucle imbricate",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nfor (int i = 1; i <= 3; i++)\n    for (int j = 1; j <= 2; j++)\n        cout << i*j << \" \";\n```",
+    "hint_key": "rep_nested",
+    "explanation": "i=1: j=1→1, j=2→2. i=2: j=1→2, j=2→4. i=3: j=1→3, j=2→6.",
+    "answer": "1 2 2 4 3 6 ",
+    "question_data": {
+      "expected": "1 2 2 4 3 6 "
+    },
+    "keywords": [
+      "nested",
+      "for",
+      "output"
+    ]
+  },
+  {
+    "id": "q0058",
+    "title": "Ce afișează?\n```cpp\nfor (int i = 1; i <= 10; i++) {\n    if (",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "break/continue",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nfor (int i = 1; i <= 10; i++) {\n    if (i % 2 == 0) continue;\n    if (i > 7) break;\n    cout << i << \" \";\n}\n```",
+    "hint_key": "rep_break",
+    "explanation": "continue sare numerele pare. break iese la i=9>7. Afișate: numerele impare 1,3,5,7.",
+    "answer": "1 3 5 7 ",
+    "question_data": {
+      "expected": "1 3 5 7 "
+    },
+    "keywords": [
+      "break",
+      "continue",
+      "for"
+    ]
+  },
+  {
+    "id": "q0059",
+    "title": "Ce afișează?\n```cpp\nint s = 0;\nfor (int i = 1; i <= 4; i++)\n",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Bucle imbricate",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint s = 0;\nfor (int i = 1; i <= 4; i++)\n    for (int j = i; j <= 4; j++)\n        s++;\ncout << s;\n```",
+    "hint_key": "rep_nested",
+    "explanation": "i=1: j=1,2,3,4 (4 pași). i=2: j=2,3,4 (3 pași). i=3: 2 pași. i=4: 1 pas. Total: 10.",
+    "answer": "10",
+    "question_data": {
+      "options": {
+        "A": "6",
+        "B": "10",
+        "C": "16",
+        "D": "4"
+      }
+    },
+    "keywords": [
+      "nested",
+      "count",
+      "algoritm"
+    ]
+  }
+]

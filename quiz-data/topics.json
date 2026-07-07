@@ -1,0 +1,166 @@
+[
+  {
+    "id": "intro",
+    "label": "Introducere în C++",
+    "subtopics": [
+      {
+        "id": "intro_hello",
+        "label": "Hello World"
+      },
+      {
+        "id": "intro_io",
+        "label": "cin / cout"
+      },
+      {
+        "id": "intro_vars",
+        "label": "Variabile și tipuri"
+      }
+    ]
+  },
+  {
+    "id": "ops",
+    "label": "Operatori și expresii",
+    "subtopics": [
+      {
+        "id": "ops_arith",
+        "label": "Operatori aritmetici"
+      },
+      {
+        "id": "ops_rel",
+        "label": "Operatori relaționali"
+      },
+      {
+        "id": "ops_assign",
+        "label": "Operatori de atribuire"
+      },
+      {
+        "id": "ops_bitwise",
+        "label": "Operatori pe biți"
+      }
+    ]
+  },
+  {
+    "id": "decizie",
+    "label": "Structura de decizie",
+    "subtopics": [
+      {
+        "id": "dec_if",
+        "label": "if / if-else"
+      },
+      {
+        "id": "dec_switch",
+        "label": "switch"
+      }
+    ]
+  },
+  {
+    "id": "repetitiv",
+    "label": "Structuri repetitive",
+    "subtopics": [
+      {
+        "id": "rep_while",
+        "label": "while"
+      },
+      {
+        "id": "rep_dowhile",
+        "label": "do-while"
+      },
+      {
+        "id": "rep_for",
+        "label": "for"
+      },
+      {
+        "id": "rep_nested",
+        "label": "Bucle imbricate"
+      }
+    ]
+  },
+  {
+    "id": "tablouri",
+    "label": "Tablouri unidimensionale",
+    "subtopics": [
+      {
+        "id": "tab_decl",
+        "label": "Declarare și parcurgere"
+      },
+      {
+        "id": "tab_ops",
+        "label": "Operații pe vectori"
+      },
+      {
+        "id": "tab_sort",
+        "label": "Sortare"
+      },
+      {
+        "id": "tab_search",
+        "label": "Căutare"
+      },
+      {
+        "id": "tab_classic",
+        "label": "Probleme clasice"
+      }
+    ]
+  },
+  {
+    "id": "siruri",
+    "label": "Șiruri de caractere",
+    "subtopics": [
+      {
+        "id": "str_decl",
+        "label": "Declarare și funcții"
+      },
+      {
+        "id": "str_ops",
+        "label": "Operații pe șiruri"
+      }
+    ]
+  },
+  {
+    "id": "alg",
+    "label": "Algoritmi elementari",
+    "subtopics": [
+      {
+        "id": "alg_cifre",
+        "label": "Prelucrarea cifrelor"
+      },
+      {
+        "id": "alg_div",
+        "label": "Divizibilitate"
+      },
+      {
+        "id": "alg_maxmin",
+        "label": "Maxime și minime"
+      },
+      {
+        "id": "alg_sume",
+        "label": "Sume, produse, numărări"
+      },
+      {
+        "id": "alg_numaratie",
+        "label": "Baze de numerație"
+      },
+      {
+        "id": "alg_siruri_gen",
+        "label": "Generarea șirurilor"
+      }
+    ]
+  },
+  {
+    "id": "func",
+    "label": "Subprograme",
+    "subtopics": [
+      {
+        "id": "func_def",
+        "label": "Definire și apel"
+      },
+      {
+        "id": "func_rec",
+        "label": "Recursivitate"
+      },
+      {
+        "id": "func_param",
+        "label": "Parametri"
+      }
+    ]
+  }
+]

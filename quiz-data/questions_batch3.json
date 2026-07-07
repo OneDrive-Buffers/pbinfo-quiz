@@ -1,0 +1,951 @@
+[
+  {
+    "id": "q0200",
+    "title": "Ce cuvânt cheie se folosește pentru o funcție care nu return",
+    "category": "Subprograme",
+    "subcategory": "Definire și apel",
+    "lesson": "Funcții",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Ce cuvânt cheie se folosește pentru o funcție care nu returnează nicio valoare?",
+    "hint_key": "func_def",
+    "explanation": "void indică că funcția nu returnează nimic.",
+    "answer": "void",
+    "question_data": {
+      "options": {
+        "A": "null",
+        "B": "void",
+        "C": "none",
+        "D": "int"
+      }
+    },
+    "keywords": [
+      "void",
+      "functie",
+      "tip"
+    ]
+  },
+  {
+    "id": "q0201",
+    "title": "Ce afișează?\n```cpp\nint dublu(int x) { return x * 2; }\nint m",
+    "category": "Subprograme",
+    "subcategory": "Definire și apel",
+    "lesson": "Funcții",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint dublu(int x) { return x * 2; }\nint main() {\n    cout << dublu(5);\n    return 0;\n}\n```",
+    "hint_key": "func_def",
+    "explanation": "dublu(5) returnează 5 * 2 = 10.",
+    "answer": "10",
+    "question_data": {
+      "expected": "10"
+    },
+    "keywords": [
+      "functie",
+      "return",
+      "apel"
+    ]
+  },
+  {
+    "id": "q0202",
+    "title": "Completează funcția care calculează suma a, b:\n```cpp\n___ su",
+    "category": "Subprograme",
+    "subcategory": "Definire și apel",
+    "lesson": "Funcții",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Completează funcția care calculează suma a, b:\n```cpp\n___ suma(int a, int b) {\n    ___ a + b;\n}\n```",
+    "hint_key": "func_def",
+    "explanation": "Tipul de return este int (suma a doi întregi este întreg). Se folosește return.",
+    "answer": [
+      "int",
+      "return"
+    ],
+    "question_data": {
+      "blanks": [
+        "int",
+        "return"
+      ],
+      "options_per_blank": [
+        [
+          "int",
+          "void",
+          "float",
+          "double"
+        ],
+        [
+          "return",
+          "cout",
+          "print",
+          "out"
+        ]
+      ]
+    },
+    "keywords": [
+      "functie",
+      "return",
+      "suma"
+    ]
+  },
+  {
+    "id": "q0203",
+    "title": "Găsește eroarea:\n```cpp\nint max(int a, int b) {\n    if (a > ",
+    "category": "Subprograme",
+    "subcategory": "Definire și apel",
+    "lesson": "Funcții",
+    "difficulty": "mediocre",
+    "type": "debug-code",
+    "statement": "Găsește eroarea:\n```cpp\nint max(int a, int b) {\n    if (a > b) return a;\n}\nint main() {\n    cout << max(3, 5);\n    return 0;\n}\n```",
+    "hint_key": "func_def",
+    "explanation": "Funcția nu returnează nicio valoare pentru cazul a <= b. Trebuie adăugat else return b;",
+    "answer": "Lipsește else return b; (sau return b; după if)",
+    "question_data": {
+      "buggy_line": "    if (a > b) return a;",
+      "fix_hint": "Adaugă: else return b;"
+    },
+    "keywords": [
+      "functie",
+      "return",
+      "bug"
+    ]
+  },
+  {
+    "id": "q0204",
+    "title": "Ce afișează?\n```cpp\nvoid adauga(int x) { x += 10; }\nint main",
+    "category": "Subprograme",
+    "subcategory": "Definire și apel",
+    "lesson": "Parametri",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nvoid adauga(int x) { x += 10; }\nint main() {\n    int a = 5;\n    adauga(a);\n    cout << a;\n    return 0;\n}\n```",
+    "hint_key": "func_param",
+    "explanation": "Parametrul x este o copie a lui a. Modificarea lui x nu afectează a.",
+    "answer": "5",
+    "question_data": {
+      "expected": "5"
+    },
+    "keywords": [
+      "parametru",
+      "valoare",
+      "copie"
+    ]
+  },
+  {
+    "id": "q0205",
+    "title": "Ce afișează?\n```cpp\nvoid adauga(int &x) { x += 10; }\nint mai",
+    "category": "Subprograme",
+    "subcategory": "Parametri",
+    "lesson": "Referință",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nvoid adauga(int &x) { x += 10; }\nint main() {\n    int a = 5;\n    adauga(a);\n    cout << a;\n    return 0;\n}\n```",
+    "hint_key": "func_param",
+    "explanation": "Parametrul &x este o referință la a. Modificarea lui x modifică a.",
+    "answer": "15",
+    "question_data": {
+      "expected": "15"
+    },
+    "keywords": [
+      "referinta",
+      "&",
+      "parametru"
+    ]
+  },
+  {
+    "id": "q0206",
+    "title": "Cum se declară o funcție care primește un vector v cu n elem",
+    "category": "Subprograme",
+    "subcategory": "Parametri",
+    "lesson": "Tablouri ca parametri",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Cum se declară o funcție care primește un vector v cu n elemente și afișează elementele sale?",
+    "hint_key": "func_param",
+    "explanation": "Tablourile se transmit prin referință implicit (se specifică [] fără dimensiune).",
+    "answer": "void afisare(int v[], int n)",
+    "question_data": {
+      "options": {
+        "A": "void afisare(int v[n])",
+        "B": "void afisare(int v[], int n)",
+        "C": "void afisare(int[] v, int n)",
+        "D": "void afisare(vector v, int n)"
+      }
+    },
+    "keywords": [
+      "tablou",
+      "parametru",
+      "declarare"
+    ]
+  },
+  {
+    "id": "q0207",
+    "title": "Ce afișează?\n```cpp\nvoid modifica(int v[], int n) {\n    for ",
+    "category": "Subprograme",
+    "subcategory": "Parametri",
+    "lesson": "Tablouri ca parametri",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nvoid modifica(int v[], int n) {\n    for (int i = 0; i < n; i++) v[i] *= 2;\n}\nint main() {\n    int v[] = {1, 2, 3};\n    modifica(v, 3);\n    cout << v[1];\n    return 0;\n}\n```",
+    "hint_key": "func_param",
+    "explanation": "Tablourile se transmit prin referință. v[1] = 2 * 2 = 4.",
+    "answer": "4",
+    "question_data": {
+      "expected": "4"
+    },
+    "keywords": [
+      "tablou",
+      "referinta",
+      "modificare"
+    ]
+  },
+  {
+    "id": "q0208",
+    "title": "Ce afișează?\n```cpp\nint f(int n) {\n    if (n == 0) return 1;",
+    "category": "Subprograme",
+    "subcategory": "Recursivitate",
+    "lesson": "Recursie",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint f(int n) {\n    if (n == 0) return 1;\n    return n * f(n - 1);\n}\nint main() {\n    cout << f(4);\n    return 0;\n}\n```",
+    "hint_key": "func_rec",
+    "explanation": "f(4) = 4 * f(3) = 4 * 3 * f(2) = 4 * 3 * 2 * f(1) = 4 * 3 * 2 * 1 * f(0) = 24.",
+    "answer": "24",
+    "question_data": {
+      "expected": "24"
+    },
+    "keywords": [
+      "recursie",
+      "factorial",
+      "output"
+    ]
+  },
+  {
+    "id": "q0209",
+    "title": "Ordonează blocurile funcției recursive care calculează al n-",
+    "category": "Subprograme",
+    "subcategory": "Recursivitate",
+    "lesson": "Recursie",
+    "difficulty": "hard",
+    "type": "order-blocks",
+    "statement": "Ordonează blocurile funcției recursive care calculează al n-lea termen Fibonacci:",
+    "hint_key": "func_rec",
+    "explanation": "Caz de bază: n <= 1. Apel recursiv: fib(n-1) + fib(n-2).",
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "question_data": {
+      "blocks": [
+        "int fib(int n) {",
+        "    if (n <= 1) return n;",
+        "    return fib(n - 1) + fib(n - 2);",
+        "}"
+      ]
+    },
+    "keywords": [
+      "fibonacci",
+      "recursie",
+      "caz-baza"
+    ]
+  },
+  {
+    "id": "q0210",
+    "title": "Ce afișează?\n```cpp\nvoid f(int n) {\n    if (n == 0) return;\n",
+    "category": "Subprograme",
+    "subcategory": "Recursivitate",
+    "lesson": "Recursie",
+    "difficulty": "very-hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nvoid f(int n) {\n    if (n == 0) return;\n    f(n - 1);\n    cout << n << \" \";\n}\nint main() { f(4); return 0; }\n```",
+    "hint_key": "func_rec",
+    "explanation": "Apelul recursiv vine ÎNAINTE de cout, deci afișarea e în ordine crescătoare după ce stiva se desfășoară.",
+    "answer": "1 2 3 4 ",
+    "question_data": {
+      "expected": "1 2 3 4 "
+    },
+    "keywords": [
+      "recursie",
+      "stiva",
+      "ordine"
+    ]
+  },
+  {
+    "id": "q0211",
+    "title": "Ce afișează?\n```cpp\nvoid f(int n) {\n    if (n == 0) return;\n",
+    "category": "Subprograme",
+    "subcategory": "Recursivitate",
+    "lesson": "Recursie",
+    "difficulty": "very-hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nvoid f(int n) {\n    if (n == 0) return;\n    cout << n << \" \";\n    f(n - 1);\n}\nint main() { f(4); return 0; }\n```",
+    "hint_key": "func_rec",
+    "explanation": "cout vine ÎNAINTE de apelul recursiv, deci afișăm 4,3,2,1 în ordine descrescătoare.",
+    "answer": "4 3 2 1 ",
+    "question_data": {
+      "expected": "4 3 2 1 "
+    },
+    "keywords": [
+      "recursie",
+      "stiva",
+      "ordine"
+    ]
+  },
+  {
+    "id": "q0212",
+    "title": "Câte stele afișează?\n```cpp\nfor (int i = 1; i <= 4; i++)\n   ",
+    "category": "Structuri repetitive",
+    "subcategory": "Bucle imbricate",
+    "lesson": "Algoritme",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Câte stele afișează?\n```cpp\nfor (int i = 1; i <= 4; i++)\n    for (int j = 1; j <= i; j++)\n        cout << \"*\";\n```",
+    "hint_key": "rep_nested",
+    "explanation": "i=1: 1 stea. i=2: 2 stele. i=3: 3 stele. i=4: 4 stele. Total: 1+2+3+4=10.",
+    "answer": "10",
+    "question_data": {
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "10",
+        "D": "16"
+      }
+    },
+    "keywords": [
+      "stele",
+      "triunghi",
+      "nested"
+    ]
+  },
+  {
+    "id": "q0213",
+    "title": "Scrie codul care afișează un triunghi de stele cu n rânduri ",
+    "category": "Structuri repetitive",
+    "subcategory": "Bucle imbricate",
+    "lesson": "Algoritme",
+    "difficulty": "hard",
+    "type": "code-snippet",
+    "statement": "Scrie codul care afișează un triunghi de stele cu n rânduri (linia i are i stele).",
+    "hint_key": "rep_nested",
+    "explanation": "Buclă externă pentru rânduri (i de la 1 la n), buclă internă pentru stele (j de la 1 la i).",
+    "answer": "for (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= i; j++) cout << \"*\";\n    cout << endl;\n}",
+    "question_data": {
+      "placeholder": "for (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= ___; j++) cout << \"*\";\n    cout << endl;\n}"
+    },
+    "keywords": [
+      "stele",
+      "triunghi",
+      "nested"
+    ]
+  },
+  {
+    "id": "q0214",
+    "title": "Care algoritm eficient găsește suma maximă a unui subșir con",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Subsir",
+    "difficulty": "contest-level",
+    "type": "multiple-choice",
+    "statement": "Care algoritm eficient găsește suma maximă a unui subșir contiguu (Kadane's)?",
+    "hint_key": "tab_classic",
+    "explanation": "Kadane: suma_max=v[0], suma_cur=v[0]. Pentru fiecare element: suma_cur = max(v[i], suma_cur+v[i]).",
+    "answer": "Kadane's algorithm: O(n)",
+    "question_data": {
+      "options": {
+        "A": "Bubble sort + căutare binară: O(n log n)",
+        "B": "Forță brută: O(n³)",
+        "C": "Kadane's algorithm: O(n)",
+        "D": "Recursie: O(2^n)"
+      }
+    },
+    "keywords": [
+      "kadane",
+      "subsir",
+      "suma-maxima"
+    ]
+  },
+  {
+    "id": "q0215",
+    "title": "Fie v = {-2, 1, -3, 4, -1, 2, 1, -5, 4}. Care este suma maxi",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Subsir",
+    "difficulty": "contest-level",
+    "type": "output-prediction",
+    "statement": "Fie v = {-2, 1, -3, 4, -1, 2, 1, -5, 4}. Care este suma maximă a unui subșir contiguu?",
+    "hint_key": "tab_classic",
+    "explanation": "Subșirul {4, -1, 2, 1} are suma 6, cea mai mare posibilă.",
+    "answer": "6",
+    "question_data": {
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      }
+    },
+    "keywords": [
+      "kadane",
+      "subsir",
+      "maxim"
+    ]
+  },
+  {
+    "id": "q0216",
+    "title": "Scrie Ciurul lui Eratostene pentru a marca numerele prime pâ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Numere prime",
+    "difficulty": "extra-hard",
+    "type": "code-snippet",
+    "statement": "Scrie Ciurul lui Eratostene pentru a marca numerele prime până la N=100. Declari int ciur[101] = {0};",
+    "hint_key": "alg_div",
+    "explanation": "Ciurul: marcăm multiplii fiecărui număr p>=2 ca ne-prime.",
+    "answer": "for (int i = 2; i <= 100; i++)\n    if (ciur[i] == 0)\n        for (int j = 2*i; j <= 100; j += i)\n            ciur[j] = 1;",
+    "question_data": {
+      "placeholder": "for (int i = 2; i <= 100; i++)\n    if (ciur[i] == 0)\n        for (int j = 2*i; j <= 100; j += ___)\n            ciur[j] = 1;"
+    },
+    "keywords": [
+      "ciur",
+      "eratostene",
+      "prime"
+    ]
+  },
+  {
+    "id": "q0217",
+    "title": "Teorema lui Bertrand afirmă că pentru orice n > 1 există un ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Numere prime",
+    "difficulty": "excruciatingly-difficult",
+    "type": "multiple-choice",
+    "statement": "Teorema lui Bertrand afirmă că pentru orice n > 1 există un număr prim p cu n < p < 2n. Care este cel mai mic număr prim mai mare decât 50?",
+    "hint_key": "alg_div",
+    "explanation": "53 este număr prim (nu se divide cu 2,3,5,7 care sunt ≤ sqrt(53)≈7.3).",
+    "answer": "53",
+    "question_data": {
+      "options": {
+        "A": "51",
+        "B": "52",
+        "C": "53",
+        "D": "55"
+      }
+    },
+    "keywords": [
+      "prime",
+      "bertrand",
+      "teorema"
+    ]
+  },
+  {
+    "id": "q0218",
+    "title": "Care este complexitatea timp a algoritmului bubble sort în c",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Sortare",
+    "lesson": "Complexitate",
+    "difficulty": "above-average",
+    "type": "multiple-choice",
+    "statement": "Care este complexitatea timp a algoritmului bubble sort în cazul cel mai rău?",
+    "hint_key": "tab_sort",
+    "explanation": "Bubble sort compară toate perechile de elemente vecine: O(n²).",
+    "answer": "O(n²)",
+    "question_data": {
+      "options": {
+        "A": "O(n)",
+        "B": "O(n log n)",
+        "C": "O(n²)",
+        "D": "O(n³)"
+      }
+    },
+    "keywords": [
+      "complexitate",
+      "bubble-sort",
+      "O(n^2)"
+    ]
+  },
+  {
+    "id": "q0219",
+    "title": "Câte comparații face căutarea binară pentru a găsi un elemen",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Căutare",
+    "lesson": "Complexitate",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Câte comparații face căutarea binară pentru a găsi un element într-un vector de 1024 elemente?",
+    "hint_key": "tab_search",
+    "explanation": "Căutarea binară: log₂(1024) = 10 comparații maxim.",
+    "answer": "10",
+    "question_data": {
+      "options": {
+        "A": "1024",
+        "B": "512",
+        "C": "10",
+        "D": "32"
+      }
+    },
+    "keywords": [
+      "cautare-binara",
+      "complexitate",
+      "log"
+    ]
+  },
+  {
+    "id": "q0220",
+    "title": "Ce afișează?\n```cpp\nint n = 100, s = 0;\nfor (int i = 1; i <=",
+    "category": "Algoritmi elementari",
+    "subcategory": "Sume, produse, numărări",
+    "lesson": "Serii",
+    "difficulty": "difficult",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint n = 100, s = 0;\nfor (int i = 1; i <= n; i += 2)\n    s += i;\ncout << s;\n```",
+    "hint_key": "alg_sume",
+    "explanation": "Suma numerelor impare de la 1 la 99 (50 de numere). Formula: n² = 50² = 2500.",
+    "answer": "2500",
+    "question_data": {
+      "expected": "2500"
+    },
+    "keywords": [
+      "suma",
+      "impare",
+      "formula"
+    ]
+  },
+  {
+    "id": "q0221",
+    "title": "Ce valoare în baza 10 are numărul hexazecimal A3?",
+    "category": "Algoritmi elementari",
+    "subcategory": "Baze de numerație",
+    "lesson": "Baza 16",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Ce valoare în baza 10 are numărul hexazecimal A3?",
+    "hint_key": "alg_numaratie",
+    "explanation": "A3 (hex) = 10*16 + 3 = 160 + 3 = 163.",
+    "answer": "163",
+    "question_data": {
+      "options": {
+        "A": "103",
+        "B": "163",
+        "C": "1003",
+        "D": "A3"
+      }
+    },
+    "keywords": [
+      "hex",
+      "baza16",
+      "conversie"
+    ]
+  },
+  {
+    "id": "q0222",
+    "title": "Conjectura Collatz: pornind de la n>1, dacă e par îl împărți",
+    "category": "Algoritmi elementari",
+    "subcategory": "Generarea șirurilor",
+    "lesson": "Colatz",
+    "difficulty": "olympiad-difficult",
+    "type": "multiple-choice",
+    "statement": "Conjectura Collatz: pornind de la n>1, dacă e par îl împărțim la 2, dacă e impar îl înmulțim cu 3 și adăugăm 1. Se repetă până ajungem la 1. Pornind de la n=6, câți pași facem?",
+    "hint_key": "alg_siruri_gen",
+    "explanation": "6→3→10→5→16→8→4→2→1. 8 pași.",
+    "answer": "8",
+    "question_data": {
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      }
+    },
+    "keywords": [
+      "collatz",
+      "conjectura",
+      "pasi"
+    ]
+  },
+  {
+    "id": "q0223",
+    "title": "Scrie algoritmul cu doi pointeri (two pointers) care verific",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Two pointers",
+    "difficulty": "olympiad-difficult",
+    "type": "code-snippet",
+    "statement": "Scrie algoritmul cu doi pointeri (two pointers) care verifică dacă există două elemente consecutive egale în vectorul sortat v cu n elemente.",
+    "hint_key": "tab_classic",
+    "explanation": "Dacă vectorul e sortat, elementele egale sunt consecutive. Comparăm v[i] cu v[i+1].",
+    "answer": "int ok = 0;\nfor (int i = 0; i < n-1; i++)\n    if (v[i] == v[i+1]) { ok = 1; break; }\ncout << (ok ? \"DA\" : \"NU\");",
+    "question_data": {
+      "placeholder": "for (int i = 0; i < n-1; i++)\n    if (v[i] == v[___]) { ok = 1; break; }"
+    },
+    "keywords": [
+      "doi-pointeri",
+      "sortat",
+      "consecutive"
+    ]
+  },
+  {
+    "id": "q0224",
+    "title": "Turnul Hanoi cu n discuri necesită minim câte mutări?",
+    "category": "Subprograme",
+    "subcategory": "Recursivitate",
+    "lesson": "Turnul Hanoi",
+    "difficulty": "absurd",
+    "type": "multiple-choice",
+    "statement": "Turnul Hanoi cu n discuri necesită minim câte mutări?",
+    "hint_key": "func_rec",
+    "explanation": "Formula pentru Turnul Hanoi: 2^n - 1 mutări.",
+    "answer": "2^n - 1",
+    "question_data": {
+      "options": {
+        "A": "n²",
+        "B": "2^n",
+        "C": "2^n - 1",
+        "D": "n!"
+      }
+    },
+    "keywords": [
+      "hanoi",
+      "recursie",
+      "formula"
+    ]
+  },
+  {
+    "id": "q0225",
+    "title": "Care este cel mai eficient algoritm de factorizare pentru nu",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Numere prime",
+    "difficulty": "absurd",
+    "type": "multiple-choice",
+    "statement": "Care este cel mai eficient algoritm de factorizare pentru numere întregi mari (la nivel olimpiadă)?",
+    "hint_key": "alg_div",
+    "explanation": "Factorizarea prin împărțiri succesive cu toți d de la 2 la sqrt(n) este O(sqrt(n)).",
+    "answer": "O(sqrt(n)) cu împărțiri succesive",
+    "question_data": {
+      "options": {
+        "A": "O(n) cu verificare naivă",
+        "B": "O(sqrt(n)) cu împărțiri succesive",
+        "C": "O(log n) cu algoritmul lui Euclid",
+        "D": "O(1) cu formule matematice"
+      }
+    },
+    "keywords": [
+      "factorizare",
+      "complexitate",
+      "optim"
+    ]
+  },
+  {
+    "id": "q0226",
+    "title": "Potriveste fiecare bucla for cu efectul sau:",
+    "category": "Structuri repetitive",
+    "subcategory": "for",
+    "lesson": "Bucla for",
+    "difficulty": "easy",
+    "type": "drag-drop",
+    "statement": "Potriveste fiecare bucla for cu efectul sau:",
+    "hint_key": "rep_for",
+    "explanation": "for(i=0;i<n;i++) creste i. for(i=n;i>0;i--) scade i.",
+    "answer": {
+      "for(i=0;i<n;i++)": "Parcurgere crescătoare 0..n-1",
+      "for(i=n;i>0;i--)": "Parcurgere descrescătoare n..1",
+      "for(i=1;i<=n;i+=2)": "Parcurgere numerelor impare 1..n"
+    },
+    "question_data": {
+      "pairs": [
+        {
+          "item": "for(i=0;i<n;i++)",
+          "match": "Parcurgere crescătoare 0..n-1"
+        },
+        {
+          "item": "for(i=n;i>0;i--)",
+          "match": "Parcurgere descrescătoare n..1"
+        },
+        {
+          "item": "for(i=1;i<=n;i+=2)",
+          "match": "Parcurgere numerelor impare 1..n"
+        }
+      ]
+    },
+    "keywords": [
+      "for",
+      "directie",
+      "parcurgere"
+    ]
+  },
+  {
+    "id": "q0227",
+    "title": "Potriveste fiecare expresie cu descrierea sa:",
+    "category": "Structura de decizie",
+    "subcategory": "if / if-else",
+    "lesson": "Condiții",
+    "difficulty": "mediocre",
+    "type": "drag-drop",
+    "statement": "Potriveste fiecare expresie cu descrierea sa:",
+    "hint_key": "ops_rel",
+    "explanation": "Potriviti expresiile logice cu semnificatia lor.",
+    "answer": {
+      "n%2==0": "n este par",
+      "n>0 && n<10": "n este o cifra pozitiva",
+      "n==0": "n este zero"
+    },
+    "question_data": {
+      "pairs": [
+        {
+          "item": "n % 2 == 0",
+          "match": "n este par"
+        },
+        {
+          "item": "n > 0 && n < 10",
+          "match": "n este o cifra pozitivă"
+        },
+        {
+          "item": "n == 0",
+          "match": "n este zero"
+        }
+      ]
+    },
+    "keywords": [
+      "conditie",
+      "drag-drop",
+      "expresie"
+    ]
+  },
+  {
+    "id": "q0228",
+    "title": "Bubble sort pe vectorul {5, 2, 8, 1, 9}. Câți pași (comparaț",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Sortare",
+    "lesson": "Sortare",
+    "difficulty": "above-average",
+    "type": "slider",
+    "statement": "Bubble sort pe vectorul {5, 2, 8, 1, 9}. Câți pași (comparații) se fac în total în worst-case pentru n=5?",
+    "hint_key": "tab_sort",
+    "explanation": "Bubble sort: (n-1)+(n-2)+...+1 = n*(n-1)/2 = 5*4/2 = 10 comparații.",
+    "answer": "10",
+    "question_data": {
+      "min": 1,
+      "max": 25,
+      "correct": 10,
+      "unit": "comparații"
+    },
+    "keywords": [
+      "bubble-sort",
+      "comparatii",
+      "complexitate"
+    ]
+  },
+  {
+    "id": "q0229",
+    "title": "Câte cifre are numărul 12345?",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Cifre",
+    "difficulty": "mediocre",
+    "type": "slider",
+    "statement": "Câte cifre are numărul 12345?",
+    "hint_key": "alg_cifre",
+    "explanation": "12345 are 5 cifre: 1,2,3,4,5.",
+    "answer": "5",
+    "question_data": {
+      "min": 1,
+      "max": 10,
+      "correct": 5,
+      "unit": "cifre"
+    },
+    "keywords": [
+      "cifre",
+      "numar",
+      "count"
+    ]
+  },
+  {
+    "id": "q0230",
+    "title": "Problema: Se citesc n numere naturale nenule. Să se afișeze ",
+    "category": "Structuri repetitive",
+    "subcategory": "while",
+    "lesson": "Probleme reale",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Problema: Se citesc n numere naturale nenule. Să se afișeze câte sunt puteri ale lui 2.\n\nCompletează verificarea dacă x este putere a lui 2:\n```cpp\nint ok = 1;\nwhile (x > 1) {\n    if (x % 2 != 0) { ok = 0; break; }\n    x ___= 2;\n}\nif (x != 1) ok = 0;\n```",
+    "hint_key": "rep_while",
+    "explanation": "Împărțim x la 2 cât timp e par. Dacă rămâne 1, a fost putere a lui 2.",
+    "answer": "/",
+    "question_data": {
+      "blanks": [
+        "/"
+      ],
+      "options_per_blank": [
+        [
+          "/",
+          " %",
+          "*",
+          "+",
+          "−"
+        ]
+      ]
+    },
+    "keywords": [
+      "putere",
+      "2",
+      "verificare"
+    ]
+  },
+  {
+    "id": "q0231",
+    "title": "Completează algoritmul care elimină duplicatele dintr-un vec",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Vectori",
+    "difficulty": "hard",
+    "type": "fill-gaps",
+    "statement": "Completează algoritmul care elimină duplicatele dintr-un vector sortat:\n```cpp\nint i = 0;\nwhile (i < n - 1) {\n    if (v[i] == v[___]) {\n        for (int j = i + 1; j < n - 1; j++)\n            v[j] = v[j + 1];\n        n___;\n    } else\n        ___++;\n}\n```",
+    "hint_key": "tab_ops",
+    "explanation": "Dacă v[i]==v[i+1] ștergem elementul de la i+1 și decrementăm n. Altfel avansăm i.",
+    "answer": [
+      "i+1",
+      "--",
+      "i"
+    ],
+    "question_data": {
+      "blanks": [
+        "i+1",
+        "--",
+        "i"
+      ],
+      "options_per_blank": [
+        [
+          "i+1",
+          "i",
+          "i-1",
+          "n"
+        ],
+        [
+          "--",
+          "++",
+          "*=",
+          "+="
+        ],
+        [
+          "i",
+          "j",
+          "n",
+          "0"
+        ]
+      ]
+    },
+    "keywords": [
+      "duplicate",
+      "stergere",
+      "sortat"
+    ]
+  },
+  {
+    "id": "q0232",
+    "title": "Ce bibliotecă trebuie inclusă pentru lucrul cu fișiere în C+",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Fișiere",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Ce bibliotecă trebuie inclusă pentru lucrul cu fișiere în C++?",
+    "hint_key": "intro_io",
+    "explanation": "#include <fstream> pentru citire/scriere fișiere.",
+    "answer": "#include <fstream>",
+    "question_data": {
+      "options": {
+        "A": "#include <iostream>",
+        "B": "#include <fstream>",
+        "C": "#include <file>",
+        "D": "#include <stdio>"
+      }
+    },
+    "keywords": [
+      "fisiere",
+      "fstream",
+      "include"
+    ]
+  },
+  {
+    "id": "q0233",
+    "title": "Completează pentru citire din fișierul 'date.in':\n```cpp\n#in",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Fișiere",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Completează pentru citire din fișierul 'date.in':\n```cpp\n#include <fstream>\n___ fin(\"date.in\");\nint n;\n___ >> n;\n```",
+    "hint_key": "intro_io",
+    "explanation": "ifstream pentru citire din fișier, ifstream fin(\"fisier\") deschide fișierul.",
+    "answer": [
+      "ifstream",
+      "fin"
+    ],
+    "question_data": {
+      "blanks": [
+        "ifstream",
+        "fin"
+      ],
+      "options_per_blank": [
+        [
+          "ifstream",
+          "ofstream",
+          "fstream",
+          "iostream"
+        ],
+        [
+          "fin",
+          "cin",
+          "cout",
+          "fout"
+        ]
+      ]
+    },
+    "keywords": [
+      "fisiere",
+      "ifstream",
+      "citire"
+    ]
+  },
+  {
+    "id": "q0234",
+    "title": "Completează pentru scriere în fișierul 'rezultat.out':\n```cp",
+    "category": "Introducere în C++",
+    "subcategory": "cin / cout",
+    "lesson": "Fișiere",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Completează pentru scriere în fișierul 'rezultat.out':\n```cpp\n#include <fstream>\n___ fout(\"rezultat.out\");\nfout ___ rezultat << endl;\n```",
+    "hint_key": "intro_io",
+    "explanation": "ofstream pentru scriere în fișier, << operator pentru scriere.",
+    "answer": [
+      "ofstream",
+      "<<"
+    ],
+    "question_data": {
+      "blanks": [
+        "ofstream",
+        "<<"
+      ],
+      "options_per_blank": [
+        [
+          "ofstream",
+          "ifstream",
+          "fstream"
+        ],
+        [
+          "<<",
+          ">>",
+          "->",
+          "."
+        ]
+      ]
+    },
+    "keywords": [
+      "fisiere",
+      "ofstream",
+      "scriere"
+    ]
+  }
+]

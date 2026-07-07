@@ -1,0 +1,375 @@
+[
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=2&id_subtag=9",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 2,
+      "id_subtag": 9
+    },
+    "articles": [
+      {
+        "id": 5583,
+        "title": "Declararea și parcurgerea tablourilor unidimensionale",
+        "brief": "Prezentare a modului în care se declară un tablou unidimensional în C++ și cum se parcurg elementele sale.",
+        "abstract": "Articolul explică sintaxa de declarare a unui tablou unidimensional cu forma tipDeBază denumire[Dimensiune], arată intervalul indicilor (0 până la Dimensiune-1) și reguli de inițializare: tablourile globale sunt inițializate cu 0, iar cele locale conțin valori nedeterminate. Sunt descrise modalitățile de referire a elementelor prin operatorul [] și se introduce distincția între dimensiunea fizică a tabloului (numărul maxim de elemente) și dimensiunea logică n (numărul de elemente utilizate în program). Se subliniază că în C++ nu există verificarea automată a indicilor, responsabilitatea revine programatorului.",
+        "introduction": "Un tablou unidimensional se declară în C++ folosind un tip de bază și o dimensiune în paranteze, de exemplu int X[10]. Indicele elementelor variază de la 0 la Dimensiune-1, iar accesul la elemente se face cu operatorul de indexare []. Programul trebuie să folosească și o variabilă n pentru numărul curent de elemente folosite din tablou.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Tablou unidimensional și referirea elementelor",
+            "content": "Un tablou unidimensional este declarat prin tipul de bază și numărul maxim de elemente: tipDeBază denumire[Dimensiune]. Elementele sunt accesate cu operatorul de indexare [], indicii variind de la 0 la Dimensiune-1【809279414830304†L79-L92】."
+          },
+          {
+            "type": "properties",
+            "title": "Inițializarea și dimensiunea tabloului",
+            "content": "Elementele unui tablou global sunt inițializate implicit cu 0, în timp ce elementele unui tablou local au valori nedeterminate. Dimensiunea fizică reprezintă numărul maxim de elemente, iar dimensiunea logică n reprezintă numărul de elemente efectiv utilizate【809279414830304†L99-L149】."
+          },
+          {
+            "type": "observation",
+            "title": "Controlul indicilor",
+            "content": "C++ nu verifică automat dacă valoarea indicelui se află în intervalul corect; programatorul trebuie să se asigure că indici sunt în limitele tabloului pentru a evita comportamentul impredictibil【809279414830304†L116-L134】."
+          },
+          {
+            "type": "example",
+            "title": "Referirea și modificarea elementelor",
+            "content": "Exemplu: pentru tabloul X[10], instrucțiunile cin >> X[0]; X[0] = 17; cout << X[0]; sunt valide și exemplifică citirea, modificarea și afișarea unui element al tabloului【809279414830304†L121-L129】."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=2&id_subtag=155",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 2,
+      "id_subtag": 155
+    },
+    "articles": [
+      {
+        "id": 5584,
+        "title": "Ștergeri și inserări de elemente",
+        "brief": "Algoritmi pentru ștergerea și inserarea elementelor în vectori, cu exemple de cod.",
+        "abstract": "Articolul prezintă cum se elimină un element dintr-un vector prin deplasarea elementelor următoare spre stânga și diminuarea dimensiunii logice n. Se discută ștergerea tuturor elementelor cu o anumită proprietate și se subliniază că parcurgerea trebuie făcută în ordine inversă pentru a nu sări peste elemente. Pentru adăugarea unui element la sfârșitul vectorului se arată că valoarea se scrie în poziția X[n], apoi n se incrementează. Inserarea la o poziție specificată implică deplasarea elementelor spre dreapta pentru a face loc noii valori.",
+        "introduction": "Ștergerea și inserarea elementelor în vectori sunt operații comune, de exemplu când actualizăm o listă de elevi. Pentru a elimina un element la poziția p se mută elementele cu indici mai mari spre stânga și se reduce dimensiunea n cu 1. Pentru a insera sau adăuga un element se folosește poziția de la sfârșitul vectorului sau se deplasează elementele pentru a crea spațiu.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Ștergerea unui element",
+            "content": "Pentru a șterge elementul X[p] se mută elementele cu indici p+1..n-1 cu o poziție spre stânga și se decrementează n【63898200282083†L108-L118】."
+          },
+          {
+            "type": "observation",
+            "title": "Ștergerea mai multor valori",
+            "content": "Dacă în vector sunt mai multe elemente consecutive care respectă proprietatea de eliminat, parcurgerea trebuie făcută invers (de la n-1 la 0) pentru a nu omite elemente【63898200282083†L141-L149】."
+          },
+          {
+            "type": "example",
+            "title": "Adăugarea unui element la sfârșitul vectorului",
+            "content": "Pentru un vector indexat de la 0, adăugarea unui element val se face cu X[n] = val; n++; sau X[n++] = val; iar pentru indexare de la 1 se folosește n++; X[n] = val【63898200282083†L154-L170】."
+          },
+          {
+            "type": "properties",
+            "title": "Inserarea unui element",
+            "content": "Inserarea unui element într-o poziție p presupune deplasarea elementelor de la p..n-1 spre dreapta pentru a face loc noii valori, apoi incrementarea dimensiunii n."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=2&id_subtag=21",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 2,
+      "id_subtag": 21
+    },
+    "articles": [
+      {
+        "id": 5586,
+        "title": "Verificarea unor proprietăți",
+        "brief": "Metode pentru a verifica dacă toate elementele sau cel puțin un element dintr-un vector respectă o anumită regulă.",
+        "abstract": "Articolul abordează problemele în care trebuie verificat dacă elementele unui vector respectă o proprietate. Sunt descrise două cazuri: (1) verificarea dacă toate elementele respectă regula, (2) verificarea dacă există cel puțin un element care respectă regula. Se propune soluția numărării elementelor sau, mai eficient, folosirea unei variabile booleene OK pentru a opri parcurgerea când rezultatul este cunoscut. Se oferă cod C++ pentru parcurgeri cu for și while care evaluează condiția și actualizează variabila OK.",
+        "introduction": "În multe probleme este necesar să determinăm dacă toate elementele unui vector respectă o anumită regulă sau dacă există elemente care o respectă. Problema poate fi rezolvată fie prin numărarea elementelor care satisfac regula, fie prin utilizarea unei variabile booleene pentru a opri parcurgerea când rezultatul devine evident.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Verificarea tuturor elementelor",
+            "content": "Se inițializează variabila booleană OK cu true și se parcurge vectorul. Dacă un element nu respectă regula, OK devine false și parcurgerea se poate opri【866430904901680†L93-L100】."
+          },
+          {
+            "type": "definition",
+            "title": "Verificarea existenței unui element",
+            "content": "Se inițializează variabila OK cu false și se parcurge vectorul; când se găsește un element care respectă regula, OK devine true și parcurgerea se oprește【866430904901680†L130-L160】."
+          },
+          {
+            "type": "observation",
+            "title": "Optimizarea parcurgerii",
+            "content": "Prin folosirea variabilei OK, parcurgerea se poate opri înainte de a examina toate elementele, imediat ce rezultatul devine clar【866430904901680†L84-L91】."
+          },
+          {
+            "type": "example",
+            "title": "Cod C++ pentru verificare",
+            "content": "Exemple de cod folosind for și while arată cum se inițializează variabila OK și cum se actualizează în funcție de rezultatul condiției【866430904901680†L101-L116】."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=2&id_subtag=45",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 2,
+      "id_subtag": 45
+    },
+    "articles": [
+      {
+        "id": 5587,
+        "title": "Sortarea tablourilor",
+        "brief": "Prezentarea sortării vectorilor și clasificarea algoritmilor de sortare după eficiență.",
+        "abstract": "Articolul definește sortarea vectorilor ca rearanjarea elementelor într-o ordine (de obicei crescătoare sau descrescătoare). Se enumeră metode de sortare ineficiente, cu complexitate O(n²) – metoda bulelor (bubble sort), sortarea prin selecție (selection sort), sortarea prin inserție (insertion sort), metoda piticului (gnome sort) – și se menționează algoritmi eficienți cu complexitate O(n·log n), precum QuickSort, MergeSort și HeapSort. Articolul sugerează folosirea unor articole separate pentru fiecare algoritm.",
+        "introduction": "Sortarea unui tablou presupune rearanjarea elementelor pentru a le ordona crescător sau descrescător. Există numeroase metode de sortare, iar eficiența lor variază; se disting între algoritmi neeficienți cu complexitate O(n²) și algoritmi eficienți cu complexitate O(n·log n).",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Sortare",
+            "content": "Sortarea reprezintă o rearanjare a elementelor unui vector astfel încât valorile să fie într-o anumită ordine, de regulă crescătoare sau descrescătoare【694466638460673†L62-L64】."
+          },
+          {
+            "type": "result",
+            "title": "Clasificarea algoritmilor de sortare",
+            "content": "Algoritmii de sortare se împart în metode neeficiente, de complexitate O(n²) – bubble sort, selection sort, insertion sort, gnome sort – și metode eficiente, de complexitate O(n·log n) – QuickSort, MergeSort și HeapSort【694466638460673†L68-L81】."
+          },
+          {
+            "type": "observation",
+            "title": "Importanța eficienței",
+            "content": "Pentru structuri de date particulare pot exista algoritmi de sortare în timp O(n); totuși, algoritmii exponențiali O(n!) nu au utilitate practică【694466638460673†L82-L83】."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=2&id_subtag=44",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 2,
+      "id_subtag": 44
+    },
+    "articles": [
+      {
+        "id": 5588,
+        "title": "Interclasarea tablourilor",
+        "brief": "Algoritmul de interclasare (merging) pentru două tablouri ordonate.",
+        "abstract": "Articolul descrie cum se combină două tablouri unidimensionale ordonate crescător într-un tablou rezultat ordonat. Se parcurg simultan cele două tablouri și se alege, la fiecare pas, elementul mai mic pentru a fi adăugat în rezultatul final. După epuizarea unuia dintre tablouri, restul elementelor din celălalt tablou se copiază integral. Complexitatea algoritmului este O(n + m).",
+        "introduction": "Considerând două tablouri ordonate cu n și m elemente, se dorește construirea unui al treilea tablou care să conțină toate valorile din primele două, în ordine crescătoare. Interclasarea (merge) este soluția eficientă la această problemă.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Pașii algoritmului de interclasare",
+            "content": "Pentru tablourile ordonate a[] și b[] cu n, respectiv m elemente, algoritmul parcurge concomitent tablourile, comparând elementele curente și adăugând în rezultatul c[] elementul mai mic; la final, elementele rămase în a[] sau b[] se adaugă integral【251894896412823†L62-L75】."
+          },
+          {
+            "type": "result",
+            "title": "Pseudocod pentru interclasare",
+            "content": "Varianta de cod C++ folosește două indecși i și j pentru parcurgerea tablourilor a[] și b[], un index p pentru c[] și două bucle while pentru adăugarea elementelor: while(i < n && j < m) se compară a[i] și b[j], iar ulterior se adaugă elementele rămase【251894896412823†L82-L97】."
+          },
+          {
+            "type": "observation",
+            "title": "Complexitatea interclasării",
+            "content": "În fiecare pas doar una dintre variabilele i sau j crește, iar una dintre buclele finale se execută; astfel, algoritmul de interclasare are complexitate O(n + m)【251894896412823†L99-L105】."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=46&id_subtag=47",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 46,
+      "id_subtag": 47
+    },
+    "articles": [
+      {
+        "id": 62,
+        "title": "Operații pe biți",
+        "brief": "Introducere în reprezentarea în memorie a valorilor întregi și descrierea principalilor operatori pe biți.",
+        "abstract": "Articolul explică cum se reprezintă numerele întregi în memorie pe 16 biți, atât pentru tipuri fără semn (unsigned) cât și pentru tipuri cu semn (short int). Se descrie reprezentarea în baza 2, completarea cu zerouri nesemnificative, precum și reprezentarea numerelor negative folosind codul complementar față de 2. Sunt prezentate operatorii pe biți: negație (~), conjuncție (&), disjuncție (|), disjuncție exclusivă (^), deplasare la stânga (<<) și la dreapta (>>).",
+        "introduction": "Operațiile pe biți sunt operații eficiente care lucrează direct cu biții din reprezentările numerice. Pentru a le înțelege este necesară cunoașterea modului în care valorile întregi se reprezintă în memorie, atât pentru tipuri fără semn cât și cu semn. Articolul pornește de la reprezentarea valorilor pe 16 biți și explică detaliat codul complementar folosit pentru reprezentarea numerelor negative.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Reprezentarea numerelor întregi",
+            "content": "Un număr întreg fără semn se reprezintă prin transformarea sa în baza 2 și completarea cu zerouri nesemnificative pentru a ajunge la 16 biți; pentru tipul short int, bitul cel mai semnificativ reprezintă semnul, iar numerele negative se obțin prin complement față de 1 și adunarea lui 1【15724700510622†L83-L114】."
+          },
+          {
+            "type": "definition",
+            "title": "Operatorii pe biți",
+            "content": "Sunt descriși operatorii de negație (~), conjuncție (&), disjuncție (|), disjuncție exclusivă (^), deplasare la stânga (<<) și deplasare la dreapta (>>), care permit manipularea directă a biților unui număr【15724700510622†L81-L96】."
+          },
+          {
+            "type": "example",
+            "title": "Reprezentarea valorilor",
+            "content": "Exemple de reprezentări: 0 se reprezintă ca 0000000000000000; 65535 ca 1111111111111111; 5 ca 0000000000000101; 133 ca 0000000010000101【15724700510622†L96-L114】."
+          },
+          {
+            "type": "observation",
+            "title": "Reprezentarea numerelor negative",
+            "content": "Pentru reprezentarea unui număr negativ, se determină reprezentarea în baza 2 a valorii absolute, se calculează complementul față de 1 și se adaugă 1. De exemplu, -133 se reprezintă pornind de la 133 ca 0000000010000101, complementat în 1111111101111010, apoi adunând 1 obținem 1111111101111011【15724700510622†L117-L145】."
+          }
+        ]
+      },
+      {
+        "id": 18895,
+        "title": "Aplicații ale operațiilor pe biți",
+        "brief": "Utilizări practice ale operațiilor pe biți în C++, precum multiplicarea cu puteri ale lui 2, verificarea parității și identificarea puterilor de 2.",
+        "abstract": "Articolul prezintă diverse aplicații utile ale operațiilor pe biți. Se arată că înmulțirea unui număr cu 2^k se realizează prin deplasarea la stânga (a << k) și împărțirea la 2^k prin deplasarea la dreapta (a >> k). Verificarea parității unui număr se face analizând ultimul bit prin operația n & 1. Pentru a verifica dacă un număr este putere a lui 2 se folosește expresia n & (n-1) == 0. Se explică determinarea celei mai mari puteri a lui 2 care divide n prin n & -n și se prezintă modul de setare, resetare și testare a unui bit folosind măști.",
+        "introduction": "Operațiile pe biți sunt foarte rapide și au numeroase aplicații în rezolvarea problemelor. Articolul reamintește numerotarea biților începând cu 0 și prezintă aplicații practice precum multiplicarea și divizarea cu puteri ale lui 2, verificarea parității, identificarea puterilor de 2, determinarea celei mai mari puteri a lui 2 ce divide un număr și manipularea individuală a biților.",
+        "concept": [
+          {
+            "type": "result",
+            "title": "Înmulțirea și împărțirea cu puteri ale lui 2",
+            "content": "Înmulțirea unui număr a cu 2^k se face prin deplasarea la stânga cu k poziții (a << k); împărțirea lui a la 2^k se face prin deplasarea la dreapta cu k poziții (a >> k)【57920156682233†L80-L90】."
+          },
+          {
+            "type": "definition",
+            "title": "Verificarea parității",
+            "content": "Paritatea unui număr se verifică folosind operația n & 1: rezultatul este 0 dacă n este par și 1 dacă n este impar【57920156682233†L91-L100】."
+          },
+          {
+            "type": "definition",
+            "title": "Verificarea puterilor lui 2",
+            "content": "Un număr natural n este putere a lui 2 dacă expresia n & (n-1) produce 0; puterile lui 2 au exact un bit 1 în reprezentarea lor binară【57920156682233†L103-L113】."
+          },
+          {
+            "type": "result",
+            "title": "Cea mai mare putere a lui 2 care divide n",
+            "content": "Cea mai mare putere a lui 2 ce divide un număr n se determină prin n & -n, rezultatul reprezentând o putere a lui 2 corespunzătoare numărului de zerouri consecutive la sfârșitul reprezentării binare a lui n【57920156682233†L120-L124】."
+          },
+          {
+            "type": "properties",
+            "title": "Manipularea biților prin măști",
+            "content": "Pentru a seta bitul k al numărului n se folosește masca 1 << k cu operația n | (1 << k); pentru a reseta bitul k se folosește n & ~(1 << k); pentru a verifica valoarea bitului k se folosește (n >> k) & 1【57920156682233†L127-L139】."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=151&id_subtag=160",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 151,
+      "id_subtag": 160
+    },
+    "articles": [
+      {
+        "id": 5623,
+        "title": "Parcurgerea tablourilor bidimensionale",
+        "brief": "Descrierea modului de a parcurge o matrice: pe linii, pe coloane, citire și afișare.",
+        "abstract": "Articolul prezintă noțiuni despre dimensiunile fizice (maxime) și logice ale unei matrice și explică diferența dintre indexarea de la 0 și indexarea de la 1. Se arată modurile de parcurgere a matricei pe linii și pe coloane, cum se parcurge o anumită linie sau o anumită coloană și cum se citesc și se afișează elementele. Sunt furnizate exemple de cod C++ pentru fiecare tip de parcurgere și se subliniază necesitatea declarării unor variabile suplimentare (n, m) pentru a reprezenta numărul de linii și coloane folosite.",
+        "introduction": "Parcurgerea unui tablou bidimensional înseamnă accesarea elementelor sale într-o anumită ordine. Matricea are dimensiuni fizice, maxime, și dimensiuni logice (n linii și m coloane) care pot fi mai mici decât cele fizice. Este important să cunoaștem modul de indexare și să folosim două variabile pentru numărul curent de linii și coloane.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Dimensiuni ale matricei și indexarea",
+            "content": "Matricele au dimensiuni fizice (numărul maxim de linii și coloane) și dimensiuni logice (n și m). Indexarea implicită pornește de la 0, dar poate fi adaptată la 1 prin mărirea dimensiunilor declarate【583450334585606†L75-L103】."
+          },
+          {
+            "type": "result",
+            "title": "Parcurgerea pe linii și pe coloane",
+            "content": "Pentru a parcurge matricea pe linii se folosesc două bucle for imbricate: prima pe variabila de linie i și a doua pe variabila de coloană j. Pentru parcurgerea pe coloane se inversează ordinea buclelor【583450334585606†L113-L138】."
+          },
+          {
+            "type": "example",
+            "title": "Citirea și afișarea unei matrice",
+            "content": "Citirea unei matrice implică citirea lui n și m, apoi citirea elementelor cu două bucle. Afișarea se face tot cu două bucle, adăugând un \n după fiecare linie pentru a obține aspectul corespunzător【583450334585606†L169-L185】."
+          },
+          {
+            "type": "observation",
+            "title": "Parcurgerea unei linii sau coloane",
+            "content": "Parcurgerea unei linii fixe k se face prin menținerea indicelui de linie constant și varierea indicelui de coloană; pentru parcurgerea unei coloane fixe se procedează invers【583450334585606†L141-L156】."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "https://www.pbinfo.ro/articole/recomandate?disciplina=0&clasa=9&id_tag=151&id_subtag=152",
+    "filters": {
+      "disciplina": 0,
+      "clasa": 9,
+      "id_tag": 151,
+      "id_subtag": 152
+    },
+    "articles": [
+      {
+        "id": 5622,
+        "title": "Declararea matricelor. Referirea elementelor",
+        "brief": "Ghid de declarare a matricei (tablou bidimensional) și modalități de accesare a elementelor în C++.",
+        "abstract": "Articolul arată cum se declară o matrice în C++ folosind două dimensiuni fizice (linii și coloane) și explică modul de accesare a elementelor prin doi indici. Se discută pericolul accesului în afara limitelor matricei și responsabilitatea programatorului de a verifica indicii. Se explică legătura dintre matrice și vectori (o matrice poate fi privită ca un vector de vectori) și se calculează memoria ocupată de o matrice în funcție de tipul elementelor și dimensiuni.",
+        "introduction": "Declararea unei matrice în C++ se face similar cu cea a unui vector, dar sunt necesare două dimensiuni: numărul maxim de linii și de coloane. Elementele sunt accesate folosind doi indici – primul indică linia, al doilea coloana. Programatorul trebuie să se asigure că indicii se află în intervalele permise pentru a evita erori de execuție.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Declararea matricei",
+            "content": "O matrice se declară cu două dimensiuni: tipDeBază denumire[NumarLinii][NumarColoane], de exemplu int A[5][10]; elementele sunt accesate cu A[i][j]【673089939620545†L71-L99】."
+          },
+          {
+            "type": "observation",
+            "title": "Controlul indicilor",
+            "content": "Programatorul trebuie să verifice valorile indicilor; accesul cu indici incorecți duce la comportament impredictibil, de exemplu expresiile A[-1][7] sau A[2][20] sunt greșite【673089939620545†L107-L114】."
+          },
+          {
+            "type": "definition",
+            "title": "Matrice ca vector de vectori",
+            "content": "O matrice poate fi privită ca un vector de vectori: A[1] este un vector (linia 1), iar A[1][9] este un element al acestui vector【673089939620545†L117-L129】."
+          },
+          {
+            "type": "result",
+            "title": "Memoria ocupată de o matrice",
+            "content": "Memoria ocupată de o matrice depinde de tipul elementelor și de dimensiunile declarate. De exemplu, o matrice int A[1000][1000] ocupă 4 milioane de octeți, deoarece fiecare int are 4 B și matricea are 1.000.000 de elemente【673089939620545†L143-L149】."
+          }
+        ]
+      },
+      {
+        "id": 5626,
+        "title": "Tablouri patratice",
+        "brief": "Introducere în matricele pătratice și modul de identificare a elementelor de pe diagonale și zonele definite de acestea.",
+        "abstract": "Articolul definește matricea pătratică (număr egal de linii și coloane) și descrie principalele elemente distinctive: diagonala principală (i=j) și diagonala secundară (i+j=n-1). Se arată cum se parcurg elementele de pe diagonale și cum se identifică elementele deasupra sau sub aceste diagonale. De asemenea, se explică modul de împărțire a matricei pătratice în patru zone (Nord, Est, Sud, Vest) delimitate de diagonale.",
+        "introduction": "O matrice este pătratică dacă numărul de linii este egal cu numărul de coloane. În acest caz, se folosește o singură variabilă n pentru dimensiunea matricei și se studiază proprietăți speciale legate de diagonale și zonele delimitate de acestea.",
+        "concept": [
+          {
+            "type": "definition",
+            "title": "Matrice pătratică și diagonale",
+            "content": "Un tablou bidimensional este pătratic dacă numărul de linii este egal cu numărul de coloane; diagona principală conține elementele cu i=j, iar diagonala secundară conține elementele cu i+j=n-1【406296888801504†L104-L145】."
+          },
+          {
+            "type": "result",
+            "title": "Parcurgerea diagonalelor",
+            "content": "Elementele de pe diagonala principală se parcurg cu for(int i=0; i<n; i++) A[i][i]; elementele de pe diagonala secundară se parcurg cu for(int i=0; i<n; i++) A[i][n-1-i]【406296888801504†L124-L149】."
+          },
+          {
+            "type": "observation",
+            "title": "Diagonale și elemente comune",
+            "content": "Dacă n este impar, cele două diagonale au un element comun; dacă n este par, diagonalele nu au elemente comune【406296888801504†L157-L158】."
+          },
+          {
+            "type": "properties",
+            "title": "Zonele delimitate de diagonale",
+            "content": "Diagona principală și secundară împart matricea în patru zone (Nord, Est, Sud, Vest). Condițiile pentru ca un element să aparțină fiecărei zone se exprimă prin relații între indicii i și j (de exemplu, i<j pentru deasupra diagonalei principale)【406296888801504†L164-L176】."
+          }
+        ]
+      }
+    ]
+  }
+]

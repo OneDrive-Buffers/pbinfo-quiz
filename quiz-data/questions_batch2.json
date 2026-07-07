@@ -1,0 +1,1365 @@
+[
+  {
+    "id": "q0100",
+    "title": "Cum se declară un tablou de 100 de întregi în C++?",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Cum se declară un tablou de 100 de întregi în C++?",
+    "hint_key": "tab_decl",
+    "explanation": "Sintaxa: tipDeBaza numeTablou[Dimensiune];",
+    "answer": "int v[100];",
+    "question_data": {
+      "options": {
+        "A": "array v[100] int;",
+        "B": "int v[100];",
+        "C": "int[100] v;",
+        "D": "vector<int> v(100);"
+      }
+    },
+    "keywords": [
+      "tablou",
+      "declarare",
+      "vector"
+    ]
+  },
+  {
+    "id": "q0101",
+    "title": "Ce indice are primul element al unui tablou în C++?",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "trivial",
+    "type": "multiple-choice",
+    "statement": "Ce indice are primul element al unui tablou în C++?",
+    "hint_key": "tab_decl",
+    "explanation": "În C++ indicii încep de la 0.",
+    "answer": "0",
+    "question_data": {
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1",
+        "D": "primul"
+      }
+    },
+    "keywords": [
+      "indice",
+      "tablou",
+      "zero"
+    ]
+  },
+  {
+    "id": "q0102",
+    "title": "Completează codul de citire a unui vector cu n elemente:\n```",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "easy",
+    "type": "fill-gaps",
+    "statement": "Completează codul de citire a unui vector cu n elemente:\n```cpp\nint v[100], n;\ncin >> n;\nfor (int i = 0; ___ < n; i++)\n    cin >> v[___];\n```",
+    "hint_key": "tab_decl",
+    "explanation": "Bucla parcurge indicii de la 0 la n-1. v[i] accesează elementul i.",
+    "answer": [
+      "i",
+      "i"
+    ],
+    "question_data": {
+      "blanks": [
+        "i",
+        "i"
+      ],
+      "options_per_blank": [
+        [
+          "i",
+          "n",
+          "0",
+          "v"
+        ],
+        [
+          "i",
+          "n",
+          "0",
+          "v"
+        ]
+      ]
+    },
+    "keywords": [
+      "citire",
+      "tablou",
+      "for"
+    ]
+  },
+  {
+    "id": "q0103",
+    "title": "Fie v = {3, 1, 4, 1, 5}. Ce afișează?\n```cpp\ncout << v[0] <<",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Fie v = {3, 1, 4, 1, 5}. Ce afișează?\n```cpp\ncout << v[0] << \" \" << v[2] << \" \" << v[4];\n```",
+    "hint_key": "tab_decl",
+    "explanation": "v[0]=3, v[2]=4, v[4]=5 (indici pornesc de la 0).",
+    "answer": "3 4 5",
+    "question_data": {
+      "expected": "3 4 5"
+    },
+    "keywords": [
+      "indice",
+      "acces",
+      "tablou"
+    ]
+  },
+  {
+    "id": "q0104",
+    "title": "Scrie codul care afișează elementele unui vector v cu n elem",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "mediocre",
+    "type": "code-snippet",
+    "statement": "Scrie codul care afișează elementele unui vector v cu n elemente, separate prin spații.",
+    "hint_key": "tab_decl",
+    "explanation": "Parcurgem de la i=0 la i<n și afișăm v[i] urmat de spațiu.",
+    "answer": "for (int i = 0; i < n; i++) cout << v[i] << \" \";",
+    "question_data": {
+      "placeholder": "for (...) cout << ... ;",
+      "accept_patterns": [
+        "for\\s*\\(\\s*int\\s+i\\s*=\\s*0\\s*;\\s*i\\s*<\\s*n\\s*;\\s*i\\+\\+\\s*\\)\\s*cout\\s*<<\\s*v\\[i\\]"
+      ]
+    },
+    "keywords": [
+      "afisare",
+      "tablou",
+      "for"
+    ]
+  },
+  {
+    "id": "q0105",
+    "title": "Fie v = {5, 2, 8, 3, 7}, n = 5. Ce afișează?\n```cpp\nint s = ",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Fie v = {5, 2, 8, 3, 7}, n = 5. Ce afișează?\n```cpp\nint s = 0;\nfor (int i = 0; i < n; i++)\n    if (v[i] % 2 == 0) s += v[i];\ncout << s;\n```",
+    "hint_key": "tab_decl",
+    "explanation": "Elementele pare: v[1]=2, v[2]=8. Suma = 2 + 8 = 10.",
+    "answer": "10",
+    "question_data": {
+      "expected": "10"
+    },
+    "keywords": [
+      "suma",
+      "pare",
+      "tablou"
+    ]
+  },
+  {
+    "id": "q0106",
+    "title": "Afirmație: Dacă declarăm `int v[5];` ca variabilă locală, to",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Declarare și parcurgere",
+    "lesson": "Tablouri",
+    "difficulty": "above-average",
+    "type": "true-false",
+    "statement": "Afirmație: Dacă declarăm `int v[5];` ca variabilă locală, toate elementele sunt 0 inițial.",
+    "hint_key": "tab_decl",
+    "explanation": "Variabilele locale nu sunt inițializate automat. Tablourile globale sunt inițializate cu 0.",
+    "answer": "false",
+    "question_data": {
+      "statement": "Tabloul local int v[5] are toate elementele 0 inițial."
+    },
+    "keywords": [
+      "initializare",
+      "local",
+      "tablou"
+    ]
+  },
+  {
+    "id": "q0107",
+    "title": "Ordonează blocurile pentru a șterge elementul de la poziția ",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Operații pe vectori",
+    "lesson": "Inserare/Ștergere",
+    "difficulty": "mediocre",
+    "type": "order-blocks",
+    "statement": "Ordonează blocurile pentru a șterge elementul de la poziția p dintr-un vector (indexat de la 0):",
+    "hint_key": "tab_ops",
+    "explanation": "La ștergere deplasăm elementele spre stânga și decrementăm n.",
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "question_data": {
+      "blocks": [
+        "for (int i = p; i < n - 1; i++)",
+        "    v[i] = v[i + 1];",
+        "n--;",
+        "// gata"
+      ]
+    },
+    "keywords": [
+      "stergere",
+      "tablou",
+      "deplasare"
+    ]
+  },
+  {
+    "id": "q0108",
+    "title": "Ordonează blocurile pentru a insera valoarea x la poziția p:",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Operații pe vectori",
+    "lesson": "Inserare/Ștergere",
+    "difficulty": "mediocre",
+    "type": "order-blocks",
+    "statement": "Ordonează blocurile pentru a insera valoarea x la poziția p:",
+    "hint_key": "tab_ops",
+    "explanation": "La inserare deplasăm elementele spre dreapta pentru a face loc.",
+    "answer": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "question_data": {
+      "blocks": [
+        "for (int i = n; i > p; i--)",
+        "    v[i] = v[i - 1];",
+        "v[p] = x;",
+        "n++;"
+      ]
+    },
+    "keywords": [
+      "inserare",
+      "tablou",
+      "deplasare"
+    ]
+  },
+  {
+    "id": "q0109",
+    "title": "Găsește eroarea la ștergerea elementului de la poziția p:\n``",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Operații pe vectori",
+    "lesson": "Inserare/Ștergere",
+    "difficulty": "above-average",
+    "type": "debug-code",
+    "statement": "Găsește eroarea la ștergerea elementului de la poziția p:\n```cpp\nfor (int i = p; i < n; i++)\n    v[i] = v[i + 1];\nn--;\n```",
+    "hint_key": "tab_ops",
+    "explanation": "La ultima iterație i = n-1, accesăm v[n] care e în afara tabloului.",
+    "answer": "Condiția trebuie să fie i < n - 1 (nu i < n)",
+    "question_data": {
+      "buggy_line": "for (int i = p; i < n; i++)",
+      "fixed_line": "for (int i = p; i < n - 1; i++)"
+    },
+    "keywords": [
+      "stergere",
+      "tablou",
+      "bug",
+      "indice"
+    ]
+  },
+  {
+    "id": "q0110",
+    "title": "Completează bubble sort pentru sortare crescătoare:\n```cpp\nf",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Sortare",
+    "lesson": "Bubble Sort",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Completează bubble sort pentru sortare crescătoare:\n```cpp\nfor (int i = 0; i < n-1; i++)\n    for (int j = 0; j < n-1-i; j++)\n        if (v[j] ___ v[j+1]) {\n            int aux = v[j];\n            v[j] = v[j+1];\n            v[j+1] = ___;\n        }\n```",
+    "hint_key": "tab_sort",
+    "explanation": "Dacă v[j] > v[j+1] interschimbăm. Interschimbarea necesită variabilă aux.",
+    "answer": [
+      ">",
+      "aux"
+    ],
+    "question_data": {
+      "blanks": [
+        ">",
+        "aux"
+      ],
+      "options_per_blank": [
+        [
+          ">",
+          "<",
+          "==",
+          ">="
+        ],
+        [
+          "aux",
+          "v[j]",
+          "v[j+1]",
+          "0"
+        ]
+      ]
+    },
+    "keywords": [
+      "bubble-sort",
+      "sortare",
+      "interschimbare"
+    ]
+  },
+  {
+    "id": "q0111",
+    "title": "Ce operație se folosește pentru interschimbarea a două eleme",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Sortare",
+    "lesson": "Sortare",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Ce operație se folosește pentru interschimbarea a două elemente v[i] și v[j]?",
+    "hint_key": "tab_sort",
+    "explanation": "Interschimbarea necesită o variabilă auxiliară aux pentru a nu pierde o valoare.",
+    "answer": "int aux = v[i]; v[i] = v[j]; v[j] = aux;",
+    "question_data": {
+      "options": {
+        "A": "v[i] = v[j]; v[j] = v[i];",
+        "B": "int aux = v[i]; v[i] = v[j]; v[j] = aux;",
+        "C": "swap = v[i]; v[i] = v[j];",
+        "D": "v[i] += v[j]; v[j] = v[i] - v[j]; v[i] -= v[j];"
+      }
+    },
+    "keywords": [
+      "interschimbare",
+      "aux",
+      "swap"
+    ]
+  },
+  {
+    "id": "q0112",
+    "title": "Ordonează blocurile pentru selection sort (sortare crescătoa",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Sortare",
+    "lesson": "Selection Sort",
+    "difficulty": "hard",
+    "type": "order-blocks",
+    "statement": "Ordonează blocurile pentru selection sort (sortare crescătoare):",
+    "hint_key": "tab_sort",
+    "explanation": "Selection sort: găsim minimul din subaroul nesortat și îl mutăm la început.",
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "question_data": {
+      "blocks": [
+        "for (int i = 0; i < n - 1; i++) {",
+        "    int pmin = i;",
+        "    for (int j = i + 1; j < n; j++)",
+        "        if (v[j] < v[pmin]) pmin = j;",
+        "    int aux = v[i];",
+        "    v[i] = v[pmin];",
+        "    v[pmin] = aux;",
+        "}"
+      ]
+    },
+    "keywords": [
+      "selection-sort",
+      "sortare",
+      "minim"
+    ]
+  },
+  {
+    "id": "q0113",
+    "title": "Fie v = {3, 1, 2}. După un singur pas al bubble sort (i=0), ",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Sortare",
+    "lesson": "Bubble Sort",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Fie v = {3, 1, 2}. După un singur pas al bubble sort (i=0), ce devine vectorul?",
+    "hint_key": "tab_sort",
+    "explanation": "Un pas complet bubble sort: comparăm și interschimbăm perechile vecine. 3>1→interschimb→1,3,2. 3>2→interschimb→1,2,3.",
+    "answer": "1 2 3",
+    "question_data": {
+      "expected": "1 2 3"
+    },
+    "keywords": [
+      "bubble-sort",
+      "pas",
+      "vector"
+    ]
+  },
+  {
+    "id": "q0114",
+    "title": "Completează căutarea secvențială a valorii x în vectorul v:\n",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Căutare",
+    "lesson": "Căutare secvențială",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Completează căutarea secvențială a valorii x în vectorul v:\n```cpp\nint poz = -1;\nfor (int i = 0; i < n; i++)\n    if (v[i] == x) {\n        poz = ___;\n        ___;\n    }\n```",
+    "hint_key": "tab_search",
+    "explanation": "Salvăm indexul unde am găsit și ieșim din buclă cu break.",
+    "answer": [
+      "i",
+      "break"
+    ],
+    "question_data": {
+      "blanks": [
+        "i",
+        "break"
+      ],
+      "options_per_blank": [
+        [
+          "i",
+          "x",
+          "n",
+          "0"
+        ],
+        [
+          "break",
+          "continue",
+          "return",
+          "stop"
+        ]
+      ]
+    },
+    "keywords": [
+      "cautare",
+      "secventiala",
+      "poz"
+    ]
+  },
+  {
+    "id": "q0115",
+    "title": "Care este condiția de continuare a buclei în căutarea binară",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Căutare",
+    "lesson": "Căutare binară",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Care este condiția de continuare a buclei în căutarea binară?",
+    "hint_key": "tab_search",
+    "explanation": "Căutăm cât timp intervalul nu e gol: stânga ≤ dreapta.",
+    "answer": "st <= dr",
+    "question_data": {
+      "options": {
+        "A": "st < dr",
+        "B": "st <= dr",
+        "C": "st != dr",
+        "D": "mij > 0"
+      }
+    },
+    "keywords": [
+      "cautare-binara",
+      "interval",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0116",
+    "title": "Completează căutarea binară:\n```cpp\nint st = 0, dr = n - 1, ",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Căutare",
+    "lesson": "Căutare binară",
+    "difficulty": "hard",
+    "type": "fill-gaps",
+    "statement": "Completează căutarea binară:\n```cpp\nint st = 0, dr = n - 1, poz = -1;\nwhile (st <= dr) {\n    int mij = (st + dr) / 2;\n    if (v[mij] == x) { poz = mij; break; }\n    else if (v[mij] < x) st = ___ + 1;\n    else dr = ___ - 1;\n}\n```",
+    "hint_key": "tab_search",
+    "explanation": "Dacă v[mij] < x, căutăm în dreapta (st = mij + 1). Dacă > x, în stânga (dr = mij - 1).",
+    "answer": [
+      "mij",
+      "mij"
+    ],
+    "question_data": {
+      "blanks": [
+        "mij",
+        "mij"
+      ],
+      "options_per_blank": [
+        [
+          "mij",
+          "st",
+          "dr",
+          "0"
+        ],
+        [
+          "mij",
+          "st",
+          "dr",
+          "n"
+        ]
+      ]
+    },
+    "keywords": [
+      "cautare-binara",
+      "mij",
+      "interval"
+    ]
+  },
+  {
+    "id": "q0117",
+    "title": "Afirmație: Căutarea binară funcționează corect pe orice vect",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Căutare",
+    "lesson": "Căutare binară",
+    "difficulty": "above-average",
+    "type": "true-false",
+    "statement": "Afirmație: Căutarea binară funcționează corect pe orice vector, indiferent dacă e sortat sau nu.",
+    "hint_key": "tab_search",
+    "explanation": "Căutarea binară necesită ca vectorul să fie SORTAT.",
+    "answer": "false",
+    "question_data": {
+      "statement": "Căutarea binară funcționează pe orice vector."
+    },
+    "keywords": [
+      "cautare-binara",
+      "sortat",
+      "conditie"
+    ]
+  },
+  {
+    "id": "q0118",
+    "title": "Scrie codul care găsește maximul unui vector v cu n elemente",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Maxim/Minim",
+    "difficulty": "easy",
+    "type": "code-snippet",
+    "statement": "Scrie codul care găsește maximul unui vector v cu n elemente (n >= 1). Declară int max = v[0]; și continuă.",
+    "hint_key": "tab_classic",
+    "explanation": "Parcurgem de la 1 la n-1 și actualizăm max când găsim un element mai mare.",
+    "answer": "for (int i = 1; i < n; i++) if (v[i] > max) max = v[i];",
+    "question_data": {
+      "placeholder": "for (int i = 1; i < n; i++) if (v[i] ___ max) max = v[i];",
+      "accept_patterns": [
+        "for\\s*\\(.*\\)\\s*(if\\s*\\(\\s*v\\[i\\]\\s*>\\s*max)"
+      ]
+    },
+    "keywords": [
+      "max",
+      "tablou",
+      "clasic"
+    ]
+  },
+  {
+    "id": "q0119",
+    "title": "Scrie bucla care inversează vectorul v cu n elemente in-plac",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Inversare",
+    "difficulty": "mediocre",
+    "type": "code-snippet",
+    "statement": "Scrie bucla care inversează vectorul v cu n elemente in-place.",
+    "hint_key": "tab_classic",
+    "explanation": "Interschimbăm v[i] cu v[n-1-i] pentru i de la 0 la n/2 - 1.",
+    "answer": "for (int i = 0; i < n/2; i++) { int aux = v[i]; v[i] = v[n-1-i]; v[n-1-i] = aux; }",
+    "question_data": {
+      "placeholder": "for (int i = 0; i < n/2; i++) { int aux = v[i]; v[i] = ___; ___ = aux; }",
+      "accept_patterns": [
+        "n\\s*-\\s*1\\s*-\\s*i"
+      ]
+    },
+    "keywords": [
+      "inversare",
+      "tablou",
+      "interschimbare"
+    ]
+  },
+  {
+    "id": "q0120",
+    "title": "Fie v = {1, 5, 2, 8, 3, 6}, n = 6. Ce afișează?\n```cpp\nint n",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Numărare",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Fie v = {1, 5, 2, 8, 3, 6}, n = 6. Ce afișează?\n```cpp\nint nr = 0;\nfor (int i = 0; i < n; i++)\n    if (v[i] > 4) nr++;\ncout << nr;\n```",
+    "hint_key": "tab_classic",
+    "explanation": "Elementele > 4: v[1]=5, v[3]=8, v[5]=6. Total: 3.",
+    "answer": "3",
+    "question_data": {
+      "expected": "3"
+    },
+    "keywords": [
+      "numărare",
+      "conditie",
+      "tablou"
+    ]
+  },
+  {
+    "id": "q0121",
+    "title": "Fie v = {2, 5, 1, 8, 3}, n = 5. Ce afișează?\n```cpp\nint poz_",
+    "category": "Tablouri unidimensionale",
+    "subcategory": "Probleme clasice",
+    "lesson": "Statistici",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Fie v = {2, 5, 1, 8, 3}, n = 5. Ce afișează?\n```cpp\nint poz_max = 0;\nfor (int i = 1; i < n; i++)\n    if (v[i] > v[poz_max]) poz_max = i;\ncout << poz_max;\n```",
+    "hint_key": "tab_classic",
+    "explanation": "Cel mai mare element e v[3]=8, deci poz_max = 3.",
+    "answer": "3",
+    "question_data": {
+      "expected": "3"
+    },
+    "keywords": [
+      "poz_max",
+      "indice",
+      "tablou"
+    ]
+  },
+  {
+    "id": "q0122",
+    "title": "Ce funcție returnează lungimea unui șir de caractere?",
+    "category": "Șiruri de caractere",
+    "subcategory": "Declarare și funcții",
+    "lesson": "cstring",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Ce funcție returnează lungimea unui șir de caractere?",
+    "hint_key": "str_decl",
+    "explanation": "strlen(s) returnează numărul de caractere din s (fără '\\0').",
+    "answer": "strlen",
+    "question_data": {
+      "options": {
+        "A": "length(s)",
+        "B": "size(s)",
+        "C": "strlen(s)",
+        "D": "len(s)"
+      }
+    },
+    "keywords": [
+      "strlen",
+      "lungime",
+      "sir"
+    ]
+  },
+  {
+    "id": "q0123",
+    "title": "Fie s = \"pbinfo\". Ce afișează?\n```cpp\ncout << strlen(s);\n```",
+    "category": "Șiruri de caractere",
+    "subcategory": "Declarare și funcții",
+    "lesson": "cstring",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Fie s = \"pbinfo\". Ce afișează?\n```cpp\ncout << strlen(s);\n```",
+    "hint_key": "str_decl",
+    "explanation": "'pbinfo' are 6 caractere.",
+    "answer": "6",
+    "question_data": {
+      "expected": "6"
+    },
+    "keywords": [
+      "strlen",
+      "lungime",
+      "sir"
+    ]
+  },
+  {
+    "id": "q0124",
+    "title": "Care condiție verifică dacă caracterul c este o literă mică?",
+    "category": "Șiruri de caractere",
+    "subcategory": "Operații pe șiruri",
+    "lesson": "Caractere",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Care condiție verifică dacă caracterul c este o literă mică?",
+    "hint_key": "str_ops",
+    "explanation": "Literele mici sunt între 'a' și 'z'.",
+    "answer": "c >= 'a' && c <= 'z'",
+    "question_data": {
+      "options": {
+        "A": "c >= 'a' || c <= 'z'",
+        "B": "c >= 'a' && c <= 'z'",
+        "C": "c > 'a' && c < 'z'",
+        "D": "islower(c)"
+      }
+    },
+    "keywords": [
+      "caracter",
+      "litera",
+      "mica"
+    ]
+  },
+  {
+    "id": "q0125",
+    "title": "Ce afișează?\n```cpp\nchar s[] = \"Hello\";\ncout << s[0] << s[4]",
+    "category": "Șiruri de caractere",
+    "subcategory": "Operații pe șiruri",
+    "lesson": "Caractere",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nchar s[] = \"Hello\";\ncout << s[0] << s[4];\n```",
+    "hint_key": "str_ops",
+    "explanation": "s[0]='H', s[4]='o'.",
+    "answer": "Ho",
+    "question_data": {
+      "expected": "Ho"
+    },
+    "keywords": [
+      "caracter",
+      "indice",
+      "sir"
+    ]
+  },
+  {
+    "id": "q0126",
+    "title": "Completează codul care numără cifrele dintr-un șir s:\n```cpp",
+    "category": "Șiruri de caractere",
+    "subcategory": "Operații pe șiruri",
+    "lesson": "Cifre în șir",
+    "difficulty": "above-average",
+    "type": "fill-gaps",
+    "statement": "Completează codul care numără cifrele dintr-un șir s:\n```cpp\nint nr = 0;\nfor (int i = 0; i < strlen(s); i++)\n    if (s[i] >= ___ && s[i] <= ___)\n        nr++;\n```",
+    "hint_key": "str_ops",
+    "explanation": "Cifrele sunt caracterele de la '0' la '9'.",
+    "answer": [
+      "'0'",
+      "'9'"
+    ],
+    "question_data": {
+      "blanks": [
+        "'0'",
+        "'9'"
+      ],
+      "options_per_blank": [
+        [
+          "'0'",
+          "'a'",
+          "'A'",
+          "0"
+        ],
+        [
+          "'9'",
+          "'z'",
+          "'Z'",
+          "9"
+        ]
+      ]
+    },
+    "keywords": [
+      "cifre",
+      "sir",
+      "numarare"
+    ]
+  },
+  {
+    "id": "q0127",
+    "title": "Ce valoare are expresia `'7' - '0'`?",
+    "category": "Șiruri de caractere",
+    "subcategory": "Operații pe șiruri",
+    "lesson": "Conversie",
+    "difficulty": "above-average",
+    "type": "multiple-choice",
+    "statement": "Ce valoare are expresia `'7' - '0'`?",
+    "hint_key": "str_ops",
+    "explanation": "'7' - '0' convertește caracterul '7' la valoarea întreagă 7.",
+    "answer": "7",
+    "question_data": {
+      "options": {
+        "A": "0",
+        "B": "55",
+        "C": "7",
+        "D": "'7'"
+      }
+    },
+    "keywords": [
+      "conversie",
+      "char",
+      "int"
+    ]
+  },
+  {
+    "id": "q0128",
+    "title": "Fie n = 1234. Ce afișează?\n```cpp\ncout << n % 10;\n```",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Cifre",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Fie n = 1234. Ce afișează?\n```cpp\ncout << n % 10;\n```",
+    "hint_key": "alg_cifre",
+    "explanation": "n % 10 returnează ultima cifră a lui n.",
+    "answer": "4",
+    "question_data": {
+      "expected": "4"
+    },
+    "keywords": [
+      "cifra",
+      "modulo",
+      "ultima"
+    ]
+  },
+  {
+    "id": "q0129",
+    "title": "Fie n = 1234. Ce afișează?\n```cpp\ncout << n / 10 % 10;\n```",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Cifre",
+    "difficulty": "easy",
+    "type": "output-prediction",
+    "statement": "Fie n = 1234. Ce afișează?\n```cpp\ncout << n / 10 % 10;\n```",
+    "hint_key": "alg_cifre",
+    "explanation": "n / 10 = 123, 123 % 10 = 3. Aceasta extrage a doua cifră de la dreapta.",
+    "answer": "3",
+    "question_data": {
+      "expected": "3"
+    },
+    "keywords": [
+      "cifra",
+      "a-doua",
+      "modulo"
+    ]
+  },
+  {
+    "id": "q0130",
+    "title": "Scrie un program complet care citește n și afișează suma cif",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Suma cifrelor",
+    "difficulty": "mediocre",
+    "type": "code-snippet",
+    "statement": "Scrie un program complet care citește n și afișează suma cifrelor sale.",
+    "hint_key": "alg_cifre",
+    "explanation": "Folosim while(n>0) să extragem cifre cu n%10 și să le adunăm.",
+    "answer": "#include <iostream>\nusing namespace std;\nint main() {\n    int n, s = 0;\n    cin >> n;\n    while (n > 0) { s += n % 10; n /= 10; }\n    cout << s;\n    return 0;\n}",
+    "question_data": {
+      "placeholder": "int s = 0;\nwhile (n > 0) {\n    s += n ___ 10;\n    n ___= 10;\n}",
+      "accept_patterns": [
+        "%"
+      ]
+    },
+    "keywords": [
+      "suma",
+      "cifre",
+      "while"
+    ]
+  },
+  {
+    "id": "q0131",
+    "title": "Un număr este palindrom dacă se citește la fel de la stânga ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Cifre palindrom",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Un număr este palindrom dacă se citește la fel de la stânga la dreapta și invers. Fie n = 1221. Care este numărul inversat al lui n?",
+    "hint_key": "alg_cifre",
+    "explanation": "Inversăm cifrele: 1221 → 1221. Dacă n == inv, e palindrom.",
+    "answer": "1221",
+    "question_data": {
+      "options": {
+        "A": "2112",
+        "B": "1221",
+        "C": "1212",
+        "D": "2121"
+      }
+    },
+    "keywords": [
+      "palindrom",
+      "invers",
+      "cifre"
+    ]
+  },
+  {
+    "id": "q0132",
+    "title": "Ce afișează?\n```cpp\nint n = 1234, s = 0;\nwhile (n > 0) {\n   ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Cifre",
+    "difficulty": "hard",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint n = 1234, s = 0;\nwhile (n > 0) {\n    s += n % 10;\n    n /= 10;\n}\ncout << s;\n```",
+    "hint_key": "alg_cifre",
+    "explanation": "Suma cifrelor lui 1234: 1+2+3+4 = 10.",
+    "answer": "10",
+    "question_data": {
+      "expected": "10"
+    },
+    "keywords": [
+      "suma",
+      "cifre",
+      "while"
+    ]
+  },
+  {
+    "id": "q0133",
+    "title": "Scrie codul care verifică dacă numărul n este palindrom (se ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Prelucrarea cifrelor",
+    "lesson": "Cifre",
+    "difficulty": "very-hard",
+    "type": "code-snippet",
+    "statement": "Scrie codul care verifică dacă numărul n este palindrom (se citește la fel în ambele sensuri). Afișează 'DA' sau 'NU'.",
+    "hint_key": "alg_cifre",
+    "explanation": "Calculăm numărul inversat și comparăm cu originalul. Salvăm n original înainte.",
+    "answer": "int original = n, inv = 0;\nwhile (n > 0) { inv = inv * 10 + n % 10; n /= 10; }\nif (original == inv) cout << \"DA\"; else cout << \"NU\";",
+    "question_data": {
+      "placeholder": "int original = n, inv = 0;\nwhile (n > 0) { inv = inv * 10 + n % 10; n /= 10; }\nif (___ == ___) cout << \"DA\"; else cout << \"NU\";"
+    },
+    "keywords": [
+      "palindrom",
+      "invers",
+      "cifre"
+    ]
+  },
+  {
+    "id": "q0134",
+    "title": "Afirmație: Numărul 1 este număr prim.",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Numere prime",
+    "difficulty": "mediocre",
+    "type": "true-false",
+    "statement": "Afirmație: Numărul 1 este număr prim.",
+    "hint_key": "alg_div",
+    "explanation": "Prin definiție, 1 nu este număr prim. Numerele prime au exact 2 divizori: 1 și ele însele.",
+    "answer": "false",
+    "question_data": {
+      "statement": "Numărul 1 este număr prim."
+    },
+    "keywords": [
+      "prim",
+      "1",
+      "definitie"
+    ]
+  },
+  {
+    "id": "q0135",
+    "title": "Completează algoritmul de verificare a numărului prim:\n```cp",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Numere prime",
+    "difficulty": "mediocre",
+    "type": "fill-gaps",
+    "statement": "Completează algoritmul de verificare a numărului prim:\n```cpp\nint ok = 1;\nif (n < 2) ok = 0;\nfor (int d = 2; d * d ___ n; d++)\n    if (n % d == 0) { ok = 0; ___; }\n```",
+    "hint_key": "alg_div",
+    "explanation": "Verificăm până la sqrt(n) (d*d<=n). La primul divizor ieșim cu break.",
+    "answer": [
+      "<=",
+      "break"
+    ],
+    "question_data": {
+      "blanks": [
+        "<=",
+        "break"
+      ],
+      "options_per_blank": [
+        [
+          "<=",
+          "<",
+          "==",
+          ">"
+        ],
+        [
+          "break",
+          "continue",
+          "return",
+          "stop"
+        ]
+      ]
+    },
+    "keywords": [
+      "prim",
+      "verificare",
+      "sqrt"
+    ]
+  },
+  {
+    "id": "q0136",
+    "title": "Numărul 17 este prim?",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Numere prime",
+    "difficulty": "mediocre",
+    "type": "multiple-choice",
+    "statement": "Numărul 17 este prim?",
+    "hint_key": "alg_div",
+    "explanation": "17 nu are niciun divizor între 2 și sqrt(17)≈4.1. Verificăm: 17%2≠0, 17%3≠0, 17%4≠0.",
+    "answer": "Da",
+    "question_data": {
+      "options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Depinde",
+        "D": "0 are doi divizori"
+      }
+    },
+    "keywords": [
+      "prim",
+      "17",
+      "exemple"
+    ]
+  },
+  {
+    "id": "q0137",
+    "title": "Ordonează liniile pentru algoritmul cmmdc (Euclid) pentru a ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "cmmdc",
+    "difficulty": "hard",
+    "type": "order-blocks",
+    "statement": "Ordonează liniile pentru algoritmul cmmdc (Euclid) pentru a și b:",
+    "hint_key": "alg_div",
+    "explanation": "Algoritmul lui Euclid: cmmdc(a,b) = cmmdc(b, a%b) până când b=0.",
+    "answer": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "question_data": {
+      "blocks": [
+        "while (b != 0) {",
+        "    int r = a % b;",
+        "    a = b;",
+        "    b = r;\n}",
+        "cout << a; // a = cmmdc"
+      ]
+    },
+    "keywords": [
+      "cmmdc",
+      "euclid",
+      "algoritm"
+    ]
+  },
+  {
+    "id": "q0138",
+    "title": "Ce afișează?\n```cpp\nint a = 12, b = 8;\nwhile (b != 0) {\n    ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "cmmdc",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint a = 12, b = 8;\nwhile (b != 0) {\n    int r = a % b;\n    a = b;\n    b = r;\n}\ncout << a;\n```",
+    "hint_key": "alg_div",
+    "explanation": "cmmdc(12,8): r=12%8=4, a=8,b=4; r=8%4=0, a=4,b=0. Rezultat: 4.",
+    "answer": "4",
+    "question_data": {
+      "expected": "4"
+    },
+    "keywords": [
+      "cmmdc",
+      "euclid",
+      "calcul"
+    ]
+  },
+  {
+    "id": "q0139",
+    "title": "Scrie codul care numără și afișează numărul de divizori ai l",
+    "category": "Algoritmi elementari",
+    "subcategory": "Divizibilitate",
+    "lesson": "Divizori",
+    "difficulty": "above-average",
+    "type": "code-snippet",
+    "statement": "Scrie codul care numără și afișează numărul de divizori ai lui n.",
+    "hint_key": "alg_div",
+    "explanation": "Parcurgem d de la 1 la n și numărăm d-urile pentru care n%d==0.",
+    "answer": "int nr = 0;\nfor (int d = 1; d <= n; d++)\n    if (n % d == 0) nr++;\ncout << nr;",
+    "question_data": {
+      "placeholder": "int nr = 0;\nfor (int d = 1; d ___ n; d++)\n    if (n ___ d == 0) nr++;\ncout << nr;",
+      "accept_patterns": [
+        "<=",
+        "n\\s*%\\s*d"
+      ]
+    },
+    "keywords": [
+      "divizori",
+      "numarare",
+      "for"
+    ]
+  },
+  {
+    "id": "q0140",
+    "title": "Citim n numere. La ce valoare inițializăm maximul înainte de",
+    "category": "Algoritmi elementari",
+    "subcategory": "Maxime și minime",
+    "lesson": "Max/Min",
+    "difficulty": "easy",
+    "type": "multiple-choice",
+    "statement": "Citim n numere. La ce valoare inițializăm maximul înainte de a citi numerele?",
+    "hint_key": "alg_maxmin",
+    "explanation": "Cel mai bun este să citim primul număr și să-l folosim ca max inițial.",
+    "answer": "Citim primul număr și îl folosim ca max inițial",
+    "question_data": {
+      "options": {
+        "A": "0",
+        "B": "-1",
+        "C": "1000000",
+        "D": "Citim primul număr și îl folosim ca max inițial"
+      }
+    },
+    "keywords": [
+      "max",
+      "initializare",
+      "primul"
+    ]
+  },
+  {
+    "id": "q0141",
+    "title": "Ce afișează (citim 5 numere: 3 7 1 9 4)?\n```cpp\nint n = 5, m",
+    "category": "Algoritmi elementari",
+    "subcategory": "Maxime și minime",
+    "lesson": "Max/Min",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează (citim 5 numere: 3 7 1 9 4)?\n```cpp\nint n = 5, max;\ncin >> max;\nfor (int i = 1; i < n; i++) {\n    int x; cin >> x;\n    if (x > max) max = x;\n}\ncout << max;\n```",
+    "hint_key": "alg_maxmin",
+    "explanation": "max inițial = 3. 7 > 3 → max=7. 1 < 7. 9 > 7 → max=9. 4 < 9.",
+    "answer": "9",
+    "question_data": {
+      "expected": "9"
+    },
+    "keywords": [
+      "max",
+      "citire",
+      "secvential"
+    ]
+  },
+  {
+    "id": "q0142",
+    "title": "Scrie o linie de cod care calculează maximul dintre a și b ș",
+    "category": "Algoritmi elementari",
+    "subcategory": "Maxime și minime",
+    "lesson": "Max 2 numere",
+    "difficulty": "trivial",
+    "type": "code-snippet",
+    "statement": "Scrie o linie de cod care calculează maximul dintre a și b și îl stochează în max, folosind operatorul ternar.",
+    "hint_key": "alg_maxmin",
+    "explanation": "Operatorul ternar: condiție ? valoare_dacă_adevărat : valoare_dacă_fals",
+    "answer": "int max = (a > b) ? a : b;",
+    "question_data": {
+      "placeholder": "int max = (a ___ b) ? a : b;",
+      "accept_patterns": [
+        "a\\s*>\\s*b"
+      ]
+    },
+    "keywords": [
+      "max",
+      "ternar",
+      "one-liner"
+    ]
+  },
+  {
+    "id": "q0143",
+    "title": "Completează pentru a calcula suma pătratelor numerelor de la",
+    "category": "Algoritmi elementari",
+    "subcategory": "Sume, produse, numărări",
+    "lesson": "Sume",
+    "difficulty": "easy",
+    "type": "fill-gaps",
+    "statement": "Completează pentru a calcula suma pătratelor numerelor de la 1 la n:\n```cpp\nint s = 0;\nfor (int i = 1; i <= n; i++)\n    s += ___ * ___;\ncout << s;\n```",
+    "hint_key": "alg_sume",
+    "explanation": "Suma pătratelor: adunăm i*i pentru fiecare i de la 1 la n.",
+    "answer": [
+      "i",
+      "i"
+    ],
+    "question_data": {
+      "blanks": [
+        "i",
+        "i"
+      ],
+      "options_per_blank": [
+        [
+          "i",
+          "n",
+          "s",
+          "0"
+        ],
+        [
+          "i",
+          "n",
+          "s",
+          "2"
+        ]
+      ]
+    },
+    "keywords": [
+      "suma",
+      "patrate",
+      "for"
+    ]
+  },
+  {
+    "id": "q0144",
+    "title": "Scrie codul care calculează n! (n factorial). n e mic.",
+    "category": "Algoritmi elementari",
+    "subcategory": "Sume, produse, numărări",
+    "lesson": "Produse",
+    "difficulty": "mediocre",
+    "type": "code-snippet",
+    "statement": "Scrie codul care calculează n! (n factorial). n e mic.",
+    "hint_key": "alg_sume",
+    "explanation": "Factorial: produsul de la 1 la n. Produsul se inițializează cu 1.",
+    "answer": "int p = 1;\nfor (int i = 1; i <= n; i++) p *= i;\ncout << p;",
+    "question_data": {
+      "placeholder": "int p = 1;\nfor (int i = ___; i <= n; i++) p ___ i;\ncout << p;"
+    },
+    "keywords": [
+      "factorial",
+      "produs",
+      "for"
+    ]
+  },
+  {
+    "id": "q0145",
+    "title": "Câte numere divizibile cu 3 sunt în intervalul [1, 20]?\n```c",
+    "category": "Algoritmi elementari",
+    "subcategory": "Sume, produse, numărări",
+    "lesson": "Numărare",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Câte numere divizibile cu 3 sunt în intervalul [1, 20]?\n```cpp\nint nr = 0;\nfor (int i = 1; i <= 20; i++)\n    if (i % 3 == 0) nr++;\ncout << nr;\n```",
+    "hint_key": "alg_sume",
+    "explanation": "Multipli de 3 în [1,20]: 3,6,9,12,15,18 → 6 numere.",
+    "answer": "6",
+    "question_data": {
+      "expected": "6"
+    },
+    "keywords": [
+      "numarare",
+      "multipli",
+      "for"
+    ]
+  },
+  {
+    "id": "q0146",
+    "title": "Ce afișează? (conversia lui 10 în baza 2)\n```cpp\nint n = 10;",
+    "category": "Algoritmi elementari",
+    "subcategory": "Baze de numerație",
+    "lesson": "Baza 2",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează? (conversia lui 10 în baza 2)\n```cpp\nint n = 10;\nwhile (n > 0) {\n    cout << n % 2;\n    n /= 2;\n}\n```",
+    "hint_key": "alg_numaratie",
+    "explanation": "10 în baza 2: 10%2=0,n=5; 5%2=1,n=2; 2%2=0,n=1; 1%2=1,n=0. Cifrele apar invers!",
+    "answer": "0101",
+    "question_data": {
+      "expected": "0101"
+    },
+    "keywords": [
+      "baza2",
+      "conversie",
+      "binar"
+    ]
+  },
+  {
+    "id": "q0147",
+    "title": "Care este reprezentarea în baza 2 a numărului 13?",
+    "category": "Algoritmi elementari",
+    "subcategory": "Baze de numerație",
+    "lesson": "Baza 2",
+    "difficulty": "above-average",
+    "type": "multiple-choice",
+    "statement": "Care este reprezentarea în baza 2 a numărului 13?",
+    "hint_key": "alg_numaratie",
+    "explanation": "13 = 8 + 4 + 1 = 1101 în binar.",
+    "answer": "1101",
+    "question_data": {
+      "options": {
+        "A": "1011",
+        "B": "1110",
+        "C": "1101",
+        "D": "0111"
+      }
+    },
+    "keywords": [
+      "baza2",
+      "binar",
+      "conversie"
+    ]
+  },
+  {
+    "id": "q0148",
+    "title": "Scrie codul care afișează cifrele lui n în baza b (b între 2",
+    "category": "Algoritmi elementari",
+    "subcategory": "Baze de numerație",
+    "lesson": "Baza 10 la baza b",
+    "difficulty": "hard",
+    "type": "code-snippet",
+    "statement": "Scrie codul care afișează cifrele lui n în baza b (b între 2 și 9), în ordine corectă. Poți folosi un tablou de cifre.",
+    "hint_key": "alg_numaratie",
+    "explanation": "Extragem cifre în ordine inversă, le stocăm, apoi afișăm invers.",
+    "answer": "int cifre[50], k = 0;\nwhile (n > 0) { cifre[k++] = n % b; n /= b; }\nfor (int i = k-1; i >= 0; i--) cout << cifre[i];",
+    "question_data": {
+      "placeholder": "while (n > 0) { cifre[k++] = n ___ b; n /= b; }"
+    },
+    "keywords": [
+      "baza",
+      "conversie",
+      "tablou"
+    ]
+  },
+  {
+    "id": "q0149",
+    "title": "Ce afișează?\n```cpp\nint a = 0, b = 1;\nfor (int i = 0; i < 6;",
+    "category": "Algoritmi elementari",
+    "subcategory": "Generarea șirurilor",
+    "lesson": "Fibonacci",
+    "difficulty": "mediocre",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint a = 0, b = 1;\nfor (int i = 0; i < 6; i++) {\n    cout << a << \" \";\n    int c = a + b;\n    a = b;\n    b = c;\n}\n```",
+    "hint_key": "alg_siruri_gen",
+    "explanation": "Fibonacci: 0,1,1,2,3,5,...",
+    "answer": "0 1 1 2 3 5 ",
+    "question_data": {
+      "expected": "0 1 1 2 3 5 "
+    },
+    "keywords": [
+      "fibonacci",
+      "sir",
+      "recursiv"
+    ]
+  },
+  {
+    "id": "q0150",
+    "title": "Al câtelea termen Fibonacci (indexat de la 0) este 21?",
+    "category": "Algoritmi elementari",
+    "subcategory": "Generarea șirurilor",
+    "lesson": "Fibonacci",
+    "difficulty": "hard",
+    "type": "multiple-choice",
+    "statement": "Al câtelea termen Fibonacci (indexat de la 0) este 21?",
+    "hint_key": "alg_siruri_gen",
+    "explanation": "Șirul: 0,1,1,2,3,5,8,13,21. Termenul cu indicele 8.",
+    "answer": "8",
+    "question_data": {
+      "options": {
+        "A": "7",
+        "B": "8",
+        "C": "9",
+        "D": "6"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "termen",
+      "index"
+    ]
+  },
+  {
+    "id": "q0151",
+    "title": "Ce afișează?\n```cpp\nint a = 1;\nfor (int i = 1; i <= 5; i++) ",
+    "category": "Algoritmi elementari",
+    "subcategory": "Generarea șirurilor",
+    "lesson": "Serii",
+    "difficulty": "above-average",
+    "type": "output-prediction",
+    "statement": "Ce afișează?\n```cpp\nint a = 1;\nfor (int i = 1; i <= 5; i++) {\n    cout << a << \" \";\n    a *= 2;\n}\n```",
+    "hint_key": "alg_siruri_gen",
+    "explanation": "Puterile lui 2: 1, 2, 4, 8, 16.",
+    "answer": "1 2 4 8 16 ",
+    "question_data": {
+      "expected": "1 2 4 8 16 "
+    },
+    "keywords": [
+      "puteri",
+      "2",
+      "sir"
+    ]
+  }
+]
